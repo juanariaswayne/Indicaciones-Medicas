@@ -44,6 +44,17 @@
             this.btnGuardar = new MetroFramework.Controls.MetroTile();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
             this.dataGridViewProcedimientos = new System.Windows.Forms.DataGridView();
+            this.ID_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GENERICO_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.INICIOP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SUMINISTRO_ID_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PROCEDIMIENTO_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HORARIO_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DIAS_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OBS_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FINP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CHECK_2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.TIPO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewDescartables = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,17 +81,6 @@
             this.dateHasta = new MetroFramework.Controls.MetroDateTime();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.ID_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GENERICO_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.INICIOP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SUMINISTRO_ID_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PROCEDIMIENTO_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HORARIO_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DIAS_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OBS_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FINP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CHECK_2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.TIPO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridPacientes)).BeginInit();
             this.metroPanel2.SuspendLayout();
@@ -242,6 +242,7 @@
             this.btnGuardar.Text = "imprimir";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnGuardar.UseSelectable = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // metroPanel3
             // 
@@ -300,6 +301,76 @@
             this.dataGridViewProcedimientos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProcedimientos_CellContentClick);
             this.dataGridViewProcedimientos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProcedimientos_CellDoubleClick);
             this.dataGridViewProcedimientos.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProcedimientos_CellValueChanged);
+            // 
+            // ID_2
+            // 
+            this.ID_2.HeaderText = "ID_PROCEDIMIENTO";
+            this.ID_2.Name = "ID_2";
+            this.ID_2.Visible = false;
+            // 
+            // GENERICO_ID
+            // 
+            this.GENERICO_ID.HeaderText = "GENERICO_ID";
+            this.GENERICO_ID.Name = "GENERICO_ID";
+            this.GENERICO_ID.Visible = false;
+            // 
+            // INICIOP
+            // 
+            this.INICIOP.HeaderText = "INICIO";
+            this.INICIOP.Name = "INICIOP";
+            this.INICIOP.Width = 80;
+            // 
+            // SUMINISTRO_ID_2
+            // 
+            this.SUMINISTRO_ID_2.HeaderText = "ID";
+            this.SUMINISTRO_ID_2.Name = "SUMINISTRO_ID_2";
+            this.SUMINISTRO_ID_2.Width = 80;
+            // 
+            // PROCEDIMIENTO_2
+            // 
+            this.PROCEDIMIENTO_2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.PROCEDIMIENTO_2.HeaderText = "PROCEDIMIENTO";
+            this.PROCEDIMIENTO_2.Name = "PROCEDIMIENTO_2";
+            this.PROCEDIMIENTO_2.ReadOnly = true;
+            // 
+            // HORARIO_2
+            // 
+            this.HORARIO_2.HeaderText = "HORARIO";
+            this.HORARIO_2.Name = "HORARIO_2";
+            this.HORARIO_2.ReadOnly = true;
+            // 
+            // DIAS_2
+            // 
+            this.DIAS_2.HeaderText = "DIAS";
+            this.DIAS_2.Name = "DIAS_2";
+            this.DIAS_2.ReadOnly = true;
+            // 
+            // OBS_2
+            // 
+            this.OBS_2.HeaderText = "OBS";
+            this.OBS_2.Name = "OBS_2";
+            this.OBS_2.ReadOnly = true;
+            this.OBS_2.Width = 200;
+            // 
+            // FINP
+            // 
+            this.FINP.HeaderText = "FIN";
+            this.FINP.Name = "FINP";
+            this.FINP.Width = 80;
+            // 
+            // CHECK_2
+            // 
+            this.CHECK_2.HeaderText = "✓";
+            this.CHECK_2.Name = "CHECK_2";
+            this.CHECK_2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.CHECK_2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.CHECK_2.Width = 20;
+            // 
+            // TIPO
+            // 
+            this.TIPO.HeaderText = "TIPO";
+            this.TIPO.Name = "TIPO";
+            this.TIPO.Visible = false;
             // 
             // dataGridViewDescartables
             // 
@@ -537,76 +608,6 @@
             this.metroLabel3.Size = new System.Drawing.Size(41, 19);
             this.metroLabel3.TabIndex = 9;
             this.metroLabel3.Text = "Hasta";
-            // 
-            // ID_2
-            // 
-            this.ID_2.HeaderText = "ID_PROCEDIMIENTO";
-            this.ID_2.Name = "ID_2";
-            this.ID_2.Visible = false;
-            // 
-            // GENERICO_ID
-            // 
-            this.GENERICO_ID.HeaderText = "GENERICO_ID";
-            this.GENERICO_ID.Name = "GENERICO_ID";
-            this.GENERICO_ID.Visible = false;
-            // 
-            // INICIOP
-            // 
-            this.INICIOP.HeaderText = "INICIO";
-            this.INICIOP.Name = "INICIOP";
-            this.INICIOP.Width = 80;
-            // 
-            // SUMINISTRO_ID_2
-            // 
-            this.SUMINISTRO_ID_2.HeaderText = "ID";
-            this.SUMINISTRO_ID_2.Name = "SUMINISTRO_ID_2";
-            this.SUMINISTRO_ID_2.Width = 80;
-            // 
-            // PROCEDIMIENTO_2
-            // 
-            this.PROCEDIMIENTO_2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.PROCEDIMIENTO_2.HeaderText = "PROCEDIMIENTO";
-            this.PROCEDIMIENTO_2.Name = "PROCEDIMIENTO_2";
-            this.PROCEDIMIENTO_2.ReadOnly = true;
-            // 
-            // HORARIO_2
-            // 
-            this.HORARIO_2.HeaderText = "HORARIO";
-            this.HORARIO_2.Name = "HORARIO_2";
-            this.HORARIO_2.ReadOnly = true;
-            // 
-            // DIAS_2
-            // 
-            this.DIAS_2.HeaderText = "DIAS";
-            this.DIAS_2.Name = "DIAS_2";
-            this.DIAS_2.ReadOnly = true;
-            // 
-            // OBS_2
-            // 
-            this.OBS_2.HeaderText = "OBS";
-            this.OBS_2.Name = "OBS_2";
-            this.OBS_2.ReadOnly = true;
-            this.OBS_2.Width = 200;
-            // 
-            // FINP
-            // 
-            this.FINP.HeaderText = "FIN";
-            this.FINP.Name = "FINP";
-            this.FINP.Width = 80;
-            // 
-            // CHECK_2
-            // 
-            this.CHECK_2.HeaderText = "✓";
-            this.CHECK_2.Name = "CHECK_2";
-            this.CHECK_2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.CHECK_2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.CHECK_2.Width = 20;
-            // 
-            // TIPO
-            // 
-            this.TIPO.HeaderText = "TIPO";
-            this.TIPO.Name = "TIPO";
-            this.TIPO.Visible = false;
             // 
             // ResumenIM
             // 
