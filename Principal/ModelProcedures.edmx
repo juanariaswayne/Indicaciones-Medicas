@@ -1,0 +1,1116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SISTMEDModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="PRO_Asociacion_Procedimiento">
+          <Key>
+            <PropertyRef Name="procedimiento_id" />
+            <PropertyRef Name="articulo_id" />
+          </Key>
+          <Property Name="procedimiento_id" Type="int" Nullable="false" />
+          <Property Name="articulo_id" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="suministro_procedimiento_id" Type="int" />
+          <Property Name="cantidad" Type="numeric" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="PRO_Asociacion_Procedimiento_Proc">
+          <Key>
+            <PropertyRef Name="procedimiento_id" />
+            <PropertyRef Name="procedimiento_id2" />
+          </Key>
+          <Property Name="procedimiento_id" Type="int" Nullable="false" />
+          <Property Name="procedimiento_id2" Type="int" Nullable="false" />
+          <Property Name="suministro_procedimiento_id" Type="int" />
+        </EntityType>
+        <EntityType Name="PRO_Generico">
+          <Key>
+            <PropertyRef Name="generico_id" />
+          </Key>
+          <Property Name="generico_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="paciente_id" Type="int" />
+          <Property Name="procedimiento_id" Type="int" />
+          <Property Name="observacion" Type="varchar" MaxLength="5000" />
+          <Property Name="usuario_id" Type="int" />
+          <Property Name="fechaAltaSistema" Type="datetime" />
+          <Property Name="fechaModificacion" Type="datetime" />
+          <Property Name="fechaBaja" Type="datetime" />
+          <Property Name="motivoBaja" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="PRO_Historial_SuministroDeProcedimiento">
+          <Key>
+            <PropertyRef Name="suministroDeProcedimiento_id" />
+          </Key>
+          <Property Name="suministroDeProcedimiento_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="paciente_id" Type="int" />
+          <Property Name="procedimiento_id" Type="int" />
+          <Property Name="tipoProcedimiento_id" Type="int" />
+          <Property Name="usuario_id" Type="int" />
+          <Property Name="fechaAltaSistema" Type="datetime" />
+          <Property Name="fechaModificiacion" Type="datetime" />
+          <Property Name="fechaBaja" Type="datetime" />
+          <Property Name="motivoBaja" Type="varchar" MaxLength="500" />
+          <Property Name="enfermeria_id" Type="int" />
+          <Property Name="posologia_id" Type="int" />
+          <Property Name="generico_id" Type="int" />
+          <Property Name="colocacionViaPeriferica_id" Type="int" />
+          <Property Name="cuidadoOral_id" Type="int" />
+          <Property Name="cuidadoPostural_id" Type="int" />
+          <Property Name="php_id" Type="int" />
+          <Property Name="proteccionFisica_id" Type="int" />
+        </EntityType>
+        <EntityType Name="PRO_Procedimiento">
+          <Key>
+            <PropertyRef Name="procedimiento_id" />
+          </Key>
+          <Property Name="procedimiento_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="descripcion" Type="varchar" MaxLength="250" />
+          <Property Name="tipoProcedimiento_id" Type="int" />
+          <Property Name="inactivo" Type="bit" />
+        </EntityType>
+        <EntityType Name="PRO_SuministroDeProcedimiento">
+          <Key>
+            <PropertyRef Name="suministroDeProcedimiento_id" />
+          </Key>
+          <Property Name="suministroDeProcedimiento_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="paciente_id" Type="int" />
+          <Property Name="procedimiento_id" Type="int" />
+          <Property Name="tipoProcedimiento_id" Type="int" />
+          <Property Name="usuario_id" Type="int" />
+          <Property Name="fechaAltaSistema" Type="datetime" />
+          <Property Name="fechaModificiacion" Type="datetime" />
+          <Property Name="fechaBaja" Type="datetime" />
+          <Property Name="motivoBaja" Type="varchar" MaxLength="500" />
+          <Property Name="enfermeria_id" Type="int" />
+          <Property Name="posologia_id" Type="int" />
+          <Property Name="generico_id" Type="int" />
+          <Property Name="colocacionViaPeriferica_id" Type="int" />
+          <Property Name="cuidadoOral_id" Type="int" />
+          <Property Name="cuidadoPostural_id" Type="int" />
+          <Property Name="php_id" Type="int" />
+          <Property Name="proteccionFisica_id" Type="int" />
+          <Property Name="h01" Type="bit" />
+          <Property Name="h02" Type="bit" />
+          <Property Name="h03" Type="bit" />
+          <Property Name="h04" Type="bit" />
+          <Property Name="h05" Type="bit" />
+          <Property Name="h06" Type="bit" />
+          <Property Name="h07" Type="bit" />
+          <Property Name="h08" Type="bit" />
+          <Property Name="h09" Type="bit" />
+          <Property Name="h10" Type="bit" />
+          <Property Name="h11" Type="bit" />
+          <Property Name="h12" Type="bit" />
+          <Property Name="h13" Type="bit" />
+          <Property Name="h14" Type="bit" />
+          <Property Name="h15" Type="bit" />
+          <Property Name="h16" Type="bit" />
+          <Property Name="h17" Type="bit" />
+          <Property Name="h18" Type="bit" />
+          <Property Name="h19" Type="bit" />
+          <Property Name="h20" Type="bit" />
+          <Property Name="h21" Type="bit" />
+          <Property Name="h22" Type="bit" />
+          <Property Name="h23" Type="bit" />
+          <Property Name="h00" Type="bit" />
+          <Property Name="Lunes" Type="bit" />
+          <Property Name="Martes" Type="bit" />
+          <Property Name="Miercoles" Type="bit" />
+          <Property Name="Jueves" Type="bit" />
+          <Property Name="Viernes" Type="bit" />
+          <Property Name="Sabado" Type="bit" />
+          <Property Name="Domingo" Type="bit" />
+        </EntityType>
+        <Association Name="FK_PRO_Asociacion_Procedimiento_PRO_Procedimiento">
+          <End Role="PRO_Procedimiento" Type="Self.PRO_Procedimiento" Multiplicity="1" />
+          <End Role="PRO_Asociacion_Procedimiento" Type="Self.PRO_Asociacion_Procedimiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRO_Procedimiento">
+              <PropertyRef Name="procedimiento_id" />
+            </Principal>
+            <Dependent Role="PRO_Asociacion_Procedimiento">
+              <PropertyRef Name="procedimiento_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRO_Asociacion_Procedimiento_PRO_SuministroDeProcedimiento">
+          <End Role="PRO_SuministroDeProcedimiento" Type="Self.PRO_SuministroDeProcedimiento" Multiplicity="0..1" />
+          <End Role="PRO_Asociacion_Procedimiento" Type="Self.PRO_Asociacion_Procedimiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRO_SuministroDeProcedimiento">
+              <PropertyRef Name="suministroDeProcedimiento_id" />
+            </Principal>
+            <Dependent Role="PRO_Asociacion_Procedimiento">
+              <PropertyRef Name="suministro_procedimiento_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRO_Asociacion_Procedimiento_Proc_PRO_Procedimiento">
+          <End Role="PRO_Procedimiento" Type="Self.PRO_Procedimiento" Multiplicity="1" />
+          <End Role="PRO_Asociacion_Procedimiento_Proc" Type="Self.PRO_Asociacion_Procedimiento_Proc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRO_Procedimiento">
+              <PropertyRef Name="procedimiento_id" />
+            </Principal>
+            <Dependent Role="PRO_Asociacion_Procedimiento_Proc">
+              <PropertyRef Name="procedimiento_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRO_Asociacion_Procedimiento_Proc_PRO_Procedimiento1">
+          <End Role="PRO_Procedimiento" Type="Self.PRO_Procedimiento" Multiplicity="1" />
+          <End Role="PRO_Asociacion_Procedimiento_Proc" Type="Self.PRO_Asociacion_Procedimiento_Proc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRO_Procedimiento">
+              <PropertyRef Name="procedimiento_id" />
+            </Principal>
+            <Dependent Role="PRO_Asociacion_Procedimiento_Proc">
+              <PropertyRef Name="procedimiento_id2" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRO_Asociacion_Procedimiento_Proc_PRO_SuministroDeProcedimiento">
+          <End Role="PRO_SuministroDeProcedimiento" Type="Self.PRO_SuministroDeProcedimiento" Multiplicity="0..1" />
+          <End Role="PRO_Asociacion_Procedimiento_Proc" Type="Self.PRO_Asociacion_Procedimiento_Proc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRO_SuministroDeProcedimiento">
+              <PropertyRef Name="suministroDeProcedimiento_id" />
+            </Principal>
+            <Dependent Role="PRO_Asociacion_Procedimiento_Proc">
+              <PropertyRef Name="suministro_procedimiento_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="ActualizaPuntajeObraSocial" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codEmp" Type="varchar" Mode="In" />
+          <Parameter Name="cli_Cod" Type="varchar" Mode="In" />
+          <Parameter Name="puntaje" Type="decimal" Mode="In" />
+        </Function>
+        <Function Name="Get_Paciente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="PACIENTE_ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Get_Paciente_Por_Sede" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SEDE_ID" Type="int" Mode="In" />
+          <Parameter Name="PISO_ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Get_Piso_Por_Sede" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SEDE_ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="MED_Get_Medicamento_Solicitado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="AUTORIZA" Type="bit" Mode="In" />
+          <Parameter Name="PENDIENTE" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="MED_TraeModuloEmpresaCosto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codEmp" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="ObtieneUltimoId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TABLA" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="PuntajeObraSocial" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="codEmp" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="TRAEDESCARTABLES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Descartable" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="TRAEENTERALES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="TraeHabitacionesLibres" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Sede" Type="int" Mode="In" />
+          <Parameter Name="Actualiza" Type="int" Mode="In" />
+          <Parameter Name="HabID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="TraeListaEspera" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="TRAEMEDICAMENTOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Medicamento_id" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="TraeObrasSociales" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="SISTMEDModelStoreContainer">
+          <EntitySet Name="PRO_Asociacion_Procedimiento" EntityType="Self.PRO_Asociacion_Procedimiento" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PRO_Asociacion_Procedimiento_Proc" EntityType="Self.PRO_Asociacion_Procedimiento_Proc" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PRO_Generico" EntityType="Self.PRO_Generico" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PRO_Historial_SuministroDeProcedimiento" EntityType="Self.PRO_Historial_SuministroDeProcedimiento" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PRO_Procedimiento" EntityType="Self.PRO_Procedimiento" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PRO_SuministroDeProcedimiento" EntityType="Self.PRO_SuministroDeProcedimiento" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_PRO_Asociacion_Procedimiento_PRO_Procedimiento" Association="Self.FK_PRO_Asociacion_Procedimiento_PRO_Procedimiento">
+            <End Role="PRO_Procedimiento" EntitySet="PRO_Procedimiento" />
+            <End Role="PRO_Asociacion_Procedimiento" EntitySet="PRO_Asociacion_Procedimiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRO_Asociacion_Procedimiento_PRO_SuministroDeProcedimiento" Association="Self.FK_PRO_Asociacion_Procedimiento_PRO_SuministroDeProcedimiento">
+            <End Role="PRO_SuministroDeProcedimiento" EntitySet="PRO_SuministroDeProcedimiento" />
+            <End Role="PRO_Asociacion_Procedimiento" EntitySet="PRO_Asociacion_Procedimiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRO_Asociacion_Procedimiento_Proc_PRO_Procedimiento" Association="Self.FK_PRO_Asociacion_Procedimiento_Proc_PRO_Procedimiento">
+            <End Role="PRO_Procedimiento" EntitySet="PRO_Procedimiento" />
+            <End Role="PRO_Asociacion_Procedimiento_Proc" EntitySet="PRO_Asociacion_Procedimiento_Proc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRO_Asociacion_Procedimiento_Proc_PRO_Procedimiento1" Association="Self.FK_PRO_Asociacion_Procedimiento_Proc_PRO_Procedimiento1">
+            <End Role="PRO_Procedimiento" EntitySet="PRO_Procedimiento" />
+            <End Role="PRO_Asociacion_Procedimiento_Proc" EntitySet="PRO_Asociacion_Procedimiento_Proc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRO_Asociacion_Procedimiento_Proc_PRO_SuministroDeProcedimiento" Association="Self.FK_PRO_Asociacion_Procedimiento_Proc_PRO_SuministroDeProcedimiento">
+            <End Role="PRO_SuministroDeProcedimiento" EntitySet="PRO_SuministroDeProcedimiento" />
+            <End Role="PRO_Asociacion_Procedimiento_Proc" EntitySet="PRO_Asociacion_Procedimiento_Proc" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SISTMEDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="SISTMEDProcedures" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="ActualizaPuntajeObraSocial">
+            <Parameter Name="codEmp" Mode="In" Type="String" />
+            <Parameter Name="cli_Cod" Mode="In" Type="String" />
+            <Parameter Name="puntaje" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Get_Paciente" ReturnType="Collection(SISTMEDModel.Get_Paciente_Result)">
+          <Parameter Name="PACIENTE_ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Get_Paciente_Por_Sede" ReturnType="Collection(SISTMEDModel.Get_Paciente_Por_Sede_Result)">
+            <Parameter Name="SEDE_ID" Mode="In" Type="Int32" />
+            <Parameter Name="PISO_ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Get_Piso_Por_Sede" ReturnType="Collection(SISTMEDModel.Get_Piso_Por_Sede_Result)">
+          <Parameter Name="SEDE_ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="MED_TraeModuloEmpresaCosto" ReturnType="Collection(SISTMEDModel.MED_TraeModuloEmpresaCosto_Result)">
+          <Parameter Name="codEmp" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="PuntajeObraSocial" ReturnType="Collection(SISTMEDModel.PuntajeObraSocial_Result)">
+          <Parameter Name="codEmp" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="TraeListaEspera" ReturnType="Collection(SISTMEDModel.TraeListaEspera_Result)" />
+          <FunctionImport Name="TraeObrasSociales" ReturnType="Collection(SISTMEDModel.TraeObrasSociales_Result)" />
+          <FunctionImport Name="ObtieneUltimoId" ReturnType="Collection(Decimal)">
+          <Parameter Name="TABLA" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="TRAEENTERALES" ReturnType="Collection(SISTMEDModel.TRAEENTERALES_Result)" />
+          <FunctionImport Name="TraeHabitacionesLibres" ReturnType="Collection(SISTMEDModel.TraeHabitacionesLibres_Result)">
+            <Parameter Name="Sede" Mode="In" Type="Int32" />
+            <Parameter Name="Actualiza" Mode="In" Type="Int32" />
+            <Parameter Name="HabID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="MED_Get_Medicamento_Solicitado" ReturnType="Collection(SISTMEDModel.MED_Get_Medicamento_Solicitado_Result)">
+            <Parameter Name="AUTORIZA" Mode="In" Type="Boolean" />
+            <Parameter Name="PENDIENTE" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="TRAEDESCARTABLES" ReturnType="Collection(SISTMEDModel.TRAEDESCARTABLES_Result)">
+          <Parameter Name="Descartable" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="TRAEMEDICAMENTOS" ReturnType="Collection(SISTMEDModel.TRAEMEDICAMENTOS_Result)">
+          <Parameter Name="Medicamento_id" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="PRO_Asociacion_Procedimiento" EntityType="SISTMEDModel.PRO_Asociacion_Procedimiento" />
+          <EntitySet Name="PRO_Asociacion_Procedimiento_Proc" EntityType="SISTMEDModel.PRO_Asociacion_Procedimiento_Proc" />
+          <EntitySet Name="PRO_Procedimiento" EntityType="SISTMEDModel.PRO_Procedimiento" />
+          <AssociationSet Name="FK_PRO_Asociacion_Procedimiento_PRO_Procedimiento" Association="SISTMEDModel.FK_PRO_Asociacion_Procedimiento_PRO_Procedimiento">
+            <End Role="PRO_Procedimiento" EntitySet="PRO_Procedimiento" />
+            <End Role="PRO_Asociacion_Procedimiento" EntitySet="PRO_Asociacion_Procedimiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRO_Asociacion_Procedimiento_Proc_PRO_Procedimiento" Association="SISTMEDModel.FK_PRO_Asociacion_Procedimiento_Proc_PRO_Procedimiento">
+            <End Role="PRO_Procedimiento" EntitySet="PRO_Procedimiento" />
+            <End Role="PRO_Asociacion_Procedimiento_Proc" EntitySet="PRO_Asociacion_Procedimiento_Proc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRO_Asociacion_Procedimiento_Proc_PRO_Procedimiento1" Association="SISTMEDModel.FK_PRO_Asociacion_Procedimiento_Proc_PRO_Procedimiento1">
+            <End Role="PRO_Procedimiento" EntitySet="PRO_Procedimiento" />
+            <End Role="PRO_Asociacion_Procedimiento_Proc" EntitySet="PRO_Asociacion_Procedimiento_Proc" />
+          </AssociationSet>
+          <EntitySet Name="PRO_Historial_SuministroDeProcedimiento" EntityType="SISTMEDModel.PRO_Historial_SuministroDeProcedimiento" />
+          <EntitySet Name="PRO_SuministroDeProcedimiento" EntityType="SISTMEDModel.PRO_SuministroDeProcedimiento" />
+          <AssociationSet Name="FK_PRO_Asociacion_Procedimiento_PRO_SuministroDeProcedimiento" Association="SISTMEDModel.FK_PRO_Asociacion_Procedimiento_PRO_SuministroDeProcedimiento">
+            <End Role="PRO_SuministroDeProcedimiento" EntitySet="PRO_SuministroDeProcedimiento" />
+            <End Role="PRO_Asociacion_Procedimiento" EntitySet="PRO_Asociacion_Procedimiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRO_Asociacion_Procedimiento_Proc_PRO_SuministroDeProcedimiento" Association="SISTMEDModel.FK_PRO_Asociacion_Procedimiento_Proc_PRO_SuministroDeProcedimiento">
+            <End Role="PRO_SuministroDeProcedimiento" EntitySet="PRO_SuministroDeProcedimiento" />
+            <End Role="PRO_Asociacion_Procedimiento_Proc" EntitySet="PRO_Asociacion_Procedimiento_Proc" />
+          </AssociationSet>
+          <EntitySet Name="PRO_Generico" EntityType="SISTMEDModel.PRO_Generico" />
+        </EntityContainer>
+        <ComplexType Name="Get_Paciente_Result">
+          <Property Type="Int32" Name="paciente_id" Nullable="false" />
+          <Property Type="Int32" Name="numeroHistoriaClinica" Nullable="true" />
+          <Property Type="Int32" Name="numeroInternacion" Nullable="true" />
+          <Property Type="Int32" Name="sede_id" Nullable="true" />
+          <Property Type="String" Name="sede" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="empresa_id" Nullable="true" />
+          <Property Type="String" Name="descripcion" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="habitacion_id" Nullable="false" />
+          <Property Type="String" Name="habitacion" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="apellido" Nullable="true" MaxLength="70" />
+          <Property Type="String" Name="nombre" Nullable="true" MaxLength="50" />
+          <Property Type="Boolean" Name="genero" Nullable="true" />
+          <Property Type="DateTime" Name="fechaNacimiento" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="tipoDocumento_id" Nullable="true" />
+          <Property Type="String" Name="documento" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="numeroDocumento" Nullable="true" />
+          <Property Type="Int32" Name="diagnostico_id" Nullable="false" />
+          <Property Type="DateTime" Name="fechaIngreso" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="acompaniante" Nullable="true" />
+          <Property Type="Boolean" Name="itemPendiente" Nullable="true" />
+          <Property Type="Boolean" Name="preAlta" Nullable="true" />
+          <Property Type="Boolean" Name="solicitudEstudio" Nullable="true" />
+          <Property Type="Boolean" Name="solicitudTraslado" Nullable="true" />
+          <Property Type="Boolean" Name="interconsultaPendiente" Nullable="true" />
+          <Property Type="Boolean" Name="altaAutorizada" Nullable="true" />
+          <Property Type="String" Name="obraSocial_id" Nullable="true" MaxLength="6" />
+          <Property Type="String" Name="obraSocial" Nullable="true" MaxLength="40" />
+          <Property Type="String" Name="numeroObraSocial" Nullable="true" MaxLength="100" />
+          <Property Type="DateTime" Name="fechaEgreso" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="respira" Nullable="true" />
+          <Property Type="Boolean" Name="contacto" Nullable="true" />
+          <Property Type="Boolean" Name="tqt" Nullable="true" />
+          <Property Type="Boolean" Name="arm" Nullable="true" />
+          <Property Type="Boolean" Name="oxigeno" Nullable="true" />
+          <Property Type="Boolean" Name="vo" Nullable="true" />
+          <Property Type="Boolean" Name="sng" Nullable="true" />
+          <Property Type="Boolean" Name="gastro" Nullable="true" />
+          <Property Type="Boolean" Name="sv" Nullable="true" />
+          <Property Type="Boolean" Name="cat" Nullable="true" />
+          <Property Type="Boolean" Name="talla" Nullable="true" />
+          <Property Type="Boolean" Name="talon" Nullable="true" />
+          <Property Type="Boolean" Name="sac" Nullable="true" />
+          <Property Type="Boolean" Name="isq" Nullable="true" />
+          <Property Type="DateTime" Name="fechaModificacion" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="paciente_traumatico" Nullable="true" />
+          <Property Type="String" Name="txtPacTraumatico" Nullable="true" MaxLength="500" />
+          <Property Type="Boolean" Name="paciente_judicializado" Nullable="true" />
+          <Property Type="String" Name="txtPacJudicializado" Nullable="true" MaxLength="500" />
+        </ComplexType>
+        <ComplexType Name="Get_Paciente_Por_Sede_Result">
+          <Property Type="Int32" Name="paciente_id" Nullable="false" />
+          <Property Type="Int32" Name="numeroInternacion" Nullable="true" />
+          <Property Type="Int32" Name="sede_id" Nullable="true" />
+          <Property Type="String" Name="sede" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="empresa_id" Nullable="true" />
+          <Property Type="String" Name="descripcion" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="habitacion_id" Nullable="false" />
+          <Property Type="String" Name="habitacion" Nullable="true" MaxLength="10" />
+          <Property Type="Int32" Name="piso_id" Nullable="true" />
+          <Property Type="String" Name="piso" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="nombre" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="apellido" Nullable="true" MaxLength="99" />
+          <Property Type="Boolean" Name="genero" Nullable="true" />
+          <Property Type="DateTime" Name="fechaNacimiento" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="tipoDocumento_id" Nullable="true" />
+          <Property Type="String" Name="tipoDocumento" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="numeroDocumento" Nullable="true" />
+          <Property Type="Int32" Name="diagnostico_id" Nullable="false" />
+          <Property Type="DateTime" Name="fechaIngreso" Nullable="true" Precision="23" />
+          <Property Type="String" Name="obraSocial_id" Nullable="true" MaxLength="6" />
+          <Property Type="String" Name="obraSocial" Nullable="true" MaxLength="40" />
+          <Property Type="Int32" Name="numeroObraSocial" Nullable="false" />
+          <Property Type="DateTime" Name="fechaEgreso" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="motivoEgreso_id" Nullable="true" />
+          <Property Type="String" Name="motivoEgreso" Nullable="true" MaxLength="250" />
+          <Property Type="Boolean" Name="acompaniante" Nullable="true" />
+          <Property Type="Boolean" Name="itemPendiente" Nullable="true" />
+          <Property Type="Boolean" Name="preAlta" Nullable="true" />
+          <Property Type="Boolean" Name="solicitudEstudio" Nullable="true" />
+          <Property Type="Boolean" Name="solicitudTraslado" Nullable="true" />
+          <Property Type="Boolean" Name="interconsultaPendiente" Nullable="true" />
+          <Property Type="Boolean" Name="altaAutorizada" Nullable="true" />
+          <Property Type="Int32" Name="HS_08" Nullable="true" />
+          <Property Type="Int32" Name="HS_09" Nullable="true" />
+          <Property Type="Int32" Name="HS_10" Nullable="true" />
+          <Property Type="Int32" Name="HS_11" Nullable="true" />
+          <Property Type="Int32" Name="HS_12" Nullable="true" />
+          <Property Type="Int32" Name="HS_13" Nullable="true" />
+          <Property Type="Int32" Name="HS_14" Nullable="true" />
+          <Property Type="Int32" Name="HS_15" Nullable="true" />
+          <Property Type="Int32" Name="HS_16" Nullable="true" />
+          <Property Type="Int32" Name="HS_17" Nullable="true" />
+          <Property Type="Int32" Name="HS_18" Nullable="true" />
+          <Property Type="Int32" Name="HS_19" Nullable="true" />
+          <Property Type="Int32" Name="HS_20" Nullable="true" />
+          <Property Type="Int32" Name="HS_21" Nullable="true" />
+          <Property Type="Int32" Name="HS_22" Nullable="true" />
+          <Property Type="Int32" Name="HS_23" Nullable="true" />
+          <Property Type="Int32" Name="HS_24" Nullable="true" />
+          <Property Type="Int32" Name="HS_01" Nullable="true" />
+          <Property Type="Int32" Name="HS_02" Nullable="true" />
+          <Property Type="Int32" Name="HS_03" Nullable="true" />
+          <Property Type="Int32" Name="HS_04" Nullable="true" />
+          <Property Type="Int32" Name="HS_05" Nullable="true" />
+          <Property Type="Int32" Name="HS_06" Nullable="true" />
+          <Property Type="Int32" Name="HS_07" Nullable="true" />
+          <Property Type="Int32" Name="HS_SH" Nullable="true" />
+          <Property Type="DateTime" Name="fechamodificacion" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="Get_Piso_Por_Sede_Result">
+          <Property Type="Int32" Name="piso_id" Nullable="true" />
+          <Property Type="String" Name="descripcion" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="MED_TraeModuloEmpresaCosto_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="modulo_id" Nullable="false" MaxLength="4" />
+          <Property Type="String" Name="Descripcion" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="obraSocial_id" Nullable="false" MaxLength="6" />
+          <Property Type="Double" Name="costo" Nullable="false" />
+          <Property Type="String" Name="ObraSocial" Nullable="false" MaxLength="40" />
+          <Property Type="DateTime" Name="fechaVigencia" Nullable="false" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="PuntajeObraSocial_Result">
+          <Property Type="String" Name="cli_Cod" Nullable="false" MaxLength="6" />
+          <Property Type="String" Name="cli_RazSoc" Nullable="false" MaxLength="40" />
+          <Property Type="Double" Name="Puntaje" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="TraeListaEspera_Result">
+          <Property Type="Int32" Name="espera_id" Nullable="false" />
+          <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="apellido" Nullable="false" MaxLength="70" />
+          <Property Type="Int16" Name="edad" Nullable="true" />
+          <Property Type="String" Name="genero" Nullable="true" MaxLength="1" />
+          <Property Type="DateTime" Name="fechaNacimiento" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="tipoDocumento_id" Nullable="true" />
+          <Property Type="Int32" Name="numeroDocumento" Nullable="true" />
+          <Property Type="Int32" Name="diagnostico_id" Nullable="true" />
+          <Property Type="DateTime" Name="fechaIngreso" Nullable="false" Precision="23" />
+          <Property Type="String" Name="obraSocial_id" Nullable="false" MaxLength="6" />
+          <Property Type="String" Name="nroAfiliado" Nullable="true" MaxLength="60" />
+          <Property Type="DateTime" Name="fechaEgreso" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="motivoEgreso_id" Nullable="true" />
+          <Property Type="Int32" Name="usuario_id" Nullable="false" />
+          <Property Type="DateTime" Name="fechaModificacion" Nullable="true" Precision="23" />
+          <Property Type="String" Name="deriva" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="obs" Nullable="true" MaxLength="Max" />
+          <Property Type="Boolean" Name="cultivo_POS" Nullable="true" />
+          <Property Type="Boolean" Name="cultivo_NEG" Nullable="true" />
+          <Property Type="Boolean" Name="cultivo_PEND" Nullable="true" />
+          <Property Type="DateTime" Name="fechaHisopado" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="pediatrico" Nullable="true" />
+          <Property Type="Boolean" Name="esReingreso" Nullable="true" />
+          <Property Type="String" Name="ObraSocial" Nullable="false" MaxLength="40" />
+          <Property Type="Boolean" Name="vieneRecomendado" Nullable="true" />
+          <Property Type="String" Name="QuienRecomienda" Nullable="true" MaxLength="150" />
+        </ComplexType>
+        <ComplexType Name="TraeObrasSociales_Result">
+          <Property Type="String" Name="cli_Cod" Nullable="false" MaxLength="6" />
+          <Property Type="String" Name="cli_RazSoc" Nullable="false" MaxLength="40" />
+        </ComplexType>
+        <ComplexType Name="TRAEENTERALES_Result">
+          <Property Type="String" Name="art_CodGen" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="art_DescGen" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="TraeHabitacionesLibres_Result">
+          <Property Type="Int32" Name="habitacion_id" Nullable="false" />
+          <Property Type="String" Name="descripcion" Nullable="true" MaxLength="10" />
+        </ComplexType>
+        <ComplexType Name="MED_Get_Medicamento_Solicitado_Result">
+          <Property Type="Int32" Name="medicamento_id" Nullable="false" />
+          <Property Type="String" Name="bejerman_id" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="medicamento" Nullable="true" MaxLength="100" />
+          <Property Type="Int32" Name="presentacion_id" Nullable="true" />
+          <Property Type="String" Name="presentacion" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="unidadDeMedida_id" Nullable="true" />
+          <Property Type="String" Name="unidadDeMedida" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="potencia" Nullable="true" MaxLength="250" />
+          <Property Type="Boolean" Name="autoriza" Nullable="true" />
+          <Property Type="Boolean" Name="suministraCompra" Nullable="true" />
+          <Property Type="Int32" Name="usuarioSolicita_id" Nullable="true" />
+          <Property Type="String" Name="usuarioSolicita" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="fechaSolicita" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="usuarioAutoriza_id" Nullable="true" />
+          <Property Type="String" Name="usuarioAutoriza" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="fechaAutoriza" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="pendiente" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="TRAEDESCARTABLES_Result">
+          <Property Type="String" Name="art_CodGen" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="art_DescGen" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="artele_Desc2" Nullable="false" MaxLength="15" />
+          <Property Type="String" Name="artele_Desc1" Nullable="false" MaxLength="15" />
+        </ComplexType>
+        <ComplexType Name="TRAEMEDICAMENTOS_Result">
+          <Property Type="String" Name="art_CodGen" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="art_DescGen" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="artele_Desc2" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="artele_Desc1" Nullable="true" MaxLength="100" />
+        </ComplexType>
+        <EntityType Name="PRO_Asociacion_Procedimiento">
+          <Key>
+            <PropertyRef Name="procedimiento_id" />
+            <PropertyRef Name="articulo_id" />
+          </Key>
+          <Property Name="procedimiento_id" Type="Int32" Nullable="false" />
+          <Property Name="articulo_id" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="suministro_procedimiento_id" Type="Int32" />
+          <Property Name="cantidad" Type="Decimal" Precision="18" Scale="2" />
+          <NavigationProperty Name="PRO_Procedimiento" Relationship="SISTMEDModel.FK_PRO_Asociacion_Procedimiento_PRO_Procedimiento" FromRole="PRO_Asociacion_Procedimiento" ToRole="PRO_Procedimiento" />
+          <NavigationProperty Name="PRO_SuministroDeProcedimiento" Relationship="SISTMEDModel.FK_PRO_Asociacion_Procedimiento_PRO_SuministroDeProcedimiento" FromRole="PRO_Asociacion_Procedimiento" ToRole="PRO_SuministroDeProcedimiento" />
+        </EntityType>
+        <EntityType Name="PRO_Asociacion_Procedimiento_Proc">
+          <Key>
+            <PropertyRef Name="procedimiento_id" />
+            <PropertyRef Name="procedimiento_id2" />
+          </Key>
+          <Property Name="procedimiento_id" Type="Int32" Nullable="false" />
+          <Property Name="procedimiento_id2" Type="Int32" Nullable="false" />
+          <Property Name="suministro_procedimiento_id" Type="Int32" />
+          <NavigationProperty Name="PRO_Procedimiento" Relationship="SISTMEDModel.FK_PRO_Asociacion_Procedimiento_Proc_PRO_Procedimiento" FromRole="PRO_Asociacion_Procedimiento_Proc" ToRole="PRO_Procedimiento" />
+          <NavigationProperty Name="PRO_Procedimiento1" Relationship="SISTMEDModel.FK_PRO_Asociacion_Procedimiento_Proc_PRO_Procedimiento1" FromRole="PRO_Asociacion_Procedimiento_Proc" ToRole="PRO_Procedimiento" />
+          <NavigationProperty Name="PRO_SuministroDeProcedimiento" Relationship="SISTMEDModel.FK_PRO_Asociacion_Procedimiento_Proc_PRO_SuministroDeProcedimiento" FromRole="PRO_Asociacion_Procedimiento_Proc" ToRole="PRO_SuministroDeProcedimiento" />
+        </EntityType>
+        <EntityType Name="PRO_Procedimiento">
+          <Key>
+            <PropertyRef Name="procedimiento_id" />
+          </Key>
+          <Property Name="procedimiento_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="descripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="tipoProcedimiento_id" Type="Int32" />
+          <Property Name="inactivo" Type="Boolean" />
+          <NavigationProperty Name="PRO_Asociacion_Procedimiento" Relationship="SISTMEDModel.FK_PRO_Asociacion_Procedimiento_PRO_Procedimiento" FromRole="PRO_Procedimiento" ToRole="PRO_Asociacion_Procedimiento" />
+          <NavigationProperty Name="PRO_Asociacion_Procedimiento_Proc" Relationship="SISTMEDModel.FK_PRO_Asociacion_Procedimiento_Proc_PRO_Procedimiento" FromRole="PRO_Procedimiento" ToRole="PRO_Asociacion_Procedimiento_Proc" />
+          <NavigationProperty Name="PRO_Asociacion_Procedimiento_Proc1" Relationship="SISTMEDModel.FK_PRO_Asociacion_Procedimiento_Proc_PRO_Procedimiento1" FromRole="PRO_Procedimiento" ToRole="PRO_Asociacion_Procedimiento_Proc" />
+        </EntityType>
+        <Association Name="FK_PRO_Asociacion_Procedimiento_PRO_Procedimiento">
+          <End Type="SISTMEDModel.PRO_Procedimiento" Role="PRO_Procedimiento" Multiplicity="1" />
+          <End Type="SISTMEDModel.PRO_Asociacion_Procedimiento" Role="PRO_Asociacion_Procedimiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRO_Procedimiento">
+              <PropertyRef Name="procedimiento_id" />
+            </Principal>
+            <Dependent Role="PRO_Asociacion_Procedimiento">
+              <PropertyRef Name="procedimiento_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRO_Asociacion_Procedimiento_Proc_PRO_Procedimiento">
+          <End Type="SISTMEDModel.PRO_Procedimiento" Role="PRO_Procedimiento" Multiplicity="1" />
+          <End Type="SISTMEDModel.PRO_Asociacion_Procedimiento_Proc" Role="PRO_Asociacion_Procedimiento_Proc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRO_Procedimiento">
+              <PropertyRef Name="procedimiento_id" />
+            </Principal>
+            <Dependent Role="PRO_Asociacion_Procedimiento_Proc">
+              <PropertyRef Name="procedimiento_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRO_Asociacion_Procedimiento_Proc_PRO_Procedimiento1">
+          <End Type="SISTMEDModel.PRO_Procedimiento" Role="PRO_Procedimiento" Multiplicity="1" />
+          <End Type="SISTMEDModel.PRO_Asociacion_Procedimiento_Proc" Role="PRO_Asociacion_Procedimiento_Proc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRO_Procedimiento">
+              <PropertyRef Name="procedimiento_id" />
+            </Principal>
+            <Dependent Role="PRO_Asociacion_Procedimiento_Proc">
+              <PropertyRef Name="procedimiento_id2" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="PRO_Historial_SuministroDeProcedimiento">
+          <Key>
+            <PropertyRef Name="suministroDeProcedimiento_id" />
+          </Key>
+          <Property Name="suministroDeProcedimiento_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="paciente_id" Type="Int32" />
+          <Property Name="procedimiento_id" Type="Int32" />
+          <Property Name="tipoProcedimiento_id" Type="Int32" />
+          <Property Name="usuario_id" Type="Int32" />
+          <Property Name="fechaAltaSistema" Type="DateTime" Precision="3" />
+          <Property Name="fechaModificiacion" Type="DateTime" Precision="3" />
+          <Property Name="fechaBaja" Type="DateTime" Precision="3" />
+          <Property Name="motivoBaja" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="enfermeria_id" Type="Int32" />
+          <Property Name="posologia_id" Type="Int32" />
+          <Property Name="generico_id" Type="Int32" />
+          <Property Name="colocacionViaPeriferica_id" Type="Int32" />
+          <Property Name="cuidadoOral_id" Type="Int32" />
+          <Property Name="cuidadoPostural_id" Type="Int32" />
+          <Property Name="php_id" Type="Int32" />
+          <Property Name="proteccionFisica_id" Type="Int32" />
+        </EntityType>
+        <EntityType Name="PRO_SuministroDeProcedimiento">
+          <Key>
+            <PropertyRef Name="suministroDeProcedimiento_id" />
+          </Key>
+          <Property Name="suministroDeProcedimiento_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="paciente_id" Type="Int32" />
+          <Property Name="procedimiento_id" Type="Int32" />
+          <Property Name="tipoProcedimiento_id" Type="Int32" />
+          <Property Name="usuario_id" Type="Int32" />
+          <Property Name="fechaAltaSistema" Type="DateTime" Precision="3" />
+          <Property Name="fechaModificiacion" Type="DateTime" Precision="3" />
+          <Property Name="fechaBaja" Type="DateTime" Precision="3" />
+          <Property Name="motivoBaja" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="enfermeria_id" Type="Int32" />
+          <Property Name="posologia_id" Type="Int32" />
+          <Property Name="generico_id" Type="Int32" />
+          <Property Name="colocacionViaPeriferica_id" Type="Int32" />
+          <Property Name="cuidadoOral_id" Type="Int32" />
+          <Property Name="cuidadoPostural_id" Type="Int32" />
+          <Property Name="php_id" Type="Int32" />
+          <Property Name="proteccionFisica_id" Type="Int32" />
+          <Property Name="h01" Type="Boolean" />
+          <Property Name="h02" Type="Boolean" />
+          <Property Name="h03" Type="Boolean" />
+          <Property Name="h04" Type="Boolean" />
+          <Property Name="h05" Type="Boolean" />
+          <Property Name="h06" Type="Boolean" />
+          <Property Name="h07" Type="Boolean" />
+          <Property Name="h08" Type="Boolean" />
+          <Property Name="h09" Type="Boolean" />
+          <Property Name="h10" Type="Boolean" />
+          <Property Name="h11" Type="Boolean" />
+          <Property Name="h12" Type="Boolean" />
+          <Property Name="h13" Type="Boolean" />
+          <Property Name="h14" Type="Boolean" />
+          <Property Name="h15" Type="Boolean" />
+          <Property Name="h16" Type="Boolean" />
+          <Property Name="h17" Type="Boolean" />
+          <Property Name="h18" Type="Boolean" />
+          <Property Name="h19" Type="Boolean" />
+          <Property Name="h20" Type="Boolean" />
+          <Property Name="h21" Type="Boolean" />
+          <Property Name="h22" Type="Boolean" />
+          <Property Name="h23" Type="Boolean" />
+          <Property Name="h00" Type="Boolean" />
+          <Property Name="Lunes" Type="Boolean" />
+          <Property Name="Martes" Type="Boolean" />
+          <Property Name="Miercoles" Type="Boolean" />
+          <Property Name="Jueves" Type="Boolean" />
+          <Property Name="Viernes" Type="Boolean" />
+          <Property Name="Sabado" Type="Boolean" />
+          <Property Name="Domingo" Type="Boolean" />
+          <NavigationProperty Name="PRO_Asociacion_Procedimiento" Relationship="SISTMEDModel.FK_PRO_Asociacion_Procedimiento_PRO_SuministroDeProcedimiento" FromRole="PRO_SuministroDeProcedimiento" ToRole="PRO_Asociacion_Procedimiento" />
+          <NavigationProperty Name="PRO_Asociacion_Procedimiento_Proc" Relationship="SISTMEDModel.FK_PRO_Asociacion_Procedimiento_Proc_PRO_SuministroDeProcedimiento" FromRole="PRO_SuministroDeProcedimiento" ToRole="PRO_Asociacion_Procedimiento_Proc" />
+        </EntityType>
+        <Association Name="FK_PRO_Asociacion_Procedimiento_PRO_SuministroDeProcedimiento">
+          <End Type="SISTMEDModel.PRO_SuministroDeProcedimiento" Role="PRO_SuministroDeProcedimiento" Multiplicity="0..1" />
+          <End Type="SISTMEDModel.PRO_Asociacion_Procedimiento" Role="PRO_Asociacion_Procedimiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRO_SuministroDeProcedimiento">
+              <PropertyRef Name="suministroDeProcedimiento_id" />
+            </Principal>
+            <Dependent Role="PRO_Asociacion_Procedimiento">
+              <PropertyRef Name="suministro_procedimiento_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRO_Asociacion_Procedimiento_Proc_PRO_SuministroDeProcedimiento">
+          <End Type="SISTMEDModel.PRO_SuministroDeProcedimiento" Role="PRO_SuministroDeProcedimiento" Multiplicity="0..1" />
+          <End Type="SISTMEDModel.PRO_Asociacion_Procedimiento_Proc" Role="PRO_Asociacion_Procedimiento_Proc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRO_SuministroDeProcedimiento">
+              <PropertyRef Name="suministroDeProcedimiento_id" />
+            </Principal>
+            <Dependent Role="PRO_Asociacion_Procedimiento_Proc">
+              <PropertyRef Name="suministro_procedimiento_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="PRO_Generico">
+          <Key>
+            <PropertyRef Name="generico_id" />
+          </Key>
+          <Property Name="generico_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="paciente_id" Type="Int32" />
+          <Property Name="procedimiento_id" Type="Int32" />
+          <Property Name="observacion" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="usuario_id" Type="Int32" />
+          <Property Name="fechaAltaSistema" Type="DateTime" Precision="3" />
+          <Property Name="fechaModificacion" Type="DateTime" Precision="3" />
+          <Property Name="fechaBaja" Type="DateTime" Precision="3" />
+          <Property Name="motivoBaja" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SISTMEDModelStoreContainer" CdmEntityContainer="SISTMEDProcedures" >
+          <FunctionImportMapping FunctionImportName="ActualizaPuntajeObraSocial" FunctionName="SISTMEDModel.Store.ActualizaPuntajeObraSocial" />
+          <FunctionImportMapping FunctionImportName="Get_Paciente" FunctionName="SISTMEDModel.Store.Get_Paciente">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SISTMEDModel.Get_Paciente_Result">
+                <ScalarProperty Name="paciente_id" ColumnName="paciente_id" />
+                <ScalarProperty Name="numeroHistoriaClinica" ColumnName="numeroHistoriaClinica" />
+                <ScalarProperty Name="numeroInternacion" ColumnName="numeroInternacion" />
+                <ScalarProperty Name="sede_id" ColumnName="sede_id" />
+                <ScalarProperty Name="sede" ColumnName="sede" />
+                <ScalarProperty Name="empresa_id" ColumnName="empresa_id" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="habitacion_id" ColumnName="habitacion_id" />
+                <ScalarProperty Name="habitacion" ColumnName="habitacion" />
+                <ScalarProperty Name="apellido" ColumnName="apellido" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="genero" ColumnName="genero" />
+                <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+                <ScalarProperty Name="tipoDocumento_id" ColumnName="tipoDocumento_id" />
+                <ScalarProperty Name="documento" ColumnName="documento" />
+                <ScalarProperty Name="numeroDocumento" ColumnName="numeroDocumento" />
+                <ScalarProperty Name="diagnostico_id" ColumnName="diagnostico_id" />
+                <ScalarProperty Name="fechaIngreso" ColumnName="fechaIngreso" />
+                <ScalarProperty Name="acompaniante" ColumnName="acompaniante" />
+                <ScalarProperty Name="itemPendiente" ColumnName="itemPendiente" />
+                <ScalarProperty Name="preAlta" ColumnName="preAlta" />
+                <ScalarProperty Name="solicitudEstudio" ColumnName="solicitudEstudio" />
+                <ScalarProperty Name="solicitudTraslado" ColumnName="solicitudTraslado" />
+                <ScalarProperty Name="interconsultaPendiente" ColumnName="interconsultaPendiente" />
+                <ScalarProperty Name="altaAutorizada" ColumnName="altaAutorizada" />
+                <ScalarProperty Name="obraSocial_id" ColumnName="obraSocial_id" />
+                <ScalarProperty Name="obraSocial" ColumnName="obraSocial" />
+                <ScalarProperty Name="numeroObraSocial" ColumnName="numeroObraSocial" />
+                <ScalarProperty Name="fechaEgreso" ColumnName="fechaEgreso" />
+                <ScalarProperty Name="respira" ColumnName="respira" />
+                <ScalarProperty Name="contacto" ColumnName="contacto" />
+                <ScalarProperty Name="tqt" ColumnName="tqt" />
+                <ScalarProperty Name="arm" ColumnName="arm" />
+                <ScalarProperty Name="oxigeno" ColumnName="oxigeno" />
+                <ScalarProperty Name="vo" ColumnName="vo" />
+                <ScalarProperty Name="sng" ColumnName="sng" />
+                <ScalarProperty Name="gastro" ColumnName="gastro" />
+                <ScalarProperty Name="sv" ColumnName="sv" />
+                <ScalarProperty Name="cat" ColumnName="cat" />
+                <ScalarProperty Name="talla" ColumnName="talla" />
+                <ScalarProperty Name="talon" ColumnName="talon" />
+                <ScalarProperty Name="sac" ColumnName="sac" />
+                <ScalarProperty Name="isq" ColumnName="isq" />
+                <ScalarProperty Name="fechaModificacion" ColumnName="fechaModificacion" />
+                <ScalarProperty Name="paciente_traumatico" ColumnName="paciente_traumatico" />
+                <ScalarProperty Name="txtPacTraumatico" ColumnName="txtPacTraumatico" />
+                <ScalarProperty Name="paciente_judicializado" ColumnName="paciente_judicializado" />
+                <ScalarProperty Name="txtPacJudicializado" ColumnName="txtPacJudicializado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Get_Paciente_Por_Sede" FunctionName="SISTMEDModel.Store.Get_Paciente_Por_Sede">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SISTMEDModel.Get_Paciente_Por_Sede_Result">
+                <ScalarProperty Name="paciente_id" ColumnName="paciente_id" />
+                <ScalarProperty Name="numeroInternacion" ColumnName="numeroInternacion" />
+                <ScalarProperty Name="sede_id" ColumnName="sede_id" />
+                <ScalarProperty Name="sede" ColumnName="sede" />
+                <ScalarProperty Name="empresa_id" ColumnName="empresa_id" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="habitacion_id" ColumnName="habitacion_id" />
+                <ScalarProperty Name="habitacion" ColumnName="habitacion" />
+                <ScalarProperty Name="piso_id" ColumnName="piso_id" />
+                <ScalarProperty Name="piso" ColumnName="piso" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="apellido" ColumnName="apellido" />
+                <ScalarProperty Name="genero" ColumnName="genero" />
+                <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+                <ScalarProperty Name="tipoDocumento_id" ColumnName="tipoDocumento_id" />
+                <ScalarProperty Name="tipoDocumento" ColumnName="tipoDocumento" />
+                <ScalarProperty Name="numeroDocumento" ColumnName="numeroDocumento" />
+                <ScalarProperty Name="diagnostico_id" ColumnName="diagnostico_id" />
+                <ScalarProperty Name="fechaIngreso" ColumnName="fechaIngreso" />
+                <ScalarProperty Name="obraSocial_id" ColumnName="obraSocial_id" />
+                <ScalarProperty Name="obraSocial" ColumnName="obraSocial" />
+                <ScalarProperty Name="numeroObraSocial" ColumnName="numeroObraSocial" />
+                <ScalarProperty Name="fechaEgreso" ColumnName="fechaEgreso" />
+                <ScalarProperty Name="motivoEgreso_id" ColumnName="motivoEgreso_id" />
+                <ScalarProperty Name="motivoEgreso" ColumnName="motivoEgreso" />
+                <ScalarProperty Name="acompaniante" ColumnName="acompaniante" />
+                <ScalarProperty Name="itemPendiente" ColumnName="itemPendiente" />
+                <ScalarProperty Name="preAlta" ColumnName="preAlta" />
+                <ScalarProperty Name="solicitudEstudio" ColumnName="solicitudEstudio" />
+                <ScalarProperty Name="solicitudTraslado" ColumnName="solicitudTraslado" />
+                <ScalarProperty Name="interconsultaPendiente" ColumnName="interconsultaPendiente" />
+                <ScalarProperty Name="altaAutorizada" ColumnName="altaAutorizada" />
+                <ScalarProperty Name="HS_08" ColumnName="HS_08" />
+                <ScalarProperty Name="HS_09" ColumnName="HS_09" />
+                <ScalarProperty Name="HS_10" ColumnName="HS_10" />
+                <ScalarProperty Name="HS_11" ColumnName="HS_11" />
+                <ScalarProperty Name="HS_12" ColumnName="HS_12" />
+                <ScalarProperty Name="HS_13" ColumnName="HS_13" />
+                <ScalarProperty Name="HS_14" ColumnName="HS_14" />
+                <ScalarProperty Name="HS_15" ColumnName="HS_15" />
+                <ScalarProperty Name="HS_16" ColumnName="HS_16" />
+                <ScalarProperty Name="HS_17" ColumnName="HS_17" />
+                <ScalarProperty Name="HS_18" ColumnName="HS_18" />
+                <ScalarProperty Name="HS_19" ColumnName="HS_19" />
+                <ScalarProperty Name="HS_20" ColumnName="HS_20" />
+                <ScalarProperty Name="HS_21" ColumnName="HS_21" />
+                <ScalarProperty Name="HS_22" ColumnName="HS_22" />
+                <ScalarProperty Name="HS_23" ColumnName="HS_23" />
+                <ScalarProperty Name="HS_24" ColumnName="HS_24" />
+                <ScalarProperty Name="HS_01" ColumnName="HS_01" />
+                <ScalarProperty Name="HS_02" ColumnName="HS_02" />
+                <ScalarProperty Name="HS_03" ColumnName="HS_03" />
+                <ScalarProperty Name="HS_04" ColumnName="HS_04" />
+                <ScalarProperty Name="HS_05" ColumnName="HS_05" />
+                <ScalarProperty Name="HS_06" ColumnName="HS_06" />
+                <ScalarProperty Name="HS_07" ColumnName="HS_07" />
+                <ScalarProperty Name="HS_SH" ColumnName="HS_SH" />
+                <ScalarProperty Name="fechamodificacion" ColumnName="fechamodificacion" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Get_Piso_Por_Sede" FunctionName="SISTMEDModel.Store.Get_Piso_Por_Sede">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SISTMEDModel.Get_Piso_Por_Sede_Result">
+                <ScalarProperty Name="piso_id" ColumnName="piso_id" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="MED_TraeModuloEmpresaCosto" FunctionName="SISTMEDModel.Store.MED_TraeModuloEmpresaCosto">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SISTMEDModel.MED_TraeModuloEmpresaCosto_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="modulo_id" ColumnName="modulo_id" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="obraSocial_id" ColumnName="obraSocial_id" />
+                <ScalarProperty Name="costo" ColumnName="costo" />
+                <ScalarProperty Name="ObraSocial" ColumnName="ObraSocial" />
+                <ScalarProperty Name="fechaVigencia" ColumnName="fechaVigencia" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="PuntajeObraSocial" FunctionName="SISTMEDModel.Store.PuntajeObraSocial">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SISTMEDModel.PuntajeObraSocial_Result">
+                <ScalarProperty Name="cli_Cod" ColumnName="cli_Cod" />
+                <ScalarProperty Name="cli_RazSoc" ColumnName="cli_RazSoc" />
+                <ScalarProperty Name="Puntaje" ColumnName="Puntaje" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="TraeListaEspera" FunctionName="SISTMEDModel.Store.TraeListaEspera">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SISTMEDModel.TraeListaEspera_Result">
+                <ScalarProperty Name="espera_id" ColumnName="espera_id" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="apellido" ColumnName="apellido" />
+                <ScalarProperty Name="edad" ColumnName="edad" />
+                <ScalarProperty Name="genero" ColumnName="genero" />
+                <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+                <ScalarProperty Name="tipoDocumento_id" ColumnName="tipoDocumento_id" />
+                <ScalarProperty Name="numeroDocumento" ColumnName="numeroDocumento" />
+                <ScalarProperty Name="diagnostico_id" ColumnName="diagnostico_id" />
+                <ScalarProperty Name="fechaIngreso" ColumnName="fechaIngreso" />
+                <ScalarProperty Name="obraSocial_id" ColumnName="obraSocial_id" />
+                <ScalarProperty Name="nroAfiliado" ColumnName="nroAfiliado" />
+                <ScalarProperty Name="fechaEgreso" ColumnName="fechaEgreso" />
+                <ScalarProperty Name="motivoEgreso_id" ColumnName="motivoEgreso_id" />
+                <ScalarProperty Name="usuario_id" ColumnName="usuario_id" />
+                <ScalarProperty Name="fechaModificacion" ColumnName="fechaModificacion" />
+                <ScalarProperty Name="deriva" ColumnName="deriva" />
+                <ScalarProperty Name="obs" ColumnName="obs" />
+                <ScalarProperty Name="cultivo_POS" ColumnName="cultivo_POS" />
+                <ScalarProperty Name="cultivo_NEG" ColumnName="cultivo_NEG" />
+                <ScalarProperty Name="cultivo_PEND" ColumnName="cultivo_PEND" />
+                <ScalarProperty Name="fechaHisopado" ColumnName="fechaHisopado" />
+                <ScalarProperty Name="pediatrico" ColumnName="pediatrico" />
+                <ScalarProperty Name="esReingreso" ColumnName="esReingreso" />
+                <ScalarProperty Name="ObraSocial" ColumnName="ObraSocial" />
+                <ScalarProperty Name="vieneRecomendado" ColumnName="vieneRecomendado" />
+                <ScalarProperty Name="QuienRecomienda" ColumnName="QuienRecomienda" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="TraeObrasSociales" FunctionName="SISTMEDModel.Store.TraeObrasSociales">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SISTMEDModel.TraeObrasSociales_Result">
+                <ScalarProperty Name="cli_Cod" ColumnName="cli_Cod" />
+                <ScalarProperty Name="cli_RazSoc" ColumnName="cli_RazSoc" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ObtieneUltimoId" FunctionName="SISTMEDModel.Store.ObtieneUltimoId" />
+          <FunctionImportMapping FunctionImportName="TRAEENTERALES" FunctionName="SISTMEDModel.Store.TRAEENTERALES">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SISTMEDModel.TRAEENTERALES_Result">
+                <ScalarProperty Name="art_CodGen" ColumnName="art_CodGen" />
+                <ScalarProperty Name="art_DescGen" ColumnName="art_DescGen" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="TraeHabitacionesLibres" FunctionName="SISTMEDModel.Store.TraeHabitacionesLibres">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SISTMEDModel.TraeHabitacionesLibres_Result">
+                <ScalarProperty Name="habitacion_id" ColumnName="habitacion_id" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="MED_Get_Medicamento_Solicitado" FunctionName="SISTMEDModel.Store.MED_Get_Medicamento_Solicitado">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SISTMEDModel.MED_Get_Medicamento_Solicitado_Result">
+                <ScalarProperty Name="medicamento_id" ColumnName="medicamento_id" />
+                <ScalarProperty Name="bejerman_id" ColumnName="bejerman_id" />
+                <ScalarProperty Name="medicamento" ColumnName="medicamento" />
+                <ScalarProperty Name="presentacion_id" ColumnName="presentacion_id" />
+                <ScalarProperty Name="presentacion" ColumnName="presentacion" />
+                <ScalarProperty Name="unidadDeMedida_id" ColumnName="unidadDeMedida_id" />
+                <ScalarProperty Name="unidadDeMedida" ColumnName="unidadDeMedida" />
+                <ScalarProperty Name="potencia" ColumnName="potencia" />
+                <ScalarProperty Name="autoriza" ColumnName="autoriza" />
+                <ScalarProperty Name="suministraCompra" ColumnName="suministraCompra" />
+                <ScalarProperty Name="usuarioSolicita_id" ColumnName="usuarioSolicita_id" />
+                <ScalarProperty Name="usuarioSolicita" ColumnName="usuarioSolicita" />
+                <ScalarProperty Name="fechaSolicita" ColumnName="fechaSolicita" />
+                <ScalarProperty Name="usuarioAutoriza_id" ColumnName="usuarioAutoriza_id" />
+                <ScalarProperty Name="usuarioAutoriza" ColumnName="usuarioAutoriza" />
+                <ScalarProperty Name="fechaAutoriza" ColumnName="fechaAutoriza" />
+                <ScalarProperty Name="pendiente" ColumnName="pendiente" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="TRAEDESCARTABLES" FunctionName="SISTMEDModel.Store.TRAEDESCARTABLES">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SISTMEDModel.TRAEDESCARTABLES_Result">
+                <ScalarProperty Name="art_CodGen" ColumnName="art_CodGen" />
+                <ScalarProperty Name="art_DescGen" ColumnName="art_DescGen" />
+                <ScalarProperty Name="artele_Desc2" ColumnName="artele_Desc2" />
+                <ScalarProperty Name="artele_Desc1" ColumnName="artele_Desc1" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="TRAEMEDICAMENTOS" FunctionName="SISTMEDModel.Store.TRAEMEDICAMENTOS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SISTMEDModel.TRAEMEDICAMENTOS_Result">
+                <ScalarProperty Name="art_CodGen" ColumnName="art_CodGen" />
+                <ScalarProperty Name="art_DescGen" ColumnName="art_DescGen" />
+                <ScalarProperty Name="artele_Desc2" ColumnName="artele_Desc2" />
+                <ScalarProperty Name="artele_Desc1" ColumnName="artele_Desc1" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="PRO_Asociacion_Procedimiento">
+            <EntityTypeMapping TypeName="SISTMEDModel.PRO_Asociacion_Procedimiento">
+              <MappingFragment StoreEntitySet="PRO_Asociacion_Procedimiento">
+                <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+                <ScalarProperty Name="suministro_procedimiento_id" ColumnName="suministro_procedimiento_id" />
+                <ScalarProperty Name="articulo_id" ColumnName="articulo_id" />
+                <ScalarProperty Name="procedimiento_id" ColumnName="procedimiento_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PRO_Asociacion_Procedimiento_Proc">
+            <EntityTypeMapping TypeName="SISTMEDModel.PRO_Asociacion_Procedimiento_Proc">
+              <MappingFragment StoreEntitySet="PRO_Asociacion_Procedimiento_Proc">
+                <ScalarProperty Name="suministro_procedimiento_id" ColumnName="suministro_procedimiento_id" />
+                <ScalarProperty Name="procedimiento_id2" ColumnName="procedimiento_id2" />
+                <ScalarProperty Name="procedimiento_id" ColumnName="procedimiento_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PRO_Procedimiento">
+            <EntityTypeMapping TypeName="SISTMEDModel.PRO_Procedimiento">
+              <MappingFragment StoreEntitySet="PRO_Procedimiento">
+                <ScalarProperty Name="inactivo" ColumnName="inactivo" />
+                <ScalarProperty Name="tipoProcedimiento_id" ColumnName="tipoProcedimiento_id" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="procedimiento_id" ColumnName="procedimiento_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PRO_Historial_SuministroDeProcedimiento">
+            <EntityTypeMapping TypeName="SISTMEDModel.PRO_Historial_SuministroDeProcedimiento">
+              <MappingFragment StoreEntitySet="PRO_Historial_SuministroDeProcedimiento">
+                <ScalarProperty Name="proteccionFisica_id" ColumnName="proteccionFisica_id" />
+                <ScalarProperty Name="php_id" ColumnName="php_id" />
+                <ScalarProperty Name="cuidadoPostural_id" ColumnName="cuidadoPostural_id" />
+                <ScalarProperty Name="cuidadoOral_id" ColumnName="cuidadoOral_id" />
+                <ScalarProperty Name="colocacionViaPeriferica_id" ColumnName="colocacionViaPeriferica_id" />
+                <ScalarProperty Name="generico_id" ColumnName="generico_id" />
+                <ScalarProperty Name="posologia_id" ColumnName="posologia_id" />
+                <ScalarProperty Name="enfermeria_id" ColumnName="enfermeria_id" />
+                <ScalarProperty Name="motivoBaja" ColumnName="motivoBaja" />
+                <ScalarProperty Name="fechaBaja" ColumnName="fechaBaja" />
+                <ScalarProperty Name="fechaModificiacion" ColumnName="fechaModificiacion" />
+                <ScalarProperty Name="fechaAltaSistema" ColumnName="fechaAltaSistema" />
+                <ScalarProperty Name="usuario_id" ColumnName="usuario_id" />
+                <ScalarProperty Name="tipoProcedimiento_id" ColumnName="tipoProcedimiento_id" />
+                <ScalarProperty Name="procedimiento_id" ColumnName="procedimiento_id" />
+                <ScalarProperty Name="paciente_id" ColumnName="paciente_id" />
+                <ScalarProperty Name="suministroDeProcedimiento_id" ColumnName="suministroDeProcedimiento_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PRO_SuministroDeProcedimiento">
+            <EntityTypeMapping TypeName="SISTMEDModel.PRO_SuministroDeProcedimiento">
+              <MappingFragment StoreEntitySet="PRO_SuministroDeProcedimiento">
+                <ScalarProperty Name="Domingo" ColumnName="Domingo" />
+                <ScalarProperty Name="Sabado" ColumnName="Sabado" />
+                <ScalarProperty Name="Viernes" ColumnName="Viernes" />
+                <ScalarProperty Name="Jueves" ColumnName="Jueves" />
+                <ScalarProperty Name="Miercoles" ColumnName="Miercoles" />
+                <ScalarProperty Name="Martes" ColumnName="Martes" />
+                <ScalarProperty Name="Lunes" ColumnName="Lunes" />
+                <ScalarProperty Name="h00" ColumnName="h00" />
+                <ScalarProperty Name="h23" ColumnName="h23" />
+                <ScalarProperty Name="h22" ColumnName="h22" />
+                <ScalarProperty Name="h21" ColumnName="h21" />
+                <ScalarProperty Name="h20" ColumnName="h20" />
+                <ScalarProperty Name="h19" ColumnName="h19" />
+                <ScalarProperty Name="h18" ColumnName="h18" />
+                <ScalarProperty Name="h17" ColumnName="h17" />
+                <ScalarProperty Name="h16" ColumnName="h16" />
+                <ScalarProperty Name="h15" ColumnName="h15" />
+                <ScalarProperty Name="h14" ColumnName="h14" />
+                <ScalarProperty Name="h13" ColumnName="h13" />
+                <ScalarProperty Name="h12" ColumnName="h12" />
+                <ScalarProperty Name="h11" ColumnName="h11" />
+                <ScalarProperty Name="h10" ColumnName="h10" />
+                <ScalarProperty Name="h09" ColumnName="h09" />
+                <ScalarProperty Name="h08" ColumnName="h08" />
+                <ScalarProperty Name="h07" ColumnName="h07" />
+                <ScalarProperty Name="h06" ColumnName="h06" />
+                <ScalarProperty Name="h05" ColumnName="h05" />
+                <ScalarProperty Name="h04" ColumnName="h04" />
+                <ScalarProperty Name="h03" ColumnName="h03" />
+                <ScalarProperty Name="h02" ColumnName="h02" />
+                <ScalarProperty Name="h01" ColumnName="h01" />
+                <ScalarProperty Name="proteccionFisica_id" ColumnName="proteccionFisica_id" />
+                <ScalarProperty Name="php_id" ColumnName="php_id" />
+                <ScalarProperty Name="cuidadoPostural_id" ColumnName="cuidadoPostural_id" />
+                <ScalarProperty Name="cuidadoOral_id" ColumnName="cuidadoOral_id" />
+                <ScalarProperty Name="colocacionViaPeriferica_id" ColumnName="colocacionViaPeriferica_id" />
+                <ScalarProperty Name="generico_id" ColumnName="generico_id" />
+                <ScalarProperty Name="posologia_id" ColumnName="posologia_id" />
+                <ScalarProperty Name="enfermeria_id" ColumnName="enfermeria_id" />
+                <ScalarProperty Name="motivoBaja" ColumnName="motivoBaja" />
+                <ScalarProperty Name="fechaBaja" ColumnName="fechaBaja" />
+                <ScalarProperty Name="fechaModificiacion" ColumnName="fechaModificiacion" />
+                <ScalarProperty Name="fechaAltaSistema" ColumnName="fechaAltaSistema" />
+                <ScalarProperty Name="usuario_id" ColumnName="usuario_id" />
+                <ScalarProperty Name="tipoProcedimiento_id" ColumnName="tipoProcedimiento_id" />
+                <ScalarProperty Name="procedimiento_id" ColumnName="procedimiento_id" />
+                <ScalarProperty Name="paciente_id" ColumnName="paciente_id" />
+                <ScalarProperty Name="suministroDeProcedimiento_id" ColumnName="suministroDeProcedimiento_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PRO_Generico">
+            <EntityTypeMapping TypeName="SISTMEDModel.PRO_Generico">
+              <MappingFragment StoreEntitySet="PRO_Generico">
+                <ScalarProperty Name="motivoBaja" ColumnName="motivoBaja" />
+                <ScalarProperty Name="fechaBaja" ColumnName="fechaBaja" />
+                <ScalarProperty Name="fechaModificacion" ColumnName="fechaModificacion" />
+                <ScalarProperty Name="fechaAltaSistema" ColumnName="fechaAltaSistema" />
+                <ScalarProperty Name="usuario_id" ColumnName="usuario_id" />
+                <ScalarProperty Name="observacion" ColumnName="observacion" />
+                <ScalarProperty Name="procedimiento_id" ColumnName="procedimiento_id" />
+                <ScalarProperty Name="paciente_id" ColumnName="paciente_id" />
+                <ScalarProperty Name="generico_id" ColumnName="generico_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

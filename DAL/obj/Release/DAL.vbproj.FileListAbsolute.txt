@@ -1,0 +1,14 @@
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\bin\Release\DAL.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\bin\Release\DAL.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\bin\Release\DAL.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\bin\Release\Entities.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\bin\Release\Solar.DataHelper.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\bin\Release\Entities.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\bin\Release\Entities.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\obj\Release\DAL.vbprojResolveAssemblyReference.cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\obj\Release\DAL.Resources.resources
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\obj\Release\DAL.vbproj.GenerateResource.Cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\obj\Release\DAL.vbproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\obj\Release\DAL.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\obj\Release\DAL.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\obj\Release\DAL.pdb
