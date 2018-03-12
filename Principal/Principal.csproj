@@ -301,6 +301,12 @@
     <Compile Include="Forms\ListaEspera\Frm_VisorListaEspera.Designer.cs">
       <DependentUpon>Frm_VisorListaEspera.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MapaCama\Frm_ImprimirPlanillaNutricion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Frm_ImprimirPlanillaNutricion.Designer.cs">
+      <DependentUpon>Frm_ImprimirPlanillaNutricion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\PrimeraVez.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1188,6 +1194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MapaCama\DetalleMedicacion.resx">
       <DependentUpon>DetalleMedicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Frm_ImprimirPlanillaNutricion.resx">
+      <DependentUpon>Frm_ImprimirPlanillaNutricion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MapaCama\PacientesDeAlta.resx">
       <DependentUpon>PacientesDeAlta.cs</DependentUpon>

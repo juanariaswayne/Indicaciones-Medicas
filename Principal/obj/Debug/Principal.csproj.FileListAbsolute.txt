@@ -455,3 +455,4 @@ C:\Users\Sistemas\Documents\IndicacionesMedicas\Principal\obj\Debug\Principal.pd
 C:\Users\Sistemas\Documents\IndicacionesMedicas\Principal\bin\Debug\MetroFramework.dll
 C:\Users\Sistemas\Documents\IndicacionesMedicas\Principal\obj\Debug\Principal.Forms.MapaCama.Paciente.Ficha.Indicacion.Procedimiento.AgregarPlan.resources
 C:\Users\Sistemas\Documents\IndicacionesMedicas\Principal\obj\Debug\Principal.Forms.MapaCama.Paciente.Ficha.Indicacion.Procedimiento.FrmAgregarAlimentos.resources
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Principal\obj\Debug\Principal.Forms.MapaCama.Frm_ImprimirPlanillaNutricion.resources

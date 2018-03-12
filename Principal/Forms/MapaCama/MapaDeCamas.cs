@@ -1832,6 +1832,9 @@ namespace Principal.Forms.MapaCama
             }
         }
 
-        
+        private void btnImprimirPlanillaNutricion_Click(object sender, EventArgs e)
+        {
+            new Frm_ImprimirPlanillaNutricion().Show();
+        }
     }
 }
