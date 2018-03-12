@@ -1,0 +1,10 @@
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\bin\Release\Entities.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\bin\Release\Entities.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\bin\Release\Entities.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\obj\Release\Entities.vbprojResolveAssemblyReference.cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\obj\Release\Entities.Resources.resources
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\obj\Release\Entities.vbproj.GenerateResource.Cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\obj\Release\Entities.vbproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\obj\Release\Entities.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\obj\Release\Entities.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\obj\Release\Entities.pdb

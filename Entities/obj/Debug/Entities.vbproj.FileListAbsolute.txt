@@ -1,0 +1,61 @@
+C:\Proyectos\IM\IndicacionesMedicas\Entities\bin\Debug\Entities.dll
+C:\Proyectos\IM\IndicacionesMedicas\Entities\bin\Debug\Entities.pdb
+C:\Proyectos\IM\IndicacionesMedicas\Entities\bin\Debug\Entities.xml
+C:\Proyectos\IM\IndicacionesMedicas\Entities\obj\Debug\Entities.vbprojResolveAssemblyReference.cache
+C:\Proyectos\IM\IndicacionesMedicas\Entities\obj\Debug\Entities.Resources.resources
+C:\Proyectos\IM\IndicacionesMedicas\Entities\obj\Debug\Entities.vbproj.GenerateResource.Cache
+C:\Proyectos\IM\IndicacionesMedicas\Entities\obj\Debug\Entities.dll
+C:\Proyectos\IM\IndicacionesMedicas\Entities\obj\Debug\Entities.xml
+C:\Proyectos\IM\IndicacionesMedicas\Entities\obj\Debug\Entities.pdb
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\Entities\bin\Debug\Entities.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\Entities\bin\Debug\Entities.pdb
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\Entities\bin\Debug\Entities.xml
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\Entities\obj\Debug\Entities.vbprojResolveAssemblyReference.cache
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\Entities\obj\Debug\Entities.Resources.resources
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\Entities\obj\Debug\Entities.vbproj.GenerateResource.Cache
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\Entities\obj\Debug\Entities.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\Entities\obj\Debug\Entities.xml
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\Entities\obj\Debug\Entities.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Entities\bin\Debug\Entities.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Entities\bin\Debug\Entities.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Entities\bin\Debug\Entities.xml
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.vbprojResolveAssemblyReference.cache
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.Resources.resources
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.vbproj.GenerateResource.Cache
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.xml
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\bin\Debug\Entities.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\bin\Debug\Entities.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\bin\Debug\Entities.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.Resources.resources
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.vbproj.GenerateResource.Cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.vbproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.vbprojResolveAssemblyReference.cache
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.vbproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Entities\bin\Debug\Entities.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Entities\bin\Debug\Entities.pdb
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Entities\bin\Debug\Entities.xml
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.vbprojResolveAssemblyReference.cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.Resources.resources
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.vbproj.GenerateResource.Cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.vbproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.xml
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Entities\obj\Debug\Entities.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Entities\bin\Debug\Entities.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Entities\bin\Debug\Entities.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Entities\bin\Debug\Entities.xml
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Entities\obj\Debug\Entities.vbprojResolveAssemblyReference.cache
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Entities\obj\Debug\Entities.Resources.resources
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Entities\obj\Debug\Entities.vbproj.GenerateResource.Cache
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Entities\obj\Debug\Entities.vbproj.CoreCompileInputs.cache
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Entities\obj\Debug\Entities.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Entities\obj\Debug\Entities.xml
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Entities\obj\Debug\Entities.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Entities\bin\Debug\MetroFramework.Design.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Entities\bin\Debug\MetroFramework.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Entities\bin\Debug\MetroFramework.Fonts.dll

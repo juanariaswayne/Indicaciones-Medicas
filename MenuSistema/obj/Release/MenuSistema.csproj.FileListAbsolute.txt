@@ -1,0 +1,16 @@
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Release\MenuSistema.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Release\MenuSistema.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Release\BLL.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Release\DAL.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Release\Entities.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Release\Solar.DataHelper.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Release\BLL.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Release\BLL.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Release\DAL.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Release\DAL.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Release\Entities.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Release\Entities.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\obj\Release\MenuSistema.csprojResolveAssemblyReference.cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\obj\Release\MenuSistema.csproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\obj\Release\MenuSistema.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\obj\Release\MenuSistema.pdb

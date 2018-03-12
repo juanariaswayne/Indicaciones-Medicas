@@ -1,0 +1,97 @@
+C:\Proyectos\IM\IndicacionesMedicas\MenuSistema\bin\Debug\MenuSistema.dll
+C:\Proyectos\IM\IndicacionesMedicas\MenuSistema\bin\Debug\MenuSistema.pdb
+C:\Proyectos\IM\IndicacionesMedicas\MenuSistema\bin\Debug\BLL.dll
+C:\Proyectos\IM\IndicacionesMedicas\MenuSistema\bin\Debug\DAL.dll
+C:\Proyectos\IM\IndicacionesMedicas\MenuSistema\bin\Debug\Entities.dll
+C:\Proyectos\IM\IndicacionesMedicas\MenuSistema\bin\Debug\Solar.DataHelper.dll
+C:\Proyectos\IM\IndicacionesMedicas\MenuSistema\bin\Debug\BLL.pdb
+C:\Proyectos\IM\IndicacionesMedicas\MenuSistema\bin\Debug\BLL.xml
+C:\Proyectos\IM\IndicacionesMedicas\MenuSistema\bin\Debug\DAL.pdb
+C:\Proyectos\IM\IndicacionesMedicas\MenuSistema\bin\Debug\DAL.xml
+C:\Proyectos\IM\IndicacionesMedicas\MenuSistema\bin\Debug\Entities.pdb
+C:\Proyectos\IM\IndicacionesMedicas\MenuSistema\bin\Debug\Entities.xml
+C:\Proyectos\IM\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.csprojResolveAssemblyReference.cache
+C:\Proyectos\IM\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.dll
+C:\Proyectos\IM\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.pdb
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\MenuSistema\bin\Debug\MenuSistema.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\MenuSistema\bin\Debug\MenuSistema.pdb
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\MenuSistema\bin\Debug\BLL.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\MenuSistema\bin\Debug\DAL.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\MenuSistema\bin\Debug\Entities.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\MenuSistema\bin\Debug\Solar.DataHelper.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\MenuSistema\bin\Debug\BLL.pdb
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\MenuSistema\bin\Debug\BLL.xml
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\MenuSistema\bin\Debug\DAL.pdb
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\MenuSistema\bin\Debug\DAL.xml
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\MenuSistema\bin\Debug\Entities.pdb
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\MenuSistema\bin\Debug\Entities.xml
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.csprojResolveAssemblyReference.cache
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\MenuSistema.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\MenuSistema.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\BLL.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\DAL.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\Entities.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\Solar.DataHelper.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\BLL.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\BLL.xml
+C:\Proyectos\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\DAL.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\DAL.xml
+C:\Proyectos\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\Entities.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\Entities.xml
+C:\Proyectos\GestionMedica\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.csprojResolveAssemblyReference.cache
+C:\Proyectos\GestionMedica\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\MenuSistema.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\MenuSistema.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\BLL.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\DAL.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\Entities.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\Solar.DataHelper.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\BLL.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\BLL.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\DAL.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\DAL.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\Entities.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\Entities.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.csprojResolveAssemblyReference.cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.csproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.csproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\MenuSistema.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\MenuSistema.pdb
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\BLL.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\DAL.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\Entities.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\Solar.DataHelper.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\BLL.pdb
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\BLL.xml
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\DAL.pdb
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\DAL.xml
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\Entities.pdb
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\MenuSistema\bin\Debug\Entities.xml
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.csprojResolveAssemblyReference.cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.csproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\bin\Debug\MenuSistema.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\bin\Debug\MenuSistema.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\bin\Debug\BLL.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\bin\Debug\DAL.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\bin\Debug\Entities.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\bin\Debug\Solar.DataHelper.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\bin\Debug\BLL.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\bin\Debug\BLL.xml
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\bin\Debug\DAL.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\bin\Debug\DAL.xml
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\bin\Debug\Entities.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\bin\Debug\Entities.xml
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.csprojResolveAssemblyReference.cache
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.csproj.CoreCompileInputs.cache
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\obj\Debug\MenuSistema.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\bin\Debug\MetroFramework.Design.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\bin\Debug\MetroFramework.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\MenuSistema\bin\Debug\MetroFramework.Fonts.dll

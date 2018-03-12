@@ -1,0 +1,103 @@
+C:\Proyectos\IM\IndicacionesMedicas\BLL\bin\Debug\BLL.dll
+C:\Proyectos\IM\IndicacionesMedicas\BLL\bin\Debug\BLL.pdb
+C:\Proyectos\IM\IndicacionesMedicas\BLL\bin\Debug\BLL.xml
+C:\Proyectos\IM\IndicacionesMedicas\BLL\bin\Debug\DAL.dll
+C:\Proyectos\IM\IndicacionesMedicas\BLL\bin\Debug\Entities.dll
+C:\Proyectos\IM\IndicacionesMedicas\BLL\bin\Debug\Solar.DataHelper.dll
+C:\Proyectos\IM\IndicacionesMedicas\BLL\bin\Debug\DAL.pdb
+C:\Proyectos\IM\IndicacionesMedicas\BLL\bin\Debug\DAL.xml
+C:\Proyectos\IM\IndicacionesMedicas\BLL\bin\Debug\Entities.pdb
+C:\Proyectos\IM\IndicacionesMedicas\BLL\bin\Debug\Entities.xml
+C:\Proyectos\IM\IndicacionesMedicas\BLL\obj\Debug\BLL.vbprojResolveAssemblyReference.cache
+C:\Proyectos\IM\IndicacionesMedicas\BLL\obj\Debug\BLL.Resources.resources
+C:\Proyectos\IM\IndicacionesMedicas\BLL\obj\Debug\BLL.vbproj.GenerateResource.Cache
+C:\Proyectos\IM\IndicacionesMedicas\BLL\obj\Debug\BLL.dll
+C:\Proyectos\IM\IndicacionesMedicas\BLL\obj\Debug\BLL.xml
+C:\Proyectos\IM\IndicacionesMedicas\BLL\obj\Debug\BLL.pdb
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\BLL\bin\Debug\BLL.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\BLL\bin\Debug\BLL.pdb
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\BLL\bin\Debug\BLL.xml
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\BLL\bin\Debug\DAL.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\BLL\bin\Debug\Entities.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\BLL\bin\Debug\Solar.DataHelper.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\BLL\bin\Debug\DAL.pdb
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\BLL\bin\Debug\DAL.xml
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\BLL\bin\Debug\Entities.pdb
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\BLL\bin\Debug\Entities.xml
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\BLL\obj\Debug\BLL.vbprojResolveAssemblyReference.cache
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\BLL\obj\Debug\BLL.Resources.resources
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\BLL\obj\Debug\BLL.vbproj.GenerateResource.Cache
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\BLL\obj\Debug\BLL.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\BLL\obj\Debug\BLL.xml
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\BLL\obj\Debug\BLL.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\BLL.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\BLL.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\BLL.xml
+C:\Proyectos\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\DAL.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\Entities.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\Solar.DataHelper.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\DAL.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\DAL.xml
+C:\Proyectos\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\Entities.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\Entities.xml
+C:\Proyectos\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.vbprojResolveAssemblyReference.cache
+C:\Proyectos\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.Resources.resources
+C:\Proyectos\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.vbproj.GenerateResource.Cache
+C:\Proyectos\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.xml
+C:\Proyectos\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\BLL.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\BLL.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\BLL.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\DAL.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\Entities.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\Solar.DataHelper.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\DAL.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\DAL.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\Entities.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\Entities.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.vbprojResolveAssemblyReference.cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.Resources.resources
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.vbproj.GenerateResource.Cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.vbproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.vbproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\BLL.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\BLL.pdb
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\BLL.xml
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\DAL.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\Entities.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\Solar.DataHelper.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\DAL.pdb
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\DAL.xml
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\Entities.pdb
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\BLL\bin\Debug\Entities.xml
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.vbprojResolveAssemblyReference.cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.Resources.resources
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.vbproj.GenerateResource.Cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.vbproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.xml
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\BLL\obj\Debug\BLL.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\bin\Debug\BLL.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\bin\Debug\BLL.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\bin\Debug\BLL.xml
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\bin\Debug\DAL.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\bin\Debug\Entities.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\bin\Debug\Solar.DataHelper.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\bin\Debug\DAL.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\bin\Debug\DAL.xml
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\bin\Debug\Entities.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\bin\Debug\Entities.xml
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\obj\Debug\BLL.vbprojResolveAssemblyReference.cache
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\obj\Debug\BLL.Resources.resources
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\obj\Debug\BLL.vbproj.GenerateResource.Cache
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\obj\Debug\BLL.vbproj.CoreCompileInputs.cache
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\obj\Debug\BLL.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\obj\Debug\BLL.xml
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\obj\Debug\BLL.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\bin\Debug\MetroFramework.Design.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\bin\Debug\MetroFramework.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\BLL\bin\Debug\MetroFramework.Fonts.dll

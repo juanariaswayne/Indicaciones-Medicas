@@ -1,0 +1,61 @@
+C:\Proyectos\IM\IndicacionesMedicas\Seguridad\bin\Debug\Seguridad.dll
+C:\Proyectos\IM\IndicacionesMedicas\Seguridad\bin\Debug\Seguridad.pdb
+C:\Proyectos\IM\IndicacionesMedicas\Seguridad\bin\Debug\Seguridad.xml
+C:\Proyectos\IM\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.vbprojResolveAssemblyReference.cache
+C:\Proyectos\IM\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.Resources.resources
+C:\Proyectos\IM\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.vbproj.GenerateResource.Cache
+C:\Proyectos\IM\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.dll
+C:\Proyectos\IM\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.xml
+C:\Proyectos\IM\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.pdb
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\Seguridad\bin\Debug\Seguridad.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\Seguridad\bin\Debug\Seguridad.pdb
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\Seguridad\bin\Debug\Seguridad.xml
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.vbprojResolveAssemblyReference.cache
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.Resources.resources
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.vbproj.GenerateResource.Cache
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.xml
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Seguridad\bin\Debug\Seguridad.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Seguridad\bin\Debug\Seguridad.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Seguridad\bin\Debug\Seguridad.xml
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.vbprojResolveAssemblyReference.cache
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.Resources.resources
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.vbproj.GenerateResource.Cache
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.xml
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Seguridad\bin\Debug\Seguridad.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Seguridad\bin\Debug\Seguridad.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Seguridad\bin\Debug\Seguridad.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.Resources.resources
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.vbproj.GenerateResource.Cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.vbproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.vbprojResolveAssemblyReference.cache
+C:\Proyectos\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.vbproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Seguridad\bin\Debug\Seguridad.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Seguridad\bin\Debug\Seguridad.pdb
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Seguridad\bin\Debug\Seguridad.xml
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.vbprojResolveAssemblyReference.cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.Resources.resources
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.vbproj.GenerateResource.Cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.vbproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.xml
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Seguridad\bin\Debug\Seguridad.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Seguridad\bin\Debug\Seguridad.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Seguridad\bin\Debug\Seguridad.xml
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.vbprojResolveAssemblyReference.cache
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.Resources.resources
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.vbproj.GenerateResource.Cache
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.vbproj.CoreCompileInputs.cache
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.xml
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Seguridad\obj\Debug\Seguridad.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Seguridad\bin\Debug\MetroFramework.Design.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Seguridad\bin\Debug\MetroFramework.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\Seguridad\bin\Debug\MetroFramework.Fonts.dll
