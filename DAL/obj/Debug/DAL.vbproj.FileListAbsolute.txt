@@ -1,0 +1,85 @@
+C:\Proyectos\IM\IndicacionesMedicas\DAL\bin\Debug\DAL.dll
+C:\Proyectos\IM\IndicacionesMedicas\DAL\bin\Debug\DAL.pdb
+C:\Proyectos\IM\IndicacionesMedicas\DAL\bin\Debug\DAL.xml
+C:\Proyectos\IM\IndicacionesMedicas\DAL\bin\Debug\Entities.dll
+C:\Proyectos\IM\IndicacionesMedicas\DAL\bin\Debug\Solar.DataHelper.dll
+C:\Proyectos\IM\IndicacionesMedicas\DAL\bin\Debug\Entities.pdb
+C:\Proyectos\IM\IndicacionesMedicas\DAL\bin\Debug\Entities.xml
+C:\Proyectos\IM\IndicacionesMedicas\DAL\obj\Debug\DAL.vbprojResolveAssemblyReference.cache
+C:\Proyectos\IM\IndicacionesMedicas\DAL\obj\Debug\DAL.Resources.resources
+C:\Proyectos\IM\IndicacionesMedicas\DAL\obj\Debug\DAL.vbproj.GenerateResource.Cache
+C:\Proyectos\IM\IndicacionesMedicas\DAL\obj\Debug\DAL.dll
+C:\Proyectos\IM\IndicacionesMedicas\DAL\obj\Debug\DAL.xml
+C:\Proyectos\IM\IndicacionesMedicas\DAL\obj\Debug\DAL.pdb
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\DAL\bin\Debug\DAL.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\DAL\bin\Debug\DAL.pdb
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\DAL\bin\Debug\DAL.xml
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\DAL\bin\Debug\Entities.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\DAL\bin\Debug\Solar.DataHelper.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\DAL\bin\Debug\Entities.pdb
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\DAL\bin\Debug\Entities.xml
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\DAL\obj\Debug\DAL.vbprojResolveAssemblyReference.cache
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\DAL\obj\Debug\DAL.Resources.resources
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\DAL\obj\Debug\DAL.vbproj.GenerateResource.Cache
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\DAL\obj\Debug\DAL.dll
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\DAL\obj\Debug\DAL.xml
+C:\Users\siste\Google Drive\IM\IndicacionesMedicas\DAL\obj\Debug\DAL.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\DAL.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\DAL.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\DAL.xml
+C:\Proyectos\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\Entities.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\Solar.DataHelper.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\Entities.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\Entities.xml
+C:\Proyectos\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.vbprojResolveAssemblyReference.cache
+C:\Proyectos\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.Resources.resources
+C:\Proyectos\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.vbproj.GenerateResource.Cache
+C:\Proyectos\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.dll
+C:\Proyectos\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.xml
+C:\Proyectos\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\DAL.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\DAL.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\DAL.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\Entities.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\Solar.DataHelper.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\Entities.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\Entities.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.vbprojResolveAssemblyReference.cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.Resources.resources
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.vbproj.GenerateResource.Cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.vbproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.pdb
+C:\Proyectos\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.vbproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\DAL.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\DAL.pdb
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\DAL.xml
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\Entities.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\Solar.DataHelper.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\Entities.pdb
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\DAL\bin\Debug\Entities.xml
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.vbprojResolveAssemblyReference.cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.Resources.resources
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.vbproj.GenerateResource.Cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.vbproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.dll
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.xml
+\\192.168.5.14\Sistemas\GestionMedica\IndicacionesMedicas\DAL\obj\Debug\DAL.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\DAL\bin\Debug\DAL.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\DAL\bin\Debug\DAL.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\DAL\bin\Debug\DAL.xml
+C:\Users\Sistemas\Documents\IndicacionesMedicas\DAL\bin\Debug\Entities.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\DAL\bin\Debug\Solar.DataHelper.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\DAL\bin\Debug\Entities.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\DAL\bin\Debug\Entities.xml
+C:\Users\Sistemas\Documents\IndicacionesMedicas\DAL\obj\Debug\DAL.vbprojResolveAssemblyReference.cache
+C:\Users\Sistemas\Documents\IndicacionesMedicas\DAL\obj\Debug\DAL.Resources.resources
+C:\Users\Sistemas\Documents\IndicacionesMedicas\DAL\obj\Debug\DAL.vbproj.GenerateResource.Cache
+C:\Users\Sistemas\Documents\IndicacionesMedicas\DAL\obj\Debug\DAL.vbproj.CoreCompileInputs.cache
+C:\Users\Sistemas\Documents\IndicacionesMedicas\DAL\obj\Debug\DAL.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\DAL\obj\Debug\DAL.xml
+C:\Users\Sistemas\Documents\IndicacionesMedicas\DAL\obj\Debug\DAL.pdb
+C:\Users\Sistemas\Documents\IndicacionesMedicas\DAL\bin\Debug\MetroFramework.Design.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\DAL\bin\Debug\MetroFramework.dll
+C:\Users\Sistemas\Documents\IndicacionesMedicas\DAL\bin\Debug\MetroFramework.Fonts.dll

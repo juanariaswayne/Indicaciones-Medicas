@@ -1,0 +1,17 @@
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Release\BLL.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Release\BLL.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Release\BLL.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Release\DAL.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Release\Entities.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Release\Solar.DataHelper.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Release\DAL.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Release\DAL.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Release\Entities.pdb
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\bin\Release\Entities.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\obj\Release\BLL.vbprojResolveAssemblyReference.cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\obj\Release\BLL.Resources.resources
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\obj\Release\BLL.vbproj.GenerateResource.Cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\obj\Release\BLL.vbproj.CoreCompileInputs.cache
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\obj\Release\BLL.dll
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\obj\Release\BLL.xml
+\\192.168.5.14\Sistemas\im\GestionMedica\IndicacionesMedicas\BLL\obj\Release\BLL.pdb
