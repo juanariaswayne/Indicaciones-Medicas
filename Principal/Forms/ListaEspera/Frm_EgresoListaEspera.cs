@@ -142,7 +142,7 @@ namespace Principal.Forms.ListaEspera
                 {
                     if (comboBoxTipoEgreso.SelectedIndex == 2)
                     {
-                        //ES UNA BAJA DE LA LISTA... NO INGRESA COMO PACIENTE
+                        //ES UNA BAJA DE LA LISTA... NO INGRESA COMO PACIENTE 
                         if (ValidaEgreos(false))
                         {
                             MED_ListaEspera _espera = new MED_ListaEspera();

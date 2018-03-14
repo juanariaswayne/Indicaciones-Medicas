@@ -1222,7 +1222,7 @@ namespace Principal.Forms.ListaEspera
 
         private void metroTileNuevoIngreso_Click(object sender, EventArgs e)
         {
-            NuevoIngreso();
+            NuevoIngreso();//
         }
 
         private void ComboBoxTipoDoc_KeyDown(object sender, KeyEventArgs e)
