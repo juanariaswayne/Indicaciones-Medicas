@@ -1,0 +1,1758 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8165678C-7894-43CA-9DF6-BF91A8204D05}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Principal</RootNamespace>
+    <AssemblyName>Principal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>\\192.168.2.50\Indicaciones Medicas\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>es-AR</TargetCulture>
+    <ProductName>Gestion Medica Santa Catalina</ProductName>
+    <MinimumRequiredVersion>1.0.1.20</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>36</ApplicationRevision>
+    <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsUrl>\\192.168.2.50\Recursos Sistemas</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3CAD9FF4259B52938DDFEF948B48F707AD3FE4EE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Principal_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0-beta1\lib\net40\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0-beta1\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="InteractivePreGeneratedViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=46c4868af4307d2c, processorArchitecture=MSIL">
+      <HintPath>..\packages\EFInteractiveViews.1.0.1\lib\net40\InteractivePreGeneratedViews.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\METRO DLL 1.4\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\METRO DLL 1.4\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\METRO DLL 1.4\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Neodynamic.SDK.ThermalLabel, Version=7.0.3500.0, Culture=neutral, PublicKeyToken=0630b9b3415848af, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Neodynamic\ThermalLabel SDK\v7.0\Redistributable\For .NET 3.5-4.x (AnyCPU)\Neodynamic.SDK.ThermalLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Linq.Dynamic, Version=1.0.6132.35681, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Dynamic.1.0.7\lib\net40\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Archivos_Paciente.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ARTICULO.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Funciones.cs" />
+    <Compile Include="Clases\Functions.cs" />
+    <Compile Include="Clases\IndicacionesBLL.cs" />
+    <Compile Include="Clases\Paciente.cs" />
+    <Compile Include="Clases\ProcedimientosBLL.cs" />
+    <Compile Include="Clases\Usuario.cs" />
+    <Compile Include="ContactoPaciente.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Empresa.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Enfermeria.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EstadosPertenenciasPaciente.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EST_LaboratorioCab.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EST_LaboratorioDeterminaciones.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EST_LaboratorioEstados.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EST_LaboratorioItems.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EST_LaboratorioTipoEstudio.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EST_LaboratorioTipos.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Farmacia.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FARM_DIARIO.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FARM_MOTIVO.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Facturacion\Equivalencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Facturacion\Equivalencias.Designer.cs">
+      <DependentUpon>Equivalencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Facturacion\Factu_internacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Facturacion\Factu_internacion.Designer.cs">
+      <DependentUpon>Factu_internacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Facturacion\Factu_Medicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Facturacion\Factu_Medicamentos.Designer.cs">
+      <DependentUpon>Factu_Medicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Facturacion\Factu_Pacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Facturacion\Factu_Pacientes.Designer.cs">
+      <DependentUpon>Factu_Pacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Facturacion\Factu_Procedimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Facturacion\Factu_Procedimientos.Designer.cs">
+      <DependentUpon>Factu_Procedimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Facturacion\Factu_selectorPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Facturacion\Factu_selectorPaciente.Designer.cs">
+      <DependentUpon>Factu_selectorPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Facturacion\ResumenIM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Facturacion\ResumenIM.Designer.cs">
+      <DependentUpon>ResumenIM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Farmacia\Farm_cierre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Farmacia\Farm_cierre.Designer.cs">
+      <DependentUpon>Farm_cierre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Farmacia\Farm_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Farmacia\Farm_Principal.Designer.cs">
+      <DependentUpon>Farm_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_Adjuntos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_Adjuntos.Designer.cs">
+      <DependentUpon>Frm_Adjuntos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_ConfirmaCama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_ConfirmaCama.Designer.cs">
+      <DependentUpon>Frm_ConfirmaCama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_Derivacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_Derivacion.Designer.cs">
+      <DependentUpon>Frm_Derivacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_EgresoListaEspera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_EgresoListaEspera.Designer.cs">
+      <DependentUpon>Frm_EgresoListaEspera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_ListaEsperaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_ListaEsperaPrincipal.Designer.cs">
+      <DependentUpon>Frm_ListaEsperaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_Mails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_Mails.Designer.cs">
+      <DependentUpon>Frm_Mails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_MotivoEgreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_MotivoEgreso.Designer.cs">
+      <DependentUpon>Frm_MotivoEgreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_SectoresMails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_SectoresMails.Designer.cs">
+      <DependentUpon>Frm_SectoresMails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_VisorListaEspera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_VisorListaEspera.Designer.cs">
+      <DependentUpon>Frm_VisorListaEspera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Frm_ImprimirPlanillaNutricion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Frm_ImprimirPlanillaNutricion.Designer.cs">
+      <DependentUpon>Frm_ImprimirPlanillaNutricion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\PrimeraVez.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\PrimeraVez.Designer.cs">
+      <DependentUpon>PrimeraVez.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\AgregarPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\AgregarPlan.Designer.cs">
+      <DependentUpon>AgregarPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\FrmAgregarAlimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\FrmAgregarAlimentos.Designer.cs">
+      <DependentUpon>FrmAgregarAlimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\PHPV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\PHPV2.Designer.cs">
+      <DependentUpon>PHPV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\ProcedimientoV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\ProcedimientoV2.Designer.cs">
+      <DependentUpon>ProcedimientoV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="ExtensionMetods.cs" />
+    <Compile Include="Forms\ListaEspera\Frm_CostoModulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_CostoModulo.Designer.cs">
+      <DependentUpon>Frm_CostoModulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_ListaDeEsperaIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_ListaDeEsperaIngreso.Designer.cs">
+      <DependentUpon>Frm_ListaDeEsperaIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_ModuloEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_ModuloEmpresa.Designer.cs">
+      <DependentUpon>Frm_ModuloEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_OtroFactorPonderacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_OtroFactorPonderacion.Designer.cs">
+      <DependentUpon>Frm_OtroFactorPonderacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_TipoDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListaEspera\Frm_TipoDocumento.Designer.cs">
+      <DependentUpon>Frm_TipoDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\CambioClave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\CambioClave.Designer.cs">
+      <DependentUpon>CambioClave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\DetalleMedicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\DetalleMedicacion.Designer.cs">
+      <DependentUpon>DetalleMedicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\PacientesDeAlta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\PacientesDeAlta.Designer.cs">
+      <DependentUpon>PacientesDeAlta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Diagnostico\DiagnosticoEgreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Diagnostico\DiagnosticoEgreso.Designer.cs">
+      <DependentUpon>DiagnosticoEgreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Diagnostico\DiagnosticoIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Diagnostico\DiagnosticoIngreso.Designer.cs">
+      <DependentUpon>DiagnosticoIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\FichaPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\FichaPaciente.Designer.cs">
+      <DependentUpon>FichaPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\HC\Epicrisis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\HC\Epicrisis.Designer.cs">
+      <DependentUpon>Epicrisis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\HC\HC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\HC\HC.Designer.cs">
+      <DependentUpon>HC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\HC\ImprimeHC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\HC\ImprimeHC.Designer.cs">
+      <DependentUpon>ImprimeHC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\HC\Prorroga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\HC\Prorroga.Designer.cs">
+      <DependentUpon>Prorroga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Imagenes\Imagenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Imagenes\Imagenes.designer.cs">
+      <DependentUpon>Imagenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Impresion\Impresion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Impresion\Impresion.Designer.cs">
+      <DependentUpon>Impresion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Medicamento\Historial_Medicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Medicamento\Historial_Medicacion.Designer.cs">
+      <DependentUpon>Historial_Medicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Medicamento\Solicitar_Medicamentos_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Medicamento\Solicitar_Medicamentos_Nuevo.Designer.cs">
+      <DependentUpon>Solicitar_Medicamentos_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\CuidadoOral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\CuidadoOral.Designer.cs">
+      <DependentUpon>CuidadoOral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\ProcedimientoV2_PopUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\ProcedimientoV2_PopUP.Designer.cs">
+      <DependentUpon>ProcedimientoV2_PopUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\ProteccionFisica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\ProteccionFisica.Designer.cs">
+      <DependentUpon>ProteccionFisica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\CuidadoPostural.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\CuidadoPostural.Designer.cs">
+      <DependentUpon>CuidadoPostural.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\Generico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\Generico.Designer.cs">
+      <DependentUpon>Generico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\Enfermeria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\Enfermeria.Designer.cs">
+      <DependentUpon>Enfermeria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\ColocacionViaPeriferica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\ColocacionViaPeriferica.Designer.cs">
+      <DependentUpon>ColocacionViaPeriferica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\Php.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\Php.Designer.cs">
+      <DependentUpon>Php.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\Nutricion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\Nutricion.Designer.cs">
+      <DependentUpon>Nutricion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\SeleccionarProcedimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\SeleccionarProcedimiento.Designer.cs">
+      <DependentUpon>SeleccionarProcedimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\MapaDeCamas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\MapaDeCamas.Designer.cs">
+      <DependentUpon>MapaDeCamas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\Solicitar_Procedimientos_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\Solicitar_Procedimientos_Nuevo.Designer.cs">
+      <DependentUpon>Solicitar_Procedimientos_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Laboratorio\AutorizacionLab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Laboratorio\AutorizacionLab.Designer.cs">
+      <DependentUpon>AutorizacionLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Laboratorio\ImpresionLab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Laboratorio\ImpresionLab.Designer.cs">
+      <DependentUpon>ImpresionLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Laboratorio\NuevoPedidoLab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Laboratorio\NuevoPedidoLab.Designer.cs">
+      <DependentUpon>NuevoPedidoLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Laboratorio\PedidoLab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Laboratorio\PedidoLab.Designer.cs">
+      <DependentUpon>PedidoLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Laboratorio\RecepcionMuestras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Laboratorio\RecepcionMuestras.Designer.cs">
+      <DependentUpon>RecepcionMuestras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Laboratorio\ResultadosLab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Laboratorio\ResultadosLab.Designer.cs">
+      <DependentUpon>ResultadosLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Nuevo_Diagnostico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Nuevo_Diagnostico.Designer.cs">
+      <DependentUpon>Nuevo_Diagnostico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Paciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Paciente.Designer.cs">
+      <DependentUpon>Paciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Tablero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Tablero.Designer.cs">
+      <DependentUpon>Tablero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Medicamento\Medicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Medicamento\Medicamento.Designer.cs">
+      <DependentUpon>Medicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametros\Configuraciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametros\Configuraciones.Designer.cs">
+      <DependentUpon>Configuraciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametros\Medicamento\AsociaCodigoBejerman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametros\Medicamento\AsociaCodigoBejerman.Designer.cs">
+      <DependentUpon>AsociaCodigoBejerman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametros\Medicamento\Edita_Vias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametros\Medicamento\Edita_Vias.Designer.cs">
+      <DependentUpon>Edita_Vias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametros\Medicamento\MedicamentoVia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametros\Medicamento\MedicamentoVia.Designer.cs">
+      <DependentUpon>MedicamentoVia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametros\Medicamento\Medicamento_Solicitado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametros\Medicamento\Medicamento_Solicitado.Designer.cs">
+      <DependentUpon>Medicamento_Solicitado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametros\NuevoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametros\NuevoUsuario.Designer.cs">
+      <DependentUpon>NuevoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametros\Procedimiento\EditProcedimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametros\Procedimiento\EditProcedimientos.Designer.cs">
+      <DependentUpon>EditProcedimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametros\Procedimiento\ProcedimientoDescartable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametros\Procedimiento\ProcedimientoDescartable.Designer.cs">
+      <DependentUpon>ProcedimientoDescartable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports.designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Internacion\Hoteleria\Hoteleria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Internacion\Hoteleria\Hoteleria.Designer.cs">
+      <DependentUpon>Hoteleria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Get_Paciente_Por_Sede_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Get_Paciente_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Get_Piso_Por_Sede_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Habitaciones.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HC.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HC_TraeDatos_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IMP_HC_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IMP_IM_Medicamentos_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IMP_IM_Procedimientos_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IMP_PRO_NUTRICION_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IMP_PRO_PHP_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Indicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Indicacion.Designer.cs">
+      <DependentUpon>Indicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Medicamento\SeleccionarMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Medicamento\SeleccionarMedicamento.Designer.cs">
+      <DependentUpon>SeleccionarMedicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Medicamento\Medicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Medicamento\Medicacion.Designer.cs">
+      <DependentUpon>Medicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICAMENTO.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_CultivosListaEspera.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Derivacion.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Diagnostico.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Diagnosticos.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Diagnostico_Paciente.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Diluyente.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Enfermeria.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Evento.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Get_Diagnostico_Capitulo_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Get_Diagnostico_Item_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Get_Diagnostico_Paciente_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Get_Diagnostico_Rubro_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Get_Diagnostico_SubRubro_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Get_Horarios_Paciente_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Get_Medicamento_Bejerman_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Get_Medicamento_Indicacion_Medica_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Get_Medicamento_Solicitado_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Get_Medicamento_Via_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_GET_Suministro_Medicacion_Historico_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Get_Suministro_Medicacion_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Get_Via_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Historial_SuministroDeMedicacion.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_HorarioDeSuministro.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_ListaEspera.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_ListaEsperaModulo.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Mails.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Medicamento_Via.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Modulo.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_ModuloEmpresa.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Numero.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_OtraPonderacionPuntaje.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_PacienteModulo.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_PacienteModuloTesting.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Periodo.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Presentacion.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_PuntajeAdicionalListaEspera.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_SectorMails.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Solicita_Medicamento_Nuevo.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_SuministroDeMedicacion.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_TipoEgreso.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_TraeModuloEmpresaCosto_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_UnidadDeMedida.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Via.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_Via_Endovenosa.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MotivoEgreso.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OBRA_SOCIAL.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PacientesTesting.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes_Historial.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PertenenciasPaciente.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Piso.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prorrogas.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProrrogasItem.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProrrogasUltimaModificacion_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProrrogaUltimoDetalle_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Aditivos.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Alimento.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Alimento_Horarios_Administracion.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Alimento_Paciente.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Asociacion_Procedimiento.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Asociacion_Procedimiento_Proc.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Colocacion_Via_Periferica.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Cuidado_Oral.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Cuidado_Postural.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Enfermeria.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Frasco.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_GavageIntervalo.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Generico.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Get_Abocath_Numero_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Get_Colocacion_Via_Periferica_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Get_Cuidado_Oral_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Get_Cuidado_Postural_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Get_Enfermeria_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Get_Generico_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Get_Php_Aditivo_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Get_Php_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Get_Posologia_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Get_ProcedimientoTodos_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Get_Procedimiento_Paciente_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Get_Procedimiento_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Get_Proteccion_Fisica_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Gota_Hora.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Historial_Colocacion_Via_Periferica.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Historial_Cuidado_Oral.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Historial_Cuidado_Postural.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Historial_Enfermeria.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Historial_Generico.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Historial_Php.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Historial_Posologia.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Historial_Proteccion_Fisica.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Historial_SuministroDeProcedimiento.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Php.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_PHPV2.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_PHPV2_ADITIVO.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_PHPV2_DILUYENTE.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Posologia.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Preparado.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Procedimiento.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_ProcedimientoDescartable.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Proteccion_Fisica.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_SuministroDeProcedimiento.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_SuministroDeProcedimiento_Historico.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Tipo_Procedimiento.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_TRAE_MEDICACION_PROCEDIMIENTO_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PuntajeObraSocial_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Regimenes.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sectores.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sedes.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISTMEDModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SISTMEDModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISTMEDModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISTMEDModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SISTMEDModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBL_Menus.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBL_Perfiles.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBL_PerfilesPermisos.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBL_Usuarios.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestPDF.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoDocumento.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo_Archivo.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TraeCantidadLlamadosPaciente_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRAECONTACTOPACIENTE_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TraeContactosPaciente_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRAEDESCARTABLESPROCEDIMIENTO_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRAEDESCARTABLES_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRAEENTERALES_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TraeHabitacionesLibres_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TraeListaEspera_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TraeMedicamentosUnificado_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRAEMEDICAMENTOS_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TraeObrasSociales_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TraePacientesDeAlta_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TraePacientesPertenecia_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TraeVisorListaEsperaEliminados_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TraeVisorListaEspera_Result.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VistorDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VistorDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Facturacion\Equivalencias.resx">
+      <DependentUpon>Equivalencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Facturacion\Factu_internacion.resx">
+      <DependentUpon>Factu_internacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Facturacion\Factu_Medicamentos.resx">
+      <DependentUpon>Factu_Medicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Facturacion\Factu_Pacientes.resx">
+      <DependentUpon>Factu_Pacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Facturacion\Factu_Procedimientos.resx">
+      <DependentUpon>Factu_Procedimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Facturacion\Factu_selectorPaciente.resx">
+      <DependentUpon>Factu_selectorPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Facturacion\ResumenIM.resx">
+      <DependentUpon>ResumenIM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Farmacia\Farm_cierre.resx">
+      <DependentUpon>Farm_cierre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Farmacia\Farm_Principal.resx">
+      <DependentUpon>Farm_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListaEspera\Frm_Adjuntos.resx">
+      <DependentUpon>Frm_Adjuntos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListaEspera\Frm_ConfirmaCama.resx">
+      <DependentUpon>Frm_ConfirmaCama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListaEspera\Frm_CostoModulo.resx">
+      <DependentUpon>Frm_CostoModulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListaEspera\Frm_Derivacion.resx">
+      <DependentUpon>Frm_Derivacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListaEspera\Frm_EgresoListaEspera.resx">
+      <DependentUpon>Frm_EgresoListaEspera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListaEspera\Frm_ListaDeEsperaIngreso.resx">
+      <DependentUpon>Frm_ListaDeEsperaIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListaEspera\Frm_ListaEsperaPrincipal.resx">
+      <DependentUpon>Frm_ListaEsperaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListaEspera\Frm_Mails.resx">
+      <DependentUpon>Frm_Mails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListaEspera\Frm_ModuloEmpresa.resx">
+      <DependentUpon>Frm_ModuloEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListaEspera\Frm_MotivoEgreso.resx">
+      <DependentUpon>Frm_MotivoEgreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListaEspera\Frm_OtroFactorPonderacion.resx">
+      <DependentUpon>Frm_OtroFactorPonderacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListaEspera\Frm_SectoresMails.resx">
+      <DependentUpon>Frm_SectoresMails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListaEspera\Frm_TipoDocumento.resx">
+      <DependentUpon>Frm_TipoDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListaEspera\Frm_VisorListaEspera.resx">
+      <DependentUpon>Frm_VisorListaEspera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\CambioClave.resx">
+      <DependentUpon>CambioClave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\DetalleMedicacion.resx">
+      <DependentUpon>DetalleMedicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Frm_ImprimirPlanillaNutricion.resx">
+      <DependentUpon>Frm_ImprimirPlanillaNutricion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\PacientesDeAlta.resx">
+      <DependentUpon>PacientesDeAlta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Diagnostico\DiagnosticoEgreso.resx">
+      <DependentUpon>DiagnosticoEgreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Diagnostico\DiagnosticoIngreso.resx">
+      <DependentUpon>DiagnosticoIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\FichaPaciente.resx">
+      <DependentUpon>FichaPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\HC\Epicrisis.resx">
+      <DependentUpon>Epicrisis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\HC\HC.resx">
+      <DependentUpon>HC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\HC\ImprimeHC.resx">
+      <DependentUpon>ImprimeHC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\HC\Prorroga.resx">
+      <DependentUpon>Prorroga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Imagenes\Imagenes.resx">
+      <DependentUpon>Imagenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Impresion\Impresion.resx">
+      <DependentUpon>Impresion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Medicamento\Historial_Medicacion.resx">
+      <DependentUpon>Historial_Medicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Medicamento\Solicitar_Medicamentos_Nuevo.resx">
+      <DependentUpon>Solicitar_Medicamentos_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\PrimeraVez.resx">
+      <DependentUpon>PrimeraVez.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\AgregarPlan.resx">
+      <DependentUpon>AgregarPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\CuidadoOral.resx">
+      <DependentUpon>CuidadoOral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\FrmAgregarAlimentos.resx">
+      <DependentUpon>FrmAgregarAlimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\PHPV2.resx">
+      <DependentUpon>PHPV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\ProcedimientoV2.resx">
+      <DependentUpon>ProcedimientoV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\ProcedimientoV2_PopUP.resx">
+      <DependentUpon>ProcedimientoV2_PopUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\ProteccionFisica.resx">
+      <DependentUpon>ProteccionFisica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\CuidadoPostural.resx">
+      <DependentUpon>CuidadoPostural.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\Generico.resx">
+      <DependentUpon>Generico.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\Enfermeria.resx">
+      <DependentUpon>Enfermeria.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\ColocacionViaPeriferica.resx">
+      <DependentUpon>ColocacionViaPeriferica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\Php.resx">
+      <DependentUpon>Php.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\Nutricion.resx">
+      <DependentUpon>Nutricion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\SeleccionarProcedimiento.resx">
+      <DependentUpon>SeleccionarProcedimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\MapaDeCamas.resx">
+      <DependentUpon>MapaDeCamas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\Solicitar_Procedimientos_Nuevo.resx">
+      <DependentUpon>Solicitar_Procedimientos_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Laboratorio\AutorizacionLab.resx">
+      <DependentUpon>AutorizacionLab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Laboratorio\ImpresionLab.resx">
+      <DependentUpon>ImpresionLab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Laboratorio\NuevoPedidoLab.resx">
+      <DependentUpon>NuevoPedidoLab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Laboratorio\PedidoLab.resx">
+      <DependentUpon>PedidoLab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Laboratorio\RecepcionMuestras.resx">
+      <DependentUpon>RecepcionMuestras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Laboratorio\ResultadosLab.resx">
+      <DependentUpon>ResultadosLab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Nuevo_Diagnostico.resx">
+      <DependentUpon>Nuevo_Diagnostico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Paciente.resx">
+      <DependentUpon>Paciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Tablero.resx">
+      <DependentUpon>Tablero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Medicamento\Medicamento.resx">
+      <DependentUpon>Medicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametros\Configuraciones.resx">
+      <DependentUpon>Configuraciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametros\Medicamento\AsociaCodigoBejerman.resx">
+      <DependentUpon>AsociaCodigoBejerman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametros\Medicamento\Edita_Vias.resx">
+      <DependentUpon>Edita_Vias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametros\Medicamento\MedicamentoVia.resx">
+      <DependentUpon>MedicamentoVia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametros\Medicamento\Medicamento_Solicitado.resx">
+      <DependentUpon>Medicamento_Solicitado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametros\NuevoUsuario.resx">
+      <DependentUpon>NuevoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametros\Procedimiento\EditProcedimientos.resx">
+      <DependentUpon>EditProcedimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametros\Procedimiento\ProcedimientoDescartable.resx">
+      <DependentUpon>ProcedimientoDescartable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Internacion\Hoteleria\Hoteleria.resx">
+      <DependentUpon>Hoteleria.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Indicacion.resx">
+      <DependentUpon>Indicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Medicamento\SeleccionarMedicamento.resx">
+      <DependentUpon>SeleccionarMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Medicamento\Medicacion.resx">
+      <DependentUpon>Medicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\TraeListaEspera_Result.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EntityDeploy Include="SISTMEDModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SISTMEDModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="SISTMEDModel.edmx.diagram">
+      <DependentUpon>SISTMEDModel.edmx</DependentUpon>
+    </None>
+    <None Include="Tutorial\tuto.pdf" />
+    <None Include="VistorDataSet.xsc">
+      <DependentUpon>VistorDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VistorDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VistorDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VistorDataSet.xss">
+      <DependentUpon>VistorDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.vbproj">
+      <Project>{21a7bc46-4f2f-4330-ab0a-f4a448ecfef4}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.vbproj">
+      <Project>{e9d414f1-ce41-4330-a0a8-d2b4ebf8c5db}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.vbproj">
+      <Project>{a15581fb-0f78-4cf6-87c8-dbe783ab2851}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MenuSistema\MenuSistema.csproj">
+      <Project>{55b45091-842d-428a-b31c-2a22ec5db609}</Project>
+      <Name>MenuSistema</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Seguridad\Seguridad.vbproj">
+      <Project>{54f00211-e33c-4848-a2b0-5df7465c263b}</Project>
+      <Name>Seguridad</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoEncuesta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoSalir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="icono.ico" />
+    <None Include="Resources\LogoLab.png" />
+    <None Include="Resources\Logo %28Skype%29.jpg" />
+    <None Include="Resources\logo.jpg" />
+    <Content Include="SISTMEDModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SISTMEDModel.edmx</DependentUpon>
+      <LastGenOutput>SISTMEDModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SISTMEDModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SISTMEDModel.edmx</DependentUpon>
+      <LastGenOutput>SISTMEDModel.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Localization\es\MetroMessageBoxControl.xml" />
+    <EmbeddedResource Include="Localization\es\MetroToggle.xml" />
+    <Content Include="Resources\icono.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="BusinessObjects.Enterprise.Sdk">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="BusinessObjects.Licensing.KeycodeDecoder">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Enterprise.Framework">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Enterprise.InfoStore">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Enterprise.PluginManager">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Enterprise.Viewing.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FlashControlV71">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ShockwaveFlashObjects">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\test\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

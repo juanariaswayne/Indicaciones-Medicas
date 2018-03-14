@@ -1,0 +1,7594 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Entities
+</name>
+</assembly>
+<members>
+<member name="T:Entities.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:Entities.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:Entities.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:Entities.Tables.MED_SOLICITA_MEDICAMENTO_NUEVO.MEDICAMENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SOLICITA_MEDICAMENTO_NUEVO.BEJERMAN_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SOLICITA_MEDICAMENTO_NUEVO.MEDICAMENTO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SOLICITA_MEDICAMENTO_NUEVO.PRESENTACION_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SOLICITA_MEDICAMENTO_NUEVO.UNIDADDEMEDIDA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SOLICITA_MEDICAMENTO_NUEVO.AUTORIZA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SOLICITA_MEDICAMENTO_NUEVO.SUMINISTRACOMPRA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SOLICITA_MEDICAMENTO_NUEVO.USUARIOSOLICITA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SOLICITA_MEDICAMENTO_NUEVO.FECHASOLICITA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SOLICITA_MEDICAMENTO_NUEVO.USUARIOAUTORIZA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SOLICITA_MEDICAMENTO_NUEVO.FECHAAUTORIZA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SOLICITA_MEDICAMENTO_NUEVO.PENDIENTE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SOLICITA_MEDICAMENTO_NUEVO.BEJERMANALTA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SOLICITA_MEDICAMENTO_NUEVO.INACTIVO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_MENUS.ID_MENU">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_MENUS.ID_MENUPADRE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_MENUS.DESCRIPCIONMENU">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_MENUS.POSICIONMENU">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_MENUS.HABILITADOMENU">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_MENUS.URLMENU">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_MENUS.FORMULARIOASOCIADO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_PERFILES.ID_PERFIL">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_PERFILES.NOMBREPERFIL">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_PERFILES.DESCRIPCIONPERFIL">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_PERFILESPERMISOS.ID_PERFILPERMISOS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_PERFILESPERMISOS.ID_PERFIL">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_PERFILESPERMISOS.ID_MENU">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_PERFILESPERMISOS.LECTURA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_PERFILESPERMISOS.ESCRITURA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_PERFILESPERMISOS.ELIMINACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_USUARIOS.ID_USUARIO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_USUARIOS.ID_PERFIL">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_USUARIOS.IDENTIFICADORUSUARIO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_USUARIOS.CONTRASENIAUSUARIO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_USUARIOS.NOMBREUSUARIO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_USUARIOS.INACTIVO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_USUARIOS.SECTOR_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_USUARIOS.EMAIL">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_USUARIOS.MATRICULA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_USUARIOS.FIRMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Byte()</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TBL_USUARIOS.FOTO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Byte()</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.HABITACIONES.HABITACION_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.HABITACIONES.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.HABITACIONES.PISO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.HABITACIONES.SEDE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.HABITACIONES.BAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EMPRESA.EMPRESA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EMPRESA.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EMPRESA.ULTIMAHISTORIACLINICA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.SEDES.SEDE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.SEDES.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.SEDES.EMPRESA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.NUMEROHISTORIACLINICA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.NUMEROINTERNACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HABITACION_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.SEDE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.NOMBRE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.APELLIDO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.GENERO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.FECHANACIMIENTO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.TIPODOCUMENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.NUMERODOCUMENTO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.DIAGNOSTICO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.FECHAINGRESO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.OBRASOCIAL_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.NUMEROOBRASOCIAL">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.FECHAEGRESO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.MOTIVOEGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.ACOMPANIANTE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.ITEMPENDIENTE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.PREALTA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.SOLICITUDESTUDIO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.SOLICITUDTRASLADO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.INTERCONSULTAPENDIENTE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.ALTAAUTORIZADA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_08">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_09">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_10">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_11">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_12">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_13">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_14">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_15">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_16">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_17">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_18">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_19">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_20">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_21">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_22">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_23">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_24">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_01">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_02">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_03">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_04">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_05">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_06">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_07">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.HS_SH">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.RESPIRA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.CONTACTO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.TQT">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.ARM">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.OXIGENO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.VO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.SNG">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.GASTRO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.SV">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.CAT">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.TALLA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.TALON">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.SAC">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.ISQ">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.PACIENTE_TRAUMATICO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.TXTPACTRAUMATICO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.PACIENTE_JUDICIALIZADO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES.TXTPACJUDICIALIZADO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.NUMEROHISTORIACLINICA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.NUMEROINTERNACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HABITACION_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.SEDE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.NOMBRE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.APELLIDO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.GENERO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.FECHANACIMIENTO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.TIPODOCUMENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.NUMERODOCUMENTO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.DIAGNOSTICO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.FECHAINGRESO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.OBRASOCIAL_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.NUMEROOBRASOCIAL">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.FECHAEGRESO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.MOTIVOEGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.ACOMPANIANTE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.ITEMPENDIENTE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.PREALTA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.SOLICITUDESTUDIO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.SOLICITUDTRASLADO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.INTERCONSULTAPENDIENTE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.ALTAAUTORIZADA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_08">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_09">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_10">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_11">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_12">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_13">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_14">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_15">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_16">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_17">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_18">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_19">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_20">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_21">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_22">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_23">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_24">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_01">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_02">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_03">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_04">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_05">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_06">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_07">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.HS_SH">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.RESPIRA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.CONTACTO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.TQT">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.ARM">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.OXIGENO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.VO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.SNG">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.GASTRO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.SV">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.CAT">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.TALLA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.TALON">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.SAC">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.ISQ">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.PACIENTE_TRAUMATICO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.TXTPACTRAUMATICO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.PACIENTE_JUDICIALIZADO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PACIENTES_HISTORIAL.TXTPACJUDICIALIZADO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PROCEDIMIENTOS.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PROCEDIMIENTOS.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.CONTACTOPACIENTE.CONTACTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.CONTACTOPACIENTE.NOMBRE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.CONTACTOPACIENTE.APELLIDO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.CONTACTOPACIENTE.TEL1">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.CONTACTOPACIENTE.TEL2">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.CONTACTOPACIENTE.TEL3">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.CONTACTOPACIENTE.RELACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.CONTACTOPACIENTE.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.NOMBREPACIENTE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.FECHA_ALTA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.MOTIVOALTA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.SUPERVISORENF">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.GOBERNANTE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.CANTBOLSAS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.OBSSEDE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.FECHADEPOSITO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.FECHALEGALES">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.FECHARETIRO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.RESPRETIRO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.OBSRETIRO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.CANTLLAMADOS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.FECHALIMITE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.ESTADO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.MAILSALERTAS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PERTENENCIASPACIENTE.SEDE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MOTIVOEGRESO.MOTIVOEGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MOTIVOEGRESO.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ESTADOSPERTENENCIASPACIENTE.ESTADO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ESTADOSPERTENENCIASPACIENTE.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DILUYENTE.DILUYENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DILUYENTE.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_EVENTO.EVENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_EVENTO.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HORARIODESUMINISTRO.HORARIODESUMINISTRO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HORARIODESUMINISTRO.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_NUMERO.NUMERO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_NUMERO.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_PERIODO.PERIODO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_PERIODO.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_PRESENTACION.PRESENTACION_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_PRESENTACION.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_PRESENTACION.UNIDADDEMEDIDA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.SUMINISTRODEMEDICACION_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.MEDICAMENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.FECHAINICIO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.DOSIS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Decimal</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.PRESENTACION_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.UNIDADDEMEDIDA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.POTENCIA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.VIA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.VIATIENEOTRO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.VIAOTRO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.DILUYENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.ML">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Decimal</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.DURANTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.PERIODO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.LAPSODETIEMPO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.LAPSODETIEMPOHASTA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HORARIODESUMINISTRO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HORARIOEVENTO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.EVENTO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HORARIOOTRO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_08">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_09">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_10">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_11">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_12">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_13">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_14">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_15">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_16">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_17">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_18">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_19">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_20">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_21">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_22">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_23">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_24">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_01">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_02">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_03">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_04">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_05">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_06">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_07">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.HS_SH">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.L">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.M">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.X">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.J">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.V">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.S">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_HISTORIAL_SUMINISTRODEMEDICACION.D">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.SUMINISTRODEMEDICACION_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.MEDICAMENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.FECHAINICIO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.DOSIS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Decimal</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.PRESENTACION_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.UNIDADDEMEDIDA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Decimal</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.POTENCIA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.VIA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.VIATIENEOTRO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.VIAOTRO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.DILUYENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.ML">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Decimal</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.DURANTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.PERIODO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.LAPSODETIEMPO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.LAPSODETIEMPOHASTA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HORARIODESUMINISTRO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HORARIOEVENTO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.EVENTO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HORARIOOTRO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_08">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_09">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_10">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_11">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_12">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_13">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_14">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_15">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_16">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_17">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_18">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_19">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_20">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_21">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_22">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_23">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_24">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_01">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_02">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_03">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_04">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_05">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_06">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_07">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.HS_SH">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.L">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.M">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.X">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.J">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.V">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.S">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_SUMINISTRODEMEDICACION.D">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_UNIDADDEMEDIDA.UNIDADDEMEDIDA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_UNIDADDEMEDIDA.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_VIA.VIA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_VIA.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_VIA.INACTIVO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_MEDICAMENTO_VIA.MEDICAMENTOVIA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_MEDICAMENTO_VIA.MEDICAMENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_MEDICAMENTO_VIA.VIA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.ENFERMERIA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.CONTROLVITAL">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.FRECUENCIACARDIACA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.FRECUENCIARESPIRATORIA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.TEMPERATURAAXILAR">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.DIURESIS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.GLUCEMIACAPILAR">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.MULTISTICKORINA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.CONTROLSATURACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.MEDICIONRESIDUOSGASTRICO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.ECG">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ENFERMERIA.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_GENERICO.GENERICO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_GENERICO.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_GENERICO.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_GENERICO.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_GENERICO.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_GENERICO.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_GENERICO.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_GENERICO.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_GENERICO.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.ENFERMERIA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.CONTROLVITAL">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.FRECUENCIACARDIACA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.FRECUENCIARESPIRATORIA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.TEMPERATURAAXILAR">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.DIURESIS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.GLUCEMIACAPILAR">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.MULTISTICKORINA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.CONTROLSATURACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.MEDICIONRESIDUOSGASTRICO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.ECG">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_ENFERMERIA.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_GENERICO.GENERICO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_GENERICO.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_GENERICO.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_GENERICO.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_GENERICO.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_GENERICO.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_GENERICO.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_GENERICO.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_GENERICO.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.POSOLOGIA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.PLANORAL">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.HIPOSODICA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.SINLIQUIDOS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.LIQUIDOSFINOS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.LIQUIDOSESPESOS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.LIQUIDOSALIGERADOS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.SUPCONTROL">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.ASISTENCIA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.PICADO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.CORTADO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.HIPOGRASA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.ALIMENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.ALIMENTOVELOCIDAD">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.GAVAGEINTERVALO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.GAVAGECANTIDAD">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.PREPARADO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.PREPARADOVELOCIDAD">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.AYUNOFECHA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.AYUNOHORA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.LIQUIDOFECHA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.LIQUIDOHORA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_POSOLOGIA.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_SUMINISTRODEPROCEDIMIENTO.SUMINISTRODEPROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_SUMINISTRODEPROCEDIMIENTO.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_SUMINISTRODEPROCEDIMIENTO.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_SUMINISTRODEPROCEDIMIENTO.TIPOPROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_SUMINISTRODEPROCEDIMIENTO.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_SUMINISTRODEPROCEDIMIENTO.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_SUMINISTRODEPROCEDIMIENTO.FECHAMODIFICIACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_SUMINISTRODEPROCEDIMIENTO.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_SUMINISTRODEPROCEDIMIENTO.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_SUMINISTRODEPROCEDIMIENTO.ENFERMERIA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_SUMINISTRODEPROCEDIMIENTO.POSOLOGIA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_SUMINISTRODEPROCEDIMIENTO.GENERICO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_SUMINISTRODEPROCEDIMIENTO.COLOCACIONVIAPERIFERICA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_SUMINISTRODEPROCEDIMIENTO.CUIDADOORAL_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_SUMINISTRODEPROCEDIMIENTO.CUIDADOPOSTURAL_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_SUMINISTRODEPROCEDIMIENTO.PHP_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_SUMINISTRODEPROCEDIMIENTO.PROTECCIONFISICA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_SUMINISTRODEPROCEDIMIENTO.SUMINISTRODEPROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_SUMINISTRODEPROCEDIMIENTO.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_SUMINISTRODEPROCEDIMIENTO.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_SUMINISTRODEPROCEDIMIENTO.TIPOPROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_SUMINISTRODEPROCEDIMIENTO.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_SUMINISTRODEPROCEDIMIENTO.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_SUMINISTRODEPROCEDIMIENTO.FECHAMODIFICIACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_SUMINISTRODEPROCEDIMIENTO.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_SUMINISTRODEPROCEDIMIENTO.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_SUMINISTRODEPROCEDIMIENTO.ENFERMERIA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_SUMINISTRODEPROCEDIMIENTO.POSOLOGIA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_SUMINISTRODEPROCEDIMIENTO.GENERICO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_SUMINISTRODEPROCEDIMIENTO.COLOCACIONVIAPERIFERICA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_SUMINISTRODEPROCEDIMIENTO.CUIDADOORAL_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_SUMINISTRODEPROCEDIMIENTO.CUIDADOPOSTURAL_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_SUMINISTRODEPROCEDIMIENTO.PHP_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_SUMINISTRODEPROCEDIMIENTO.PROTECCIONFISICA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.POSOLOGIA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.PLANORAL">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.HIPOSODICA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.SINLIQUIDOS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.LIQUIDOSFINOS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.LIQUIDOSESPESOS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.LIQUIDOSALIGERADOS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.SUPCONTROL">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.ASISTENCIA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.PICADO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.CORTADO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.HIPOGRASA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.ALIMENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.ALIMENTOVELOCIDAD">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.GAVAGEINTERVALO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.GAVAGECANTIDAD">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.PREPARADO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.PREPARADOVELOCIDAD">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.AYUNOFECHA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.AYUNOHORA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.LIQUIDOFECHA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.LIQUIDOHORA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_POSOLOGIA.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_TIPO_PROCEDIMIENTO.TIPOPROCEDIMINETO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_TIPO_PROCEDIMIENTO.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ALIMENTO.ALIMENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_ALIMENTO.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_GAVAGEINTERVALO.GAVAGE_INTERVALO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_GAVAGEINTERVALO.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PREPARADO.PREPARADO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PREPARADO.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TIPODOCUMENTO.TIPODOCUMENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.TIPODOCUMENTO.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_COLOCACION_VIA_PERIFERICA.COLOCACIONVIAPERIFERICA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_COLOCACION_VIA_PERIFERICA.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_COLOCACION_VIA_PERIFERICA.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_COLOCACION_VIA_PERIFERICA.ABOCATHNUMERO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_COLOCACION_VIA_PERIFERICA.PARCHETEGADERM">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_COLOCACION_VIA_PERIFERICA.INFUSION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_COLOCACION_VIA_PERIFERICA.VIA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_COLOCACION_VIA_PERIFERICA.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_COLOCACION_VIA_PERIFERICA.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_COLOCACION_VIA_PERIFERICA.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_COLOCACION_VIA_PERIFERICA.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_COLOCACION_VIA_PERIFERICA.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_COLOCACION_VIA_PERIFERICA.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.CUIDADOORAL_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.PLACADESCANSO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.MORDILLO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.CLORHEXIDINA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_08">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_09">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_10">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_11">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_12">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_13">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_14">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_15">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_16">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_17">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_18">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_19">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_20">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_21">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_22">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_23">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_24">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_01">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_02">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_03">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_04">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_05">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_06">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.HS_07">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_ORAL.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_POSTURAL.CUIDADOPOSTURAL_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_POSTURAL.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_POSTURAL.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_POSTURAL.CABECERA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_POSTURAL.ROTAR">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_POSTURAL.MOVILIZACIONENBLOQUE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_POSTURAL.ALMOHADON">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_POSTURAL.ELEVADORINODOROS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_POSTURAL.TRIANGULOSEPARADORENTREPIERNA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_POSTURAL.EVITAAPOYOTALON">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_POSTURAL.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_POSTURAL.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_POSTURAL.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_POSTURAL.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_POSTURAL.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_CUIDADO_POSTURAL.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_COLOCACION_VIA_PERIFERICA.COLOCACIONVIAPERIFERICA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_COLOCACION_VIA_PERIFERICA.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_COLOCACION_VIA_PERIFERICA.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_COLOCACION_VIA_PERIFERICA.ABOCATHNUMERO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_COLOCACION_VIA_PERIFERICA.PARCHETEGADERM">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_COLOCACION_VIA_PERIFERICA.INFUSION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_COLOCACION_VIA_PERIFERICA.VIA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_COLOCACION_VIA_PERIFERICA.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_COLOCACION_VIA_PERIFERICA.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_COLOCACION_VIA_PERIFERICA.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_COLOCACION_VIA_PERIFERICA.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_COLOCACION_VIA_PERIFERICA.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_COLOCACION_VIA_PERIFERICA.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.CUIDADOORAL_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.PLACADESCANSO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.MORDILLO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.CLORHEXIDINA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_08">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_09">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_10">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_11">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_12">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_13">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_14">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_15">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_16">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_17">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_18">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_19">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_20">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_21">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_22">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_23">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_24">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_01">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_02">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_03">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_04">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_05">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_06">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.HS_07">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_ORAL.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_POSTURAL.CUIDADOPOSTURAL_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_POSTURAL.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_POSTURAL.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_POSTURAL.CABECERA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_POSTURAL.ROTAR">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_POSTURAL.MOVILIZACIONENBLOQUE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_POSTURAL.ALMOHADON">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_POSTURAL.ELEVADORINODOROS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_POSTURAL.TRIANGULOSEPARADORENTREPIERNA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_POSTURAL.EVITAAPOYOTALON">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_POSTURAL.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_POSTURAL.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_POSTURAL.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_POSTURAL.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_POSTURAL.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_CUIDADO_POSTURAL.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PROTECCION_FISICA.PROTECCIONFISICA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PROTECCION_FISICA.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PROTECCION_FISICA.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PROTECCION_FISICA.CONTENCIONFISICA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PROTECCION_FISICA.COLCHONAIRE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PROTECCION_FISICA.BARANDASCAMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PROTECCION_FISICA.CASCOPROTECCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PROTECCION_FISICA.CHIRIPASILLA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PROTECCION_FISICA.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PROTECCION_FISICA.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PROTECCION_FISICA.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PROTECCION_FISICA.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PROTECCION_FISICA.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PROTECCION_FISICA.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROTECCION_FISICA.PROTECCIONFISICA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROTECCION_FISICA.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROTECCION_FISICA.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROTECCION_FISICA.CONTENCIONFISICA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROTECCION_FISICA.COLCHONAIRE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROTECCION_FISICA.BARANDASCAMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROTECCION_FISICA.CASCOPROTECCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROTECCION_FISICA.CHIRIPASILLA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROTECCION_FISICA.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROTECCION_FISICA.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROTECCION_FISICA.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROTECCION_FISICA.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROTECCION_FISICA.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROTECCION_FISICA.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGASITEM.ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGASITEM.PRORROGA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGASITEM.EVOLUCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGASITEM.KINESIOMUSCULAR">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGASITEM.KINESIOMUSCULARTXT">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGASITEM.FONO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGASITEM.FONOTXT">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGASITEM.TERAPIAOCUP">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGASITEM.TERAPIAOCUPTXT">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGASITEM.PSICOLOGIA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGASITEM.PSICOLOGIATXT">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGASITEM.NUTRICION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGASITEM.NUTRICIONTXT">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGASITEM.MUSICOTERAPIA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGASITEM.MUSICOTERAPIATXT">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGASITEM.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGASITEM.USUARIOMODIFICA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGASITEM.TIPO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGAS.PRORROGA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGAS.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGAS.FECHAPRORROGA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGAS.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGAS.ANTECEDENTES">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGAS.ESTADOALINGRESO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRORROGAS.ESTADOPRORROGA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.HC.HC_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.HC.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.HC.TIPO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.HC.FECHA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.HC.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.HC.TEXTO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.SECTORES.SECTOR_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.SECTORES.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.ENFERMERIA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.MEDICAMENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.DOSIS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_08">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_09">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_10">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_11">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_12">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_13">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_14">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_15">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_16">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_17">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_18">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_19">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_20">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_21">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_22">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_23">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_24">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_01">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_02">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_03">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_04">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_05">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_06">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_07">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.HS_SH">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.ENFERMERIA.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.FARMACIA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.MEDICAMENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.DOSIS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Decimal</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_08">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_09">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_10">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_11">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_12">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_13">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_14">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_15">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_16">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_17">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_18">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_19">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_20">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_21">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_22">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_23">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_24">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_01">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_02">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_03">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_04">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_05">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_06">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_07">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.HS_SH">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.FARMACIA.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROCEDIMIENTODESCARTABLE.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROCEDIMIENTODESCARTABLE.DESCARTABLE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROCEDIMIENTODESCARTABLE.IMPRIMIBLE">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROCEDIMIENTODESCARTABLE.CANTIDAD">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Decimal</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROCEDIMIENTO.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROCEDIMIENTO.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROCEDIMIENTO.TIPOPROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PROCEDIMIENTO.INACTIVO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_FRASCO.FRASCO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_FRASCO.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_GOTA_HORA.GOTAHORA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_GOTA_HORA.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.PHP_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.ML_100">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.ML_250">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.ML_500">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.ML_1000">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.BIC">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.GOTAHORA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.MLHORA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.MLDIA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.FRASCOUNO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.ADITIVOUNO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.FRASCODOS_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.ADITIVODOS_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.FRASCOTRES_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.ADITIVOTRES_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.FRASCOCUATRO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.ADITIVOCUATRO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.FRASCOCINCO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.ADITIVOCINCO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.FRASCOSEIS_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.ADITIVOSEIS_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.FRASCOSIETE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.ADITIVOSIETE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.FRASCOOCHO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.ADITIVOOCHO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.FRASCONUEVE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.ADITIVONUEVE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.FRASCODIEZ_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.ADITIVODIEZ_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_HISTORIAL_PHP.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.PHP_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.PROCEDIMIENTO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.ML_100">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.ML_250">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.ML_500">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.ML_1000">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.BIC">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.GOTAHORA_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.MLHORA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.MLDIA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.FRASCOUNO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.ADITIVOUNO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.FRASCODOS_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.ADITIVODOS_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.FRASCOTRES_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.ADITIVOTRES_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.FRASCOCUATRO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.ADITIVOCUATRO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.FRASCOCINCO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.ADITIVOCINCO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.FRASCOSEIS_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.ADITIVOSEIS_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.FRASCOSIETE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.ADITIVOSIETE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.FRASCOOCHO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.ADITIVOOCHO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.FRASCONUEVE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.ADITIVONUEVE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.FRASCODIEZ_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.ADITIVODIEZ_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.OBSERVACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.FECHAALTASISTEMA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.FECHABAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.PRO_PHP.MOTIVOBAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO.ID10">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO.DEC10">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO.GRP10">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.DIAGNOSTICO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.PRINCIPALCAPITULOINGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.PRINCIPALRUBROINGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.PRINCIPALSUBRUBROINGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.PRINCIPALITEMINGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.SECUNDARIOCAPITULOINGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.SECUNDARIORUBROINGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.SECUNDARIOSUBRUBROINGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.SECUNDARIOITEMINGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.TERCIARIOCAPITULOINGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.TERCIARIORUBROINGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.TERCIARIOSUBRUBROINGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.TERCIARIOITEMINGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.PRINCIPALCAPITULOEGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.PRINCIPALRUBROEGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.PRINCIPALSUBRUBROEGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.PRINCIPALITEMEGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.SECUNDARIOCAPITULOEGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.SECUNDARIORUBROEGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.SECUNDARIOSUBRUBROEGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.SECUNDARIOITEMEGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.TERCIARIOCAPITULOEGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.TERCIARIORUBROEGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.TERCIARIOSUBRUBROEGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.TERCIARIOITEMEGRESO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.FECHAALTA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.MED_DIAGNOSTICO_PACIENTE.FECHAMODIFICACION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOCAB.ID_SOLICITUD">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOCAB.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOCAB.FECHASOLICITUD">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOCAB.TIPO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOCAB.OTROSESTUDIOS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOCAB.OBSERVACIONESMED">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOCAB.OBSERVACIONESBIOQ">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOCAB.ESTADO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOCAB.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIODETERMINACIONES.ESTUDIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIODETERMINACIONES.DESCESTUDIO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIODETERMINACIONES.TIPOESTUDIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIODETERMINACIONES.INHABILITADO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOESTADOS.ESTADO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOESTADOS.DESCRIPCIONESTADO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOITEMS.ID_SOLICITUD">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOITEMS.NROITEM">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOITEMS.ESTUDIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOITEMS.ESTADO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOTIPOESTUDIO.TIPOESTUDIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOTIPOESTUDIO.DESCRIPCIONTIPOEST">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOTIPOS.TIPO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Tables.EST_LABORATORIOTIPOS.TIPODESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.HABITACIONES.HABITACION_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.HABITACIONES.DESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.HABITACIONES.PISO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.HABITACIONES.SEDE_ID">
+ <summary>
+  (Instance) 
+ </summary>
+ <value></value>
+ <returns>SEDES</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.HABITACIONES.BAJA">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOCAB.ID_SOLICITUD">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOCAB.PACIENTE_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOCAB.FECHASOLICITUD">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOCAB.TIPO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOCAB.OTROSESTUDIOS">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOCAB.OBSERVACIONESMED">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOCAB.OBSERVACIONESBIOQ">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOCAB.ESTADO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOCAB.USUARIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIODETERMINACIONES.ESTUDIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIODETERMINACIONES.DESCESTUDIO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIODETERMINACIONES.TIPOESTUDIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIODETERMINACIONES.INHABILITADO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOESTADOS.ESTADO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOESTADOS.DESCRIPCIONESTADO">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOITEMS.ID_SOLICITUD">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOITEMS.NROITEM">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOITEMS.ESTUDIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOITEMS.ESTADO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOTIPOESTUDIO.TIPOESTUDIO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOTIPOESTUDIO.DESCRIPCIONTIPOEST">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOTIPOS.TIPO_ID">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>Int32</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Entities.Joins.EST_LABORATORIOTIPOS.TIPODESCRIPCION">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

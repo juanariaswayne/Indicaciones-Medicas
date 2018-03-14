@@ -1,0 +1,7 @@
+.vs/*
+BLL/obj/Debug/*
+DAL/obj/Debug/*
+Entities/obj/Debug/*
+MenuSistema/obj/Debug/*
+Principal/obj/Debug/*
+Seguridad/obj/Debug/*
