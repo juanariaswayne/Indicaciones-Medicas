@@ -210,7 +210,6 @@ namespace Principal.Forms.Facturacion
             catch (Exception ex)
             {
                 return "";
-                //MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
