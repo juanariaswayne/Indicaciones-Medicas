@@ -87,6 +87,7 @@
             this.dateHasta.Name = "dateHasta";
             this.dateHasta.Size = new System.Drawing.Size(107, 29);
             this.dateHasta.TabIndex = 5;
+            this.dateHasta.ValueChanged += new System.EventHandler(this.dateHasta_ValueChanged);
             // 
             // dateDesde
             // 
@@ -111,6 +112,7 @@
             // 
             this.metroTile1.ActiveControl = null;
             this.metroTile1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.metroTile1.Enabled = false;
             this.metroTile1.Location = new System.Drawing.Point(1042, 0);
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.Size = new System.Drawing.Size(243, 46);
@@ -160,6 +162,7 @@
             this.dataGridViewProcedimientos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProcedimientos_CellContentClick);
             this.dataGridViewProcedimientos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProcedimientos_CellDoubleClick);
             this.dataGridViewProcedimientos.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProcedimientos_CellValueChanged);
+            this.dataGridViewProcedimientos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dataGridViewProcedimientos_KeyPress);
             // 
             // SUMINISTRO_ID
             // 

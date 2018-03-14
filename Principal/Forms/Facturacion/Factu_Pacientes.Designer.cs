@@ -139,7 +139,7 @@
             this.txtBuscar.WaterMark = "Buscar paciente";
             this.txtBuscar.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtBuscar.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.txtBuscar.Click += new System.EventHandler(this.metroTextBox1_Click);
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // Factu_Pacientes
             // 
@@ -154,6 +154,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Pacientes Internados";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Factu_Pacientes_FormClosed);
             this.Load += new System.EventHandler(this.Factu_Pacientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridPacientes)).EndInit();
             this.ResumeLayout(false);

@@ -35,8 +35,6 @@
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.dataGridViewMedicamentos = new System.Windows.Forms.DataGridView();
-            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Inicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,6 +50,9 @@
             this.FIN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MEDICO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.check = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.metroCheckBox1 = new MetroFramework.Controls.MetroCheckBox();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMedicamentos)).BeginInit();
             this.metroPanel2.SuspendLayout();
@@ -152,35 +153,7 @@
             this.dataGridViewMedicamentos.TabIndex = 15;
             this.dataGridViewMedicamentos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMedicamentos_CellContentClick);
             this.dataGridViewMedicamentos.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMedicamentos_CellValueChanged);
-            // 
-            // metroPanel2
-            // 
-            this.metroPanel2.Controls.Add(this.metroTile1);
-            this.metroPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.metroPanel2.HorizontalScrollbarBarColor = true;
-            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.HorizontalScrollbarSize = 10;
-            this.metroPanel2.Location = new System.Drawing.Point(20, 650);
-            this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.Size = new System.Drawing.Size(1292, 45);
-            this.metroPanel2.TabIndex = 2;
-            this.metroPanel2.VerticalScrollbarBarColor = true;
-            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.VerticalScrollbarSize = 10;
-            // 
-            // metroTile1
-            // 
-            this.metroTile1.ActiveControl = null;
-            this.metroTile1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.metroTile1.Location = new System.Drawing.Point(1076, 0);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(216, 45);
-            this.metroTile1.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile1.TabIndex = 7;
-            this.metroTile1.Text = "Imprimir medicacion historico";
-            this.metroTile1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile1.UseSelectable = true;
-            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
+            this.dataGridViewMedicamentos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dataGridViewMedicamentos_KeyPress);
             // 
             // ID
             // 
@@ -276,11 +249,52 @@
             this.check.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.check.Width = 30;
             // 
+            // metroPanel2
+            // 
+            this.metroPanel2.Controls.Add(this.metroTile1);
+            this.metroPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.metroPanel2.HorizontalScrollbarBarColor = true;
+            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel2.HorizontalScrollbarSize = 10;
+            this.metroPanel2.Location = new System.Drawing.Point(20, 650);
+            this.metroPanel2.Name = "metroPanel2";
+            this.metroPanel2.Size = new System.Drawing.Size(1292, 45);
+            this.metroPanel2.TabIndex = 2;
+            this.metroPanel2.VerticalScrollbarBarColor = true;
+            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel2.VerticalScrollbarSize = 10;
+            // 
+            // metroTile1
+            // 
+            this.metroTile1.ActiveControl = null;
+            this.metroTile1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.metroTile1.Location = new System.Drawing.Point(1076, 0);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.Size = new System.Drawing.Size(216, 45);
+            this.metroTile1.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile1.TabIndex = 7;
+            this.metroTile1.Text = "Imprimir medicacion historico";
+            this.metroTile1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile1.UseSelectable = true;
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
+            // 
+            // metroCheckBox1
+            // 
+            this.metroCheckBox1.AutoSize = true;
+            this.metroCheckBox1.Location = new System.Drawing.Point(249, 39);
+            this.metroCheckBox1.Name = "metroCheckBox1";
+            this.metroCheckBox1.Size = new System.Drawing.Size(79, 15);
+            this.metroCheckBox1.Style = MetroFramework.MetroColorStyle.Red;
+            this.metroCheckBox1.TabIndex = 5;
+            this.metroCheckBox1.Text = "Traer bajas";
+            this.metroCheckBox1.UseSelectable = true;
+            // 
             // Factu_Medicamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1332, 715);
+            this.Controls.Add(this.metroCheckBox1);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.dateHasta);
@@ -325,5 +339,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FIN;
         private System.Windows.Forms.DataGridViewTextBoxColumn MEDICO;
         private System.Windows.Forms.DataGridViewCheckBoxColumn check;
+        private MetroFramework.Controls.MetroCheckBox metroCheckBox1;
     }
 }

@@ -210,7 +210,7 @@ namespace Principal.Forms.Facturacion
             catch (Exception ex)
             {
                 return "";
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -225,7 +225,7 @@ namespace Principal.Forms.Facturacion
             catch (Exception ex)
             {
                 return "";
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -236,11 +236,11 @@ namespace Principal.Forms.Facturacion
 
                 dataGridViewMedicamentos.Rows.Clear();
                 int indice;
-                foreach (var item in E.MED_Historial_SuministroDeMedicacion.Where(p => p.paciente_id == _paciente && (p.fechaBaja >= dateDesde.Value && p.fechaBaja <= dateHasta.Value || p.fechaBaja == null)).OrderBy(med => med.MEDICAMENTO.descripcion_medicamento))
+                foreach (var item in E.MED_Historial_SuministroDeMedicacion.Where(p => p.paciente_id == _paciente && ((p.fechaBaja >= dateDesde.Value && p.fechaBaja <= dateHasta.Value) || p.fechaBaja == null)).OrderBy(med => med.MEDICAMENTO.descripcion_medicamento))
                 {
                     indice = dataGridViewMedicamentos.Rows.Add();
                     dataGridViewMedicamentos.Rows[indice].Cells[(int)Col_Medicamento.ID].Value = item.suministroDeMedicacion_id;
-                    dataGridViewMedicamentos.Rows[indice].Cells[(int)Col_Medicamento.INICIO].Value = item.fechaAltaSistema.Value.ToString();
+                    dataGridViewMedicamentos.Rows[indice].Cells[(int)Col_Medicamento.INICIO].Value = item.fechaModificacion == null? item.fechaAltaSistema.Value.ToString() : item.fechaModificacion.ToString();
                     dataGridViewMedicamentos.Rows[indice].Cells[(int)Col_Medicamento.ID_SUMINISTRO].Value = item.suministro_original;
                     dataGridViewMedicamentos.Rows[indice].Cells[(int)Col_Medicamento.MEDICAMENTO_ID].Value = item.medicamento_id;
                     dataGridViewMedicamentos.Rows[indice].Cells[(int)Col_Medicamento.MEDICAMENTO].Value = item.MEDICAMENTO.descripcion_medicamento + " " + item.MEDICAMENTO.presentacion + " " + item.MEDICAMENTO.potencia;
@@ -408,6 +408,28 @@ namespace Principal.Forms.Facturacion
                     E.MED_Historial_SuministroDeMedicacion.Attach(_hist);
                     E.Entry(_hist).Property(f => f.imprimeFactu).IsModified = true;
                     E.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void dataGridViewMedicamentos_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                if(e.KeyChar == ' ')
+                {
+                    if (Convert.ToBoolean(dataGridViewMedicamentos.CurrentRow.Cells[(int)Col_Medicamento.IMP].Value) == false)
+                    {
+                        dataGridViewMedicamentos.CurrentRow.Cells[(int)Col_Medicamento.IMP].Value = true;
+                    }
+                    else
+                    {
+                        dataGridViewMedicamentos.CurrentRow.Cells[(int)Col_Medicamento.IMP].Value = false;
+                    }                   
                 }
             }
             catch (Exception ex)

@@ -837,10 +837,5 @@ namespace Principal.Forms.Facturacion
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            //Imprime
-        }
     }
 }
