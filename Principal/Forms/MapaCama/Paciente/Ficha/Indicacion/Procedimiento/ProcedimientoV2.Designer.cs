@@ -34,8 +34,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProcedimientoV2));
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridViewMedicamentos = new System.Windows.Forms.DataGridView();
+            this.IDMed = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Medicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dosis = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Xm = new System.Windows.Forms.DataGridViewButtonColumn();
             this.dataGridView1Procedimientos = new System.Windows.Forms.DataGridView();
+            this.IDProc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Procedimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Xproc = new System.Windows.Forms.DataGridViewButtonColumn();
             this.dataGridViewDescartables = new System.Windows.Forms.DataGridView();
+            this.IDDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descartable = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Xd = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnProc = new MetroFramework.Controls.MetroTile();
             this.btMedicamento = new MetroFramework.Controls.MetroTile();
@@ -88,17 +99,6 @@
             this.btnSuspender = new MetroFramework.Controls.MetroTile();
             this.btnGuardar = new MetroFramework.Controls.MetroTile();
             this.chckAutomatico = new MetroFramework.Controls.MetroCheckBox();
-            this.IDMed = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Medicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dosis = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Xm = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.IDDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descartable = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Xd = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.IDProc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Procedimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Xproc = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMedicamentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1Procedimientos)).BeginInit();
@@ -153,6 +153,37 @@
             this.dataGridViewMedicamentos.TabIndex = 3;
             this.dataGridViewMedicamentos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMedicamentos_CellClick);
             // 
+            // IDMed
+            // 
+            this.IDMed.HeaderText = "ID";
+            this.IDMed.Name = "IDMed";
+            this.IDMed.Visible = false;
+            // 
+            // Medicamento
+            // 
+            this.Medicamento.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Medicamento.HeaderText = "Medicamento";
+            this.Medicamento.Name = "Medicamento";
+            this.Medicamento.ReadOnly = true;
+            // 
+            // Dosis
+            // 
+            this.Dosis.HeaderText = "Dosis";
+            this.Dosis.Name = "Dosis";
+            this.Dosis.Width = 70;
+            // 
+            // Xm
+            // 
+            this.Xm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Xm.HeaderText = "X";
+            this.Xm.Name = "Xm";
+            this.Xm.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Xm.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Xm.Text = "X";
+            this.Xm.ToolTipText = "Eliminar Medicamento";
+            this.Xm.UseColumnTextForButtonValue = true;
+            this.Xm.Width = 20;
+            // 
             // dataGridView1Procedimientos
             // 
             this.dataGridView1Procedimientos.AllowUserToAddRows = false;
@@ -182,6 +213,31 @@
             this.dataGridView1Procedimientos.Size = new System.Drawing.Size(275, 337);
             this.dataGridView1Procedimientos.TabIndex = 4;
             this.dataGridView1Procedimientos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1Procedimientos_CellClick);
+            // 
+            // IDProc
+            // 
+            this.IDProc.HeaderText = "ID";
+            this.IDProc.Name = "IDProc";
+            this.IDProc.Visible = false;
+            // 
+            // Procedimiento
+            // 
+            this.Procedimiento.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Procedimiento.HeaderText = "Procedimiento";
+            this.Procedimiento.Name = "Procedimiento";
+            this.Procedimiento.ReadOnly = true;
+            // 
+            // Xproc
+            // 
+            this.Xproc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Xproc.HeaderText = "X";
+            this.Xproc.Name = "Xproc";
+            this.Xproc.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Xproc.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Xproc.Text = "X";
+            this.Xproc.ToolTipText = "Eliminar Procedimiento";
+            this.Xproc.UseColumnTextForButtonValue = true;
+            this.Xproc.Width = 20;
             // 
             // dataGridViewDescartables
             // 
@@ -213,6 +269,38 @@
             this.dataGridViewDescartables.Size = new System.Drawing.Size(333, 337);
             this.dataGridViewDescartables.TabIndex = 1;
             this.dataGridViewDescartables.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDescartables_CellClick);
+            this.dataGridViewDescartables.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridViewDescartables_RowsAdded);
+            // 
+            // IDDesc
+            // 
+            this.IDDesc.HeaderText = "IDDesc";
+            this.IDDesc.Name = "IDDesc";
+            this.IDDesc.Visible = false;
+            // 
+            // Descartable
+            // 
+            this.Descartable.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Descartable.HeaderText = "Descartable";
+            this.Descartable.Name = "Descartable";
+            this.Descartable.ReadOnly = true;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.Width = 70;
+            // 
+            // Xd
+            // 
+            this.Xd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Xd.HeaderText = "X";
+            this.Xd.Name = "Xd";
+            this.Xd.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Xd.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Xd.Text = "X";
+            this.Xd.ToolTipText = "Eliminar descartable";
+            this.Xd.UseColumnTextForButtonValue = true;
+            this.Xd.Width = 20;
             // 
             // panel3
             // 
@@ -857,93 +945,6 @@
             this.chckAutomatico.TabIndex = 1;
             this.chckAutomatico.Text = "Seleccionar para crear plantilla de asociacion automatica";
             this.chckAutomatico.UseSelectable = true;
-            // 
-            // IDMed
-            // 
-            this.IDMed.HeaderText = "ID";
-            this.IDMed.Name = "IDMed";
-            this.IDMed.Visible = false;
-            // 
-            // Medicamento
-            // 
-            this.Medicamento.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Medicamento.HeaderText = "Medicamento";
-            this.Medicamento.Name = "Medicamento";
-            this.Medicamento.ReadOnly = true;
-            // 
-            // Dosis
-            // 
-            this.Dosis.HeaderText = "Dosis";
-            this.Dosis.Name = "Dosis";
-            this.Dosis.Width = 70;
-            // 
-            // Xm
-            // 
-            this.Xm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Xm.HeaderText = "X";
-            this.Xm.Name = "Xm";
-            this.Xm.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Xm.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Xm.Text = "X";
-            this.Xm.ToolTipText = "Eliminar Medicamento";
-            this.Xm.UseColumnTextForButtonValue = true;
-            this.Xm.Width = 20;
-            // 
-            // IDDesc
-            // 
-            this.IDDesc.HeaderText = "IDDesc";
-            this.IDDesc.Name = "IDDesc";
-            this.IDDesc.Visible = false;
-            // 
-            // Descartable
-            // 
-            this.Descartable.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Descartable.HeaderText = "Descartable";
-            this.Descartable.Name = "Descartable";
-            this.Descartable.ReadOnly = true;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.Width = 70;
-            // 
-            // Xd
-            // 
-            this.Xd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Xd.HeaderText = "X";
-            this.Xd.Name = "Xd";
-            this.Xd.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Xd.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Xd.Text = "X";
-            this.Xd.ToolTipText = "Eliminar descartable";
-            this.Xd.UseColumnTextForButtonValue = true;
-            this.Xd.Width = 20;
-            // 
-            // IDProc
-            // 
-            this.IDProc.HeaderText = "ID";
-            this.IDProc.Name = "IDProc";
-            this.IDProc.Visible = false;
-            // 
-            // Procedimiento
-            // 
-            this.Procedimiento.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Procedimiento.HeaderText = "Procedimiento";
-            this.Procedimiento.Name = "Procedimiento";
-            this.Procedimiento.ReadOnly = true;
-            // 
-            // Xproc
-            // 
-            this.Xproc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Xproc.HeaderText = "X";
-            this.Xproc.Name = "Xproc";
-            this.Xproc.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Xproc.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Xproc.Text = "X";
-            this.Xproc.ToolTipText = "Eliminar Procedimiento";
-            this.Xproc.UseColumnTextForButtonValue = true;
-            this.Xproc.Width = 20;
             // 
             // ProcedimientoV2
             // 

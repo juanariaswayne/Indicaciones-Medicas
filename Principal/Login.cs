@@ -124,8 +124,8 @@ namespace Principal.Forms
                         //GUARDO EL USUARIO QUE ESTÁ LOGEADO
                         Clases.Usuario.UsuarioLogeado.usuario_Logeado = txtUsuario.Text.ToString();
                         //TAMBIEN GUARDO LA EMPRESA LOGEADA ---- HECTOR
-                        int _sede = Convert.ToInt32(this.cboSede.SelectedValue);
-                        switch (_sede)
+                        Clases.Usuario.UsuarioLogeado.Id_sede = Convert.ToInt32(this.cboSede.SelectedValue);
+                        switch (Clases.Usuario.UsuarioLogeado.Id_sede)
                         {
                             case 1:
                                 Clases.Usuario.EmpresaLogeada.EmpresaIngresada = "EGES";
@@ -202,6 +202,7 @@ namespace Principal.Forms
                         if (PerfilUsuario == 13) // USUARIO DE FARMACIA
                         {
                             Forms.Farmacia.Farm_Principal _farma = new Farmacia.Farm_Principal();
+                            Clases.Usuario.UsuarioLogeado.Id_Sector = 13;
                             _farma.Show();
 
                             //Forms.Facturacion.ResumenIM _factu = new Facturacion.ResumenIM();

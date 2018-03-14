@@ -1,5 +1,6 @@
 ﻿using MetroFramework;
 using MetroFramework.Forms;
+using Principal.Forms.Farmacia;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -116,12 +117,19 @@ namespace Principal.Forms.MapaCama.Paciente.Ficha.Indicacion.Procedimiento
 
         private bool _factu;
 
+        private Farm_Principal form_Farm_Principal; // Para mandarle los datos al formulario anterior
+
         #endregion
 
         #region Funciones
         public ProcedimientoV2()
         {
             InitializeComponent();
+        }
+
+        public void recibirReferenciaFormularioAnterior(Farm_Principal f)
+        {
+            this.form_Farm_Principal = f;
         }
 
         public void CargarDatos(char _tipo, string _codigo, string _descripcion, decimal _cantidad)
@@ -507,19 +515,33 @@ namespace Principal.Forms.MapaCama.Paciente.Ficha.Indicacion.Procedimiento
             {
                 if(Clases.Usuario.UsuarioLogeado.Id_Sector != 8) //medico coordinador o supervisor de enfermeria
                 {
-                    if (Clases.Usuario.UsuarioLogeado.Id_Sector != 11) //medico coordinador o supervisor de enfermeria
+                    if (Clases.Usuario.UsuarioLogeado.Id_Sector != 13) //medico coordinador o supervisor de enfermeria
                     {
                         chckAutomatico.Hide();
                     }
-                    else if(Clases.Usuario.UsuarioLogeado.Id_Sector == 11)//Usuario de farmacia
+                    else if(Clases.Usuario.UsuarioLogeado.Id_Sector == 13)//Usuario de farmacia
                     {
-                        btMedicamento.Hide();
-                        dataGridView1Procedimientos.ReadOnly = true;
-                        dataGridViewMedicamentos.ReadOnly = true;
-                        btnProc.Hide();
+                        dataGridView1Procedimientos.Enabled = false;
+                        dataGridViewMedicamentos.Enabled = false;
                         txtObs.Enabled = false;
-                        btnSuspender.Hide();
+
+                        // Checkboxs horas
+                        h00.Enabled = false; h01.Enabled = false; h02.Enabled = false; h03.Enabled = false; h04.Enabled = false; h05.Enabled = false;
+                        h06.Enabled = false; h07.Enabled = false; h08.Enabled = false; h09.Enabled = false; h10.Enabled = false; h11.Enabled = false;
+                        h12.Enabled = false; h13.Enabled = false; h14.Enabled = false; h15.Enabled = false; h16.Enabled = false; h17.Enabled = false;
+                        h18.Enabled = false; h19.Enabled = false; h20.Enabled = false; h21.Enabled = false; h22.Enabled = false; h23.Enabled = false;
+
+                        // Checkboxes dias
+                        chckLunes.Enabled = false; chckMartes.Enabled = false; chckMiercoles.Enabled = false; chckJueves.Enabled = false;
+                        chckViernes.Enabled = false; chckSabado.Enabled = false; chckDomingo.Enabled = false;
+
+                        chckUnicaVez.Enabled = false;
+                        chckSegunNEcesidad.Enabled = false;
+                        btnSuspender.Enabled = false;
                         dateSuspender.Enabled = false;
+                        btMedicamento.Enabled = false;
+                        btnProc.Enabled = false;
+                        btnGuardar.Enabled = false;
                     }
                 }
 
@@ -733,6 +755,31 @@ namespace Principal.Forms.MapaCama.Paciente.Ficha.Indicacion.Procedimiento
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             
+            if(dataGridViewDescartables.Rows.Count > 0)
+            {
+                int indice;
+                bool filaRepetida = false;
+                foreach (DataGridViewRow fila in dataGridViewDescartables.Rows)
+                {
+                    for(int i = 0; i < this.form_Farm_Principal.dataGridViewDescartables.Rows.Count; i++)
+                    {
+                        if (this.form_Farm_Principal.dataGridViewDescartables.Rows[i].Cells[3].Value.ToString().Trim() == fila.Cells["Descartable"].Value.ToString().Trim())
+                        {
+                            filaRepetida = true;
+                            break;
+                        }
+                    }
+
+                    if(filaRepetida == false)
+                    {
+                        indice = this.form_Farm_Principal.dataGridViewDescartables.Rows.Add();
+                        this.form_Farm_Principal.dataGridViewDescartables.Rows[indice].Cells[3].Value = fila.Cells["Descartable"].Value;
+                        this.form_Farm_Principal.dataGridViewDescartables.Rows[indice].Cells[4].Value = fila.Cells["Cantidad"].Value;
+                    }
+                    filaRepetida = false;
+                }
+            }
+
             SISTMEDEntities P = new SISTMEDEntities();
             
             using (var dbContextTransaction = P.Database.BeginTransaction())
@@ -1253,6 +1300,12 @@ namespace Principal.Forms.MapaCama.Paciente.Ficha.Indicacion.Procedimiento
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void dataGridViewDescartables_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            //Console.WriteLine("Se agregaron: " + e.RowCount + " filas");
+            btnGuardar.Enabled = true;
         }
     }
  }

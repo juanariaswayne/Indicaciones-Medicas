@@ -27,6 +27,15 @@ namespace Principal.Forms.MapaCama
             cmboxTipoDocumento.Enabled = false;
             cmboxPiso.Enabled = false;
             btnImprimir.Enabled = false;
+            cmboxHorario.Enabled = false;
+
+            // Cargar el combobox Horario
+            SISTMEDEntities E = new SISTMEDEntities();
+            var horarios = from h in E.PRO_Alimento_Horarios_Administracion select h.descripcion;
+            foreach (var horario in horarios)
+            {
+                cmboxHorario.Items.Add(horario);
+            }
         }
 
         private void cmboxDocumento_SelectedIndexChanged(object sender, EventArgs e)
@@ -39,6 +48,8 @@ namespace Principal.Forms.MapaCama
             if(cmboxTipoDocumento.SelectedItem.ToString() == "Un piso específico")
             {
                 cmboxPiso.Enabled = true;
+                cmboxHorario.Enabled = false;
+                btnImprimir.Enabled = false;
                 int id_sede = Clases.Paciente.PacienteSede;
                 SISTMEDEntities E = new SISTMEDEntities();
                 var pisos = from h in E.Habitaciones
@@ -56,23 +67,25 @@ namespace Principal.Forms.MapaCama
             {
                 cmboxPiso.Enabled = false;
                 btnImprimir.Enabled = true;
+                cmboxHorario.Enabled = true;
             }
         }
 
         private void cmboxPiso_SelectedIndexChanged(object sender, EventArgs e)
         {
-            btnImprimir.Enabled = true;
+            cmboxHorario.Enabled = true;
         }
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-            // Obtengo los datos seleccionados
+            // Obtengo los datos seleccionados por el usuario
             int sede = Clases.Paciente.PacienteSede;
             string documento = cmboxDocumento.SelectedItem.ToString();
-            string datosAIncluir = cmboxTipoDocumento.SelectedItem.ToString();
+            string pacientes = cmboxTipoDocumento.SelectedItem.ToString();
             int piso;
+            string horario = cmboxHorario.SelectedItem.ToString();
 
-            if(datosAIncluir.Equals("Un piso específico"))
+            if(pacientes.Equals("Un piso específico"))
             {
                 SISTMEDEntities E = new SISTMEDEntities();
                 string piso_texto = cmboxPiso.SelectedItem.ToString();
@@ -127,7 +140,7 @@ namespace Principal.Forms.MapaCama
                 ParameterDiscreteValue ParametroValue = new ParameterDiscreteValue();
                 Parametros.Clear();
 
-                ////1° PARAMETRO
+                ////1° PARAMETRO: SEDE
                 ParametroField = new ParameterField();
                 ParametroValue = new ParameterDiscreteValue();
                 ParametroField.Name = "@sede";
@@ -135,9 +148,9 @@ namespace Principal.Forms.MapaCama
                 ParametroField.CurrentValues.Add(ParametroValue);
                 Parametros.Add(ParametroField);
 
+                ////2° PARAMETRO: PISO [OPCIONAL]
                 if (piso != -1)
                 {
-                    ////2° PARAMETRO
                     ParametroField = new ParameterField();
                     ParametroValue = new ParameterDiscreteValue();
                     ParametroField.Name = "@piso";
@@ -147,7 +160,6 @@ namespace Principal.Forms.MapaCama
                 }
                 else
                 {
-                    ////2° PARAMETRO
                     ParametroField = new ParameterField();
                     ParametroValue = new ParameterDiscreteValue();
                     ParametroField.Name = "@piso";
@@ -155,6 +167,14 @@ namespace Principal.Forms.MapaCama
                     ParametroField.CurrentValues.Add(ParametroValue);
                     Parametros.Add(ParametroField);
                 }
+
+                ////3° PARAMETRO: HORARIO
+                ParametroField = new ParameterField();
+                ParametroValue = new ParameterDiscreteValue();
+                ParametroField.Name = "@horario";
+                ParametroValue.Value = horario;
+                ParametroField.CurrentValues.Add(ParametroValue);
+                Parametros.Add(ParametroField);
 
                 _Reporte.Parameters = Parametros;
                 _Reporte.Reporte = objReport;
@@ -164,8 +184,13 @@ namespace Principal.Forms.MapaCama
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error55", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void cmboxHorario_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            btnImprimir.Enabled = true;
         }
     }
 }

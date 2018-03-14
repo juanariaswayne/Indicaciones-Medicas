@@ -73,6 +73,10 @@ namespace Principal.Forms.Farmacia
 
         int _cantAplicaciones;
         bool _pvez = true;
+
+        DataGridViewRowCollection colleccion_filas;
+
+
         #endregion
 
         #region Funciones
@@ -1106,7 +1110,7 @@ namespace Principal.Forms.Farmacia
             try
             {
                 spinner.Hide();
-                traePacientes(3);
+                traePacientes(Clases.Usuario.UsuarioLogeado.Id_sede);
               
                 if (DateTime.Now.Hour >= 07 && DateTime.Now.Hour <= 14)//Turno Mañana
                 {
@@ -1458,6 +1462,7 @@ namespace Principal.Forms.Farmacia
                     _Generico.Tipo_Procedimiento_Id = 3;
                     _Generico.Generico_Id = Convert.ToInt32(dataGridViewProcedimientos.CurrentRow.Cells[(int)Col_Procedimiento.ID_GENERICO].Value);
                     _Generico.Paciente_Id = Clases.Paciente.PacienteIngresado;
+                    _Generico.recibirReferenciaFormularioAnterior(this);
                     _Generico.ShowDialog();
                 }
                 else
@@ -1482,6 +1487,28 @@ namespace Principal.Forms.Farmacia
             try
             {
                 Application.Exit();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void metroTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                foreach (DataGridViewRow fila in gridPacientes.Rows)
+                {
+                    Console.WriteLine("Contenido de la fila: " + fila.Cells["Paciente"].Value.ToString());
+                    if (!fila.Cells["Paciente"].Value.ToString().Contains(metroTextBox1.Text.ToUpper()))
+                        fila.Visible = false;
+                    else
+                    {
+                        fila.Visible = true;
+                    }
+                    
+                }
             }
             catch (Exception ex)
             {
