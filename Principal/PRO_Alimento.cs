@@ -14,7 +14,16 @@ namespace Principal
     
     public partial class PRO_Alimento
     {
-        public string alimento_id { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public PRO_Alimento()
+        {
+            this.PRO_Alimento_Paciente = new HashSet<PRO_Alimento_Paciente>();
+        }
+    
+        public int alimento_id { get; set; }
         public string descripcion { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PRO_Alimento_Paciente> PRO_Alimento_Paciente { get; set; }
     }
 }

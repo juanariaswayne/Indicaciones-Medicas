@@ -20,6 +20,7 @@ namespace Principal
             this.Archivos_Paciente = new HashSet<Archivos_Paciente>();
             this.MED_PacienteModulo = new HashSet<MED_PacienteModulo>();
             this.MED_Solicita_Medicamento_Nuevo = new HashSet<MED_Solicita_Medicamento_Nuevo>();
+            this.PRO_Alimento_Paciente = new HashSet<PRO_Alimento_Paciente>();
         }
     
         public int paciente_id { get; set; }
@@ -105,5 +106,7 @@ namespace Principal
         public virtual ICollection<MED_PacienteModulo> MED_PacienteModulo { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MED_Solicita_Medicamento_Nuevo> MED_Solicita_Medicamento_Nuevo { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PRO_Alimento_Paciente> PRO_Alimento_Paciente { get; set; }
     }
 }

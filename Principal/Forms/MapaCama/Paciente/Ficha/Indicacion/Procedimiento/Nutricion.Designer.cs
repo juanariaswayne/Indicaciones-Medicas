@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Nutricion));
             this.panelPosologia = new MetroFramework.Controls.MetroPanel();
+            this.btnAgregarPlan = new MetroFramework.Controls.MetroTile();
             this.groupSuspender = new System.Windows.Forms.GroupBox();
             this.chckSuspender = new MetroFramework.Controls.MetroCheckBox();
             this.txtSuspenderMotivo = new MetroFramework.Controls.MetroTextBox();
@@ -79,6 +80,7 @@
             this.lblVelocidadEnteral = new MetroFramework.Controls.MetroLabel();
             this.lblAlimento = new MetroFramework.Controls.MetroLabel();
             this.groupOral = new System.Windows.Forms.GroupBox();
+            this.chboxAstringente = new MetroFramework.Controls.MetroCheckBox();
             this.chckHepatoProtector = new MetroFramework.Controls.MetroCheckBox();
             this.chckHipercalorica = new MetroFramework.Controls.MetroCheckBox();
             this.chckHipocalorica = new MetroFramework.Controls.MetroCheckBox();
@@ -115,6 +117,7 @@
             // 
             // panelPosologia
             // 
+            this.panelPosologia.Controls.Add(this.btnAgregarPlan);
             this.panelPosologia.Controls.Add(this.groupSuspender);
             this.panelPosologia.Controls.Add(this.groupObservacion);
             this.panelPosologia.Controls.Add(this.groupEnteral);
@@ -124,18 +127,31 @@
             this.panelPosologia.HorizontalScrollbarSize = 10;
             this.panelPosologia.Location = new System.Drawing.Point(12, 54);
             this.panelPosologia.Name = "panelPosologia";
-            this.panelPosologia.Size = new System.Drawing.Size(1244, 413);
+            this.panelPosologia.Size = new System.Drawing.Size(1244, 539);
             this.panelPosologia.TabIndex = 0;
             this.panelPosologia.VerticalScrollbarBarColor = true;
             this.panelPosologia.VerticalScrollbarHighlightOnWheel = false;
             this.panelPosologia.VerticalScrollbarSize = 10;
+            // 
+            // btnAgregarPlan
+            // 
+            this.btnAgregarPlan.ActiveControl = null;
+            this.btnAgregarPlan.Location = new System.Drawing.Point(17, 268);
+            this.btnAgregarPlan.Name = "btnAgregarPlan";
+            this.btnAgregarPlan.Size = new System.Drawing.Size(177, 40);
+            this.btnAgregarPlan.Style = MetroFramework.MetroColorStyle.Orange;
+            this.btnAgregarPlan.TabIndex = 83;
+            this.btnAgregarPlan.Text = "Consultar/Establecer plan";
+            this.btnAgregarPlan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAgregarPlan.UseSelectable = true;
+            this.btnAgregarPlan.Click += new System.EventHandler(this.btnAgregarPlan_Click);
             // 
             // groupSuspender
             // 
             this.groupSuspender.Controls.Add(this.chckSuspender);
             this.groupSuspender.Controls.Add(this.txtSuspenderMotivo);
             this.groupSuspender.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupSuspender.Location = new System.Drawing.Point(17, 347);
+            this.groupSuspender.Location = new System.Drawing.Point(17, 438);
             this.groupSuspender.Name = "groupSuspender";
             this.groupSuspender.Size = new System.Drawing.Size(1145, 60);
             this.groupSuspender.TabIndex = 69;
@@ -189,7 +205,7 @@
             // 
             this.groupObservacion.Controls.Add(this.txtObservacion);
             this.groupObservacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupObservacion.Location = new System.Drawing.Point(17, 268);
+            this.groupObservacion.Location = new System.Drawing.Point(17, 340);
             this.groupObservacion.Name = "groupObservacion";
             this.groupObservacion.Size = new System.Drawing.Size(1145, 73);
             this.groupObservacion.TabIndex = 67;
@@ -999,7 +1015,7 @@
             this.radioYeyu.AutoSize = true;
             this.radioYeyu.Location = new System.Drawing.Point(218, 2);
             this.radioYeyu.Name = "radioYeyu";
-            this.radioYeyu.Size = new System.Drawing.Size(99, 15);
+            this.radioYeyu.Size = new System.Drawing.Size(98, 15);
             this.radioYeyu.Style = MetroFramework.MetroColorStyle.Orange;
             this.radioYeyu.TabIndex = 91;
             this.radioYeyu.Text = "Yeyunostomia";
@@ -1056,6 +1072,7 @@
             // 
             // groupOral
             // 
+            this.groupOral.Controls.Add(this.chboxAstringente);
             this.groupOral.Controls.Add(this.chckHepatoProtector);
             this.groupOral.Controls.Add(this.chckHipercalorica);
             this.groupOral.Controls.Add(this.chckHipocalorica);
@@ -1083,6 +1100,17 @@
             this.groupOral.TabIndex = 2;
             this.groupOral.TabStop = false;
             this.groupOral.Text = "Oral";
+            // 
+            // chboxAstringente
+            // 
+            this.chboxAstringente.AutoSize = true;
+            this.chboxAstringente.Location = new System.Drawing.Point(209, 22);
+            this.chboxAstringente.Name = "chboxAstringente";
+            this.chboxAstringente.Size = new System.Drawing.Size(84, 15);
+            this.chboxAstringente.TabIndex = 101;
+            this.chboxAstringente.Text = "Astringente";
+            this.chboxAstringente.UseSelectable = true;
+            this.chboxAstringente.CheckedChanged += new System.EventHandler(this.chboxAstringente_CheckedChanged);
             // 
             // chckHepatoProtector
             // 
@@ -1177,7 +1205,7 @@
             this.chckDBT.AutoSize = true;
             this.chckDBT.Location = new System.Drawing.Point(9, 229);
             this.chckDBT.Name = "chckDBT";
-            this.chckDBT.Size = new System.Drawing.Size(55, 15);
+            this.chckDBT.Size = new System.Drawing.Size(54, 15);
             this.chckDBT.Style = MetroFramework.MetroColorStyle.Orange;
             this.chckDBT.TabIndex = 92;
             this.chckDBT.Text = "P DBT";
@@ -1316,7 +1344,7 @@
             // btnModificar
             // 
             this.btnModificar.ActiveControl = null;
-            this.btnModificar.Location = new System.Drawing.Point(880, 467);
+            this.btnModificar.Location = new System.Drawing.Point(880, 599);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(93, 40);
             this.btnModificar.Style = MetroFramework.MetroColorStyle.Orange;
@@ -1329,7 +1357,7 @@
             // btnSalir
             // 
             this.btnSalir.ActiveControl = null;
-            this.btnSalir.Location = new System.Drawing.Point(1088, 467);
+            this.btnSalir.Location = new System.Drawing.Point(1081, 599);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(93, 40);
             this.btnSalir.Style = MetroFramework.MetroColorStyle.Red;
@@ -1342,7 +1370,7 @@
             // btnGuardar
             // 
             this.btnGuardar.ActiveControl = null;
-            this.btnGuardar.Location = new System.Drawing.Point(979, 467);
+            this.btnGuardar.Location = new System.Drawing.Point(979, 599);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(93, 40);
             this.btnGuardar.Style = MetroFramework.MetroColorStyle.Orange;
@@ -1356,7 +1384,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1262, 508);
+            this.ClientSize = new System.Drawing.Size(1262, 662);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnModificar);
@@ -1463,5 +1491,7 @@
         private MetroFramework.Controls.MetroTextBox txtHorario1;
         private MetroFramework.Controls.MetroTextBox txtVelocidad1;
         private MetroFramework.Controls.MetroTile btnGuardar;
+        private MetroFramework.Controls.MetroCheckBox chboxAstringente;
+        private MetroFramework.Controls.MetroTile btnAgregarPlan;
     }
 }

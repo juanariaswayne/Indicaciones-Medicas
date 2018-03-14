@@ -707,13 +707,6 @@
     <Property Name="aditivo_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Aditivo" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
   </EntityType>
-  <EntityType Name="PRO_Alimento">
-    <Key>
-      <PropertyRef Name="alimento_id" />
-    </Key>
-    <Property Name="alimento_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-  </EntityType>
   <EntityType Name="PRO_Asociacion_Procedimiento">
     <Key>
       <PropertyRef Name="id" />
@@ -1584,7 +1577,6 @@
     <EntitySet Name="PertenenciasPaciente" EntityType="Self.PertenenciasPaciente" />
     <EntitySet Name="Piso" EntityType="Self.Piso" />
     <EntitySet Name="PRO_Aditivos" EntityType="Self.PRO_Aditivos" />
-    <EntitySet Name="PRO_Alimento" EntityType="Self.PRO_Alimento" />
     <EntitySet Name="PRO_Asociacion_Procedimiento" EntityType="Self.PRO_Asociacion_Procedimiento" />
     <EntitySet Name="PRO_Colocacion_Via_Periferica" EntityType="Self.PRO_Colocacion_Via_Periferica" />
     <EntitySet Name="PRO_Cuidado_Oral" EntityType="Self.PRO_Cuidado_Oral" />
@@ -2172,6 +2164,21 @@
     <AssociationSet Name="FK_PRO_SuministroDeProcedimiento_Historico_PRO_SuministroDeProcedimiento" Association="SISTMEDModel.FK_PRO_SuministroDeProcedimiento_Historico_PRO_SuministroDeProcedimiento">
       <End Role="PRO_SuministroDeProcedimiento" EntitySet="PRO_SuministroDeProcedimiento" />
       <End Role="PRO_SuministroDeProcedimiento_Historico" EntitySet="PRO_SuministroDeProcedimiento_Historico" />
+    </AssociationSet>
+    <EntitySet Name="PRO_Alimento_Horarios_Administracion" EntityType="SISTMEDModel.PRO_Alimento_Horarios_Administracion" />
+    <EntitySet Name="PRO_Alimento" EntityType="SISTMEDModel.PRO_Alimento" />
+    <EntitySet Name="PRO_Alimento_Paciente" EntityType="SISTMEDModel.PRO_Alimento_Paciente" />
+    <AssociationSet Name="FK__PRO_Alime__id_pa__014A0122" Association="SISTMEDModel.FK__PRO_Alime__id_pa__014A0122">
+      <End Role="Pacientes" EntitySet="Pacientes" />
+      <End Role="PRO_Alimento_Paciente" EntitySet="PRO_Alimento_Paciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PRO_Alime__id_al__023E255B" Association="SISTMEDModel.FK__PRO_Alime__id_al__023E255B">
+      <End Role="PRO_Alimento" EntitySet="PRO_Alimento" />
+      <End Role="PRO_Alimento_Paciente" EntitySet="PRO_Alimento_Paciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PRO_Alime__id_ho__03324994" Association="SISTMEDModel.FK__PRO_Alime__id_ho__03324994">
+      <End Role="PRO_Alimento_Horarios_Administracion" EntitySet="PRO_Alimento_Horarios_Administracion" />
+      <End Role="PRO_Alimento_Paciente" EntitySet="PRO_Alimento_Paciente" />
     </AssociationSet>
   </EntityContainer>
   <ComplexType Name="Get_Paciente_Por_Sede_Result">
@@ -3187,6 +3194,7 @@
     <Property Name="ml_frasco2" Type="Int32" />
     <Property Name="ml_frasco3" Type="Int32" />
     <Property Name="ml_frasco4" Type="Int32" />
+    <Property Name="astringente" Type="Boolean" />
   </EntityType>
   <EntityType Name="PRO_PHPV2">
     <Key>
@@ -4159,6 +4167,7 @@
     <NavigationProperty Name="MED_Diagnosticos" Relationship="SISTMEDModel.FK_Pacientes_MED_Diagnosticos" FromRole="Pacientes" ToRole="MED_Diagnosticos" />
     <NavigationProperty Name="MED_PacienteModulo" Relationship="SISTMEDModel.FK_MED_PacienteModulo_Pacientes" FromRole="Pacientes" ToRole="MED_PacienteModulo" />
     <NavigationProperty Name="MED_Solicita_Medicamento_Nuevo" Relationship="SISTMEDModel.FK_MED_Solicita_Medicamento_Nuevo_Pacientes" FromRole="Pacientes" ToRole="MED_Solicita_Medicamento_Nuevo" />
+    <NavigationProperty Name="PRO_Alimento_Paciente" Relationship="SISTMEDModel.FK__PRO_Alime__id_pa__014A0122" FromRole="Pacientes" ToRole="PRO_Alimento_Paciente" />
   </EntityType>
   <Association Name="FK_Archivos_Paciente_Pacientes">
     <End Type="SISTMEDModel.Pacientes" Role="Pacientes" Multiplicity="0..1" />
@@ -4543,6 +4552,72 @@
       </Principal>
       <Dependent Role="PRO_SuministroDeProcedimiento_Historico">
         <PropertyRef Name="suministro_original" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="PRO_Alimento_Horarios_Administracion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PRO_Alimento_Paciente" Relationship="SISTMEDModel.FK__PRO_Alime__id_ho__03324994" FromRole="PRO_Alimento_Horarios_Administracion" ToRole="PRO_Alimento_Paciente" />
+  </EntityType>
+  <EntityType Name="PRO_Alimento">
+    <Key>
+      <PropertyRef Name="alimento_id" />
+    </Key>
+    <Property Name="alimento_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PRO_Alimento_Paciente" Relationship="SISTMEDModel.FK__PRO_Alime__id_al__023E255B" FromRole="PRO_Alimento" ToRole="PRO_Alimento_Paciente" />
+  </EntityType>
+  <EntityType Name="PRO_Alimento_Paciente">
+    <Key>
+      <PropertyRef Name="id_paciente" />
+      <PropertyRef Name="id_alimento" />
+      <PropertyRef Name="id_horario_administracion" />
+    </Key>
+    <Property Name="id_paciente" Type="Int32" Nullable="false" />
+    <Property Name="id_alimento" Type="Int32" Nullable="false" />
+    <Property Name="id_horario_administracion" Type="Int32" Nullable="false" />
+    <Property Name="observacion" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Pacientes" Relationship="SISTMEDModel.FK__PRO_Alime__id_pa__014A0122" FromRole="PRO_Alimento_Paciente" ToRole="Pacientes" />
+    <NavigationProperty Name="PRO_Alimento" Relationship="SISTMEDModel.FK__PRO_Alime__id_al__023E255B" FromRole="PRO_Alimento_Paciente" ToRole="PRO_Alimento" />
+    <NavigationProperty Name="PRO_Alimento_Horarios_Administracion" Relationship="SISTMEDModel.FK__PRO_Alime__id_ho__03324994" FromRole="PRO_Alimento_Paciente" ToRole="PRO_Alimento_Horarios_Administracion" />
+  </EntityType>
+  <Association Name="FK__PRO_Alime__id_pa__014A0122">
+    <End Type="SISTMEDModel.Pacientes" Role="Pacientes" Multiplicity="1" />
+    <End Type="SISTMEDModel.PRO_Alimento_Paciente" Role="PRO_Alimento_Paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pacientes">
+        <PropertyRef Name="paciente_id" />
+      </Principal>
+      <Dependent Role="PRO_Alimento_Paciente">
+        <PropertyRef Name="id_paciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PRO_Alime__id_al__023E255B">
+    <End Type="SISTMEDModel.PRO_Alimento" Role="PRO_Alimento" Multiplicity="1" />
+    <End Type="SISTMEDModel.PRO_Alimento_Paciente" Role="PRO_Alimento_Paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRO_Alimento">
+        <PropertyRef Name="alimento_id" />
+      </Principal>
+      <Dependent Role="PRO_Alimento_Paciente">
+        <PropertyRef Name="id_alimento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PRO_Alime__id_ho__03324994">
+    <End Type="SISTMEDModel.PRO_Alimento_Horarios_Administracion" Role="PRO_Alimento_Horarios_Administracion" Multiplicity="1" />
+    <End Type="SISTMEDModel.PRO_Alimento_Paciente" Role="PRO_Alimento_Paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRO_Alimento_Horarios_Administracion">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="PRO_Alimento_Paciente">
+        <PropertyRef Name="id_horario_administracion" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

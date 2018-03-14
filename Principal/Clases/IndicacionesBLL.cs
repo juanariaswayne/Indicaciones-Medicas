@@ -222,41 +222,105 @@ namespace Principal.Clases
         public class Paciente
         {
             SISTMEDEntities _Mod = new SISTMEDEntities();
-            public bool IngresaPaciente(Pacientes _pac, List<MED_PacienteModulo> _listModPac ,Int32 _listaEsperaId)
+            public bool IngresaPaciente(Pacientes _pac, List<MED_PacienteModulo> _listModPac ,Int32 _listaEsperaId, bool _reingreso, int _pacienteIdIM)
             {
                 using (var dbContextTransaction = _Mod.Database.BeginTransaction())
                 {
                     try
                     {
-                        //ESTAS 2 LINEAS DE ABAJO ES IMPORTANTE PARA PODER MODIFICAR SOLO ALGUNOS CAMPOS
-                        _Mod.Configuration.AutoDetectChangesEnabled = false;
-                        _Mod.Configuration.ValidateOnSaveEnabled = false;
-
-                        // ******   INSERTO EN TABLA PACIENTE ****************
-                        _Mod.Pacientes.Add(_pac);
-
-                        // ******  AHORA INSERTO LOS MODULOS SELECCIONADOS ************
-                        foreach (MED_PacienteModulo item in _listModPac)
+                        if (!_reingreso)
                         {
-                            item.paciente_id = _pac.paciente_id; //ESTO PORQUE EL EF DEVUELVE EL ID CREAEDO EN EL MISMO OBJETO
-                            _Mod.MED_PacienteModulo.Add(item);
 
+                            //ESTAS 2 LINEAS DE ABAJO ES IMPORTANTE PARA PODER MODIFICAR SOLO ALGUNOS CAMPOS
+                            _Mod.Configuration.AutoDetectChangesEnabled = false;
+                            _Mod.Configuration.ValidateOnSaveEnabled = false;
+
+                            // ******   INSERTO EN TABLA PACIENTE ****************
+                            _Mod.Pacientes.Add(_pac);
+
+                            // ******  AHORA INSERTO LOS MODULOS SELECCIONADOS ************
+                            foreach (MED_PacienteModulo item in _listModPac)
+                            {
+                                item.paciente_id = _pac.paciente_id; //ESTO PORQUE EL EF DEVUELVE EL ID CREAEDO EN EL MISMO OBJETO
+                                _Mod.MED_PacienteModulo.Add(item);
+
+                            }
+                            // ***** AHORA ACTUALIZO LA TABLA MED_LISTAESPERA, PARA MARCAR QUE EGRESÓ *****
+                            MED_ListaEspera _espera = new MED_ListaEspera();
+                            _espera.fechaEgreso = Convert.ToDateTime(DateTime.Now); //fecha de egreso
+                                                                                    //_espera.obs = obs;                                      // OJOOOO VER SI ESTO ESTA BIEN DE MODIFICAR LAS OBS 
+                            _espera.espera_id = _listaEsperaId;                     // id lista espera
+                            _espera.habitacion_id = _pac.habitacion_id;             // habitacion id.. puede venir en null
+
+                            //AHORA MARCO LOS CAMPOS QUE SE MODIFICAN
+                            _Mod.MED_ListaEspera.Attach(_espera);
+                            _Mod.Entry(_espera).Property(m => m.fechaEgreso).IsModified = true;
+                            _Mod.Entry(_espera).Property(m => m.habitacion_id).IsModified = true;
+
+                            // **** ACTUALIZO LAS TABLAS
+                            _Mod.SaveChanges();
+                            dbContextTransaction.Commit();
+                            return true;
                         }
-                        // ***** AHORA ACTUALIZO LA TABLA MED_LISTAESPERA, PARA MARCAR QUE EGRESÓ *****
-                        MED_ListaEspera _espera = new MED_ListaEspera();
-                        _espera.fechaEgreso = Convert.ToDateTime(DateTime.Now); //fecha de egreso
-                        //_espera.obs = obs;                                      // OJOOOO VER SI ESTO ESTA BIEN DE MODIFICAR LAS OBS 
-                        _espera.espera_id = _listaEsperaId;                     // id lista espera
-                        _espera.habitacion_id = _pac.habitacion_id;             // habitacion id.. puede venir en null
 
-                        //AHORA MARCO LOS CAMPOS QUE SE MODIFICAN
-                        _Mod.MED_ListaEspera.Attach(_espera);
-                        _Mod.Entry(_espera).Property(m => m.fechaEgreso).IsModified = true;
-                        _Mod.Entry(_espera).Property(m => m.habitacion_id).IsModified = true;
+                        // *************  ES UN REINGRESO ****************************************
+                        if(_reingreso)
+                        {
+                            //ESTAS 2 LINEAS DE ABAJO ES IMPORTANTE PARA PODER MODIFICAR SOLO ALGUNOS CAMPOS
+                            _Mod.Configuration.AutoDetectChangesEnabled = false;
+                            _Mod.Configuration.ValidateOnSaveEnabled = false;
 
-                        // **** ACTUALIZO LAS TABLAS
-                        _Mod.SaveChanges();
-                        dbContextTransaction.Commit();
+                            //ACTUALIZO LA TABLA DE PACIENTES
+                            _pac.paciente_id = _pacienteIdIM;
+                            
+                            _Mod.Pacientes.Attach(_pac);
+                            _Mod.Entry(_pac).Property(m => m.habitacion_id).IsModified = true;
+                            _Mod.Entry(_pac).Property(m => m.fechaIngreso).IsModified = true;
+                            _Mod.Entry(_pac).Property(m => m.responsabe).IsModified = true;
+                            _Mod.Entry(_pac).Property(m => m.vinculo).IsModified = true;
+                            _Mod.Entry(_pac).Property(m => m.telefono).IsModified = true;
+                            _Mod.Entry(_pac).Property(m => m.diagnostico_id).IsModified = true;
+                            _Mod.Entry(_pac).Property(m => m.sede_id).IsModified = true;
+                            _Mod.Entry(_pac).Property(m => m.usuario_id).IsModified = true;
+
+                            //BORRO TODOS LOS MODULOS ASIGNADOS ANTERIORMENTE
+                            //PRIMERO BORRO LOS QUE TENGA ASIGNADO
+                            var _removeModulo = (from F in _Mod.MED_PacienteModulo where F.paciente_id == _pacienteIdIM select F).ToList();
+                            foreach (var item in _removeModulo)
+                            {
+                                _Mod.MED_PacienteModulo.Remove(item);
+
+                            }
+
+                            //FIN BORRA MODULOS
+
+                            // ******  AHORA INSERTO LOS MODULOS SELECCIONADOS ************
+                            foreach (MED_PacienteModulo item in _listModPac)
+                            {
+                                item.paciente_id = _pac.paciente_id; //ESTO PORQUE EL EF DEVUELVE EL ID CREAEDO EN EL MISMO OBJETO
+                                _Mod.MED_PacienteModulo.Add(item);
+
+                            }
+
+                            // ***** AHORA ACTUALIZO LA TABLA MED_LISTAESPERA, PARA MARCAR QUE EGRESÓ *****
+                            MED_ListaEspera _espera = new MED_ListaEspera();
+                            _espera.fechaEgreso = Convert.ToDateTime(DateTime.Now); //fecha de egreso
+                            //_espera.obs = obs;       // OJOOOO VER SI ESTO ESTA BIEN DE MODIFICAR LAS OBS 
+                            _espera.espera_id = _listaEsperaId;                     // id lista espera
+                            _espera.habitacion_id = _pac.habitacion_id;             // habitacion id.. puede venir en null
+
+                            //AHORA MARCO LOS CAMPOS QUE SE MODIFICAN
+                            _Mod.MED_ListaEspera.Attach(_espera);
+                            _Mod.Entry(_espera).Property(m => m.fechaEgreso).IsModified = true;
+                            _Mod.Entry(_espera).Property(m => m.habitacion_id).IsModified = true;
+
+                            // **** ACTUALIZO LAS TABLAS
+                            _Mod.SaveChanges();
+                            dbContextTransaction.Commit();
+
+                            return true;
+                        }
+
                         return true;
                     }
 

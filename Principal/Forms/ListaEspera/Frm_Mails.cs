@@ -102,7 +102,7 @@ namespace Principal.Forms.ListaEspera
         {
             try
             {
-                var _list = (from M in _Mod.MED_Mails where M.sede_id == _sede && M.sector_id == _sector orderby M.email select M).ToList();
+                var _list = (from M in _Mod.MED_Mails where M.sede_id == _sede && M.sector_id == _sector  orderby M.email select M).ToList();
 
                 dataGridViewMails.Rows.Clear();
                 int indice = 0;
@@ -221,13 +221,17 @@ namespace Principal.Forms.ListaEspera
                     {
                         for (int i = 0; i < dataGridViewMails.Rows.Count -1; i++)
                         {
-                            _email = new MED_Mails();
-                            _email.sede_id = Convert.ToInt32(comboBoxSede.SelectedValue);
-                            _email.sector_id = Convert.ToInt32(comboBoxSectores.SelectedValue);
-                            _email.inactivo = Convert.ToBoolean(dataGridViewMails.Rows[i].Cells[(int)Col_Mails.COL_INACTIVO].Value);
-                            _email.email = dataGridViewMails.Rows[i].Cells[(int)Col_Mails.COL_EMAIL].Value.ToString();
-                            _email.nombre = dataGridViewMails.Rows[i].Cells[(int)Col_Mails.COL_NOMBRE].Value.ToString();
-                            _listaMail.Add(_email);
+                            DataGridViewCheckBoxCell cellSelecion = dataGridViewMails.Rows[i].Cells[(int)Col_Mails.COL_INACTIVO] as DataGridViewCheckBoxCell;
+                            if (!Convert.ToBoolean(cellSelecion.Value))
+                            {
+                                _email = new MED_Mails();
+                                _email.sede_id = Convert.ToInt32(comboBoxSede.SelectedValue);
+                                _email.sector_id = Convert.ToInt32(comboBoxSectores.SelectedValue);
+                                _email.inactivo = Convert.ToBoolean(dataGridViewMails.Rows[i].Cells[(int)Col_Mails.COL_INACTIVO].Value);
+                                _email.email = dataGridViewMails.Rows[i].Cells[(int)Col_Mails.COL_EMAIL].Value.ToString();
+                                _email.nombre = dataGridViewMails.Rows[i].Cells[(int)Col_Mails.COL_NOMBRE].Value.ToString();
+                                _listaMail.Add(_email);
+                            }
                         }
 
                        if(_listaMail.Count > 0)
@@ -236,7 +240,7 @@ namespace Principal.Forms.ListaEspera
                             if( _guardar.IngresaMail(_listaMail, Convert.ToInt32(comboBoxSede.SelectedValue), Convert.ToInt32(comboBoxSectores.SelectedValue)))
                             {
                                 MessageBox.Show("Emails guardados correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                                TraerMails(Convert.ToInt32(comboBoxSede.SelectedValue), Convert.ToInt32(comboBoxSectores.SelectedValue));
                             }
                             else
                             {

@@ -83,5 +83,6 @@ namespace Principal
         public Nullable<int> ml_frasco2 { get; set; }
         public Nullable<int> ml_frasco3 { get; set; }
         public Nullable<int> ml_frasco4 { get; set; }
+        public Nullable<bool> astringente { get; set; }
     }
 }

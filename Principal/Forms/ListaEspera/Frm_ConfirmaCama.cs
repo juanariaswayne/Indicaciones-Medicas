@@ -17,6 +17,7 @@ namespace Principal.Forms.ListaEspera
         #region Variables
         SISTMEDEntities _Mod = new SISTMEDEntities();
         private int _listaEsperaId;
+    
 
         public int ListaEsperaId
         {
@@ -30,6 +31,7 @@ namespace Principal.Forms.ListaEspera
                 _listaEsperaId = value;
             }
         }
+
         #endregion
 
         #region Funciones
@@ -230,6 +232,8 @@ namespace Principal.Forms.ListaEspera
         {
             dateTimePickerConfirma.Value = DateTime.Now;
             CargarSedes();
+          
+        
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -275,42 +279,48 @@ namespace Principal.Forms.ListaEspera
                 if(ValidaConfirmacion())
                 {
                     MED_ListaEspera _espera = new MED_ListaEspera();
-                    _espera.confirmaCama = true;
-                    _espera.espera_id = _listaEsperaId;
-                    _espera.sedeSugerida = Convert.ToInt32(comboBoxSede.SelectedValue);
-                    _espera.responsable = textBoxResponsable.Text;
-                    _espera.vinculo = textBoxVinculo.Text;
-                    _espera.telefonos = textBoxTelefonos.Text;
-                    _espera.fechaConfirmacionCama = dateTimePickerConfirma.Value;
-                    if(cboHabitacionDesocupada.SelectedIndex > 0)
-                    {
-                        _espera.habitacion_id = Convert.ToInt32(cboHabitacionDesocupada.SelectedValue);
-                    }
+                 
+                        _espera.confirmaCama = true;
+                        _espera.espera_id = _listaEsperaId;
+                        _espera.sedeSugerida = Convert.ToInt32(comboBoxSede.SelectedValue);
+                        _espera.responsable = textBoxResponsable.Text;
+                        _espera.vinculo = textBoxVinculo.Text;
+                        _espera.telefonos = textBoxTelefonos.Text;
+                        _espera.fechaConfirmacionCama = dateTimePickerConfirma.Value;
+                        if (cboHabitacionDesocupada.SelectedIndex > 0)
+                        {
+                            _espera.habitacion_id = Convert.ToInt32(cboHabitacionDesocupada.SelectedValue);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Debe seleccionar una habitación", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            return;
+                        }
 
-                    //ESTAS 2 LINEAS DE ABAJO ES IMPORTANTE PARA PODER MODIFICAR SOLO ALGUNOS CAMPOS
-                    _Mod.Configuration.AutoDetectChangesEnabled = false;
-                    _Mod.Configuration.ValidateOnSaveEnabled = false;
+                        //ESTAS 2 LINEAS DE ABAJO ES IMPORTANTE PARA PODER MODIFICAR SOLO ALGUNOS CAMPOS
+                        _Mod.Configuration.AutoDetectChangesEnabled = false;
+                        _Mod.Configuration.ValidateOnSaveEnabled = false;
 
-                    //AHORA MARCO LOS CAMPOS QUE SE MODIFICAN
-                    _Mod.MED_ListaEspera.Attach(_espera);
+                        //AHORA MARCO LOS CAMPOS QUE SE MODIFICAN
+                        _Mod.MED_ListaEspera.Attach(_espera);
 
-                    _Mod.Entry(_espera).Property(m => m.confirmaCama).IsModified = true;
-                    _Mod.Entry(_espera).Property(m => m.sedeSugerida).IsModified = true;
-                    _Mod.Entry(_espera).Property(m => m.responsable).IsModified = true;
-                    _Mod.Entry(_espera).Property(m => m.vinculo).IsModified = true;
-                    _Mod.Entry(_espera).Property(m => m.telefonos).IsModified = true;
-                    _Mod.Entry(_espera).Property(m => m.fechaConfirmacionCama).IsModified = true;
-                    if (cboHabitacionDesocupada.SelectedIndex > 0)
-                    {
-                        _Mod.Entry(_espera).Property(m => m.habitacion_id).IsModified = true;
-                    }
+                        _Mod.Entry(_espera).Property(m => m.confirmaCama).IsModified = true;
+                        _Mod.Entry(_espera).Property(m => m.sedeSugerida).IsModified = true;
+                        _Mod.Entry(_espera).Property(m => m.responsable).IsModified = true;
+                        _Mod.Entry(_espera).Property(m => m.vinculo).IsModified = true;
+                        _Mod.Entry(_espera).Property(m => m.telefonos).IsModified = true;
+                        _Mod.Entry(_espera).Property(m => m.fechaConfirmacionCama).IsModified = true;
+                        //if (cboHabitacionDesocupada.SelectedIndex > 0)
+                        //{
+                            _Mod.Entry(_espera).Property(m => m.habitacion_id).IsModified = true;
+                        //}
 
-                    _Mod.SaveChanges();
-                    MessageBox.Show("Cama confirmada correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    EnviarMail(_listaEsperaId);
-                    Close();
+                        _Mod.SaveChanges();
+                        MessageBox.Show("Cama confirmada correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        EnviarMail(_listaEsperaId);
+                        Close();
 
-
+                    
                 }
 
             }

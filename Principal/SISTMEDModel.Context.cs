@@ -67,7 +67,6 @@ namespace Principal
         public virtual DbSet<PertenenciasPaciente> PertenenciasPaciente { get; set; }
         public virtual DbSet<Piso> Piso { get; set; }
         public virtual DbSet<PRO_Aditivos> PRO_Aditivos { get; set; }
-        public virtual DbSet<PRO_Alimento> PRO_Alimento { get; set; }
         public virtual DbSet<PRO_Asociacion_Procedimiento> PRO_Asociacion_Procedimiento { get; set; }
         public virtual DbSet<PRO_Colocacion_Via_Periferica> PRO_Colocacion_Via_Periferica { get; set; }
         public virtual DbSet<PRO_Cuidado_Oral> PRO_Cuidado_Oral { get; set; }
@@ -128,6 +127,9 @@ namespace Principal
         public virtual DbSet<Pacientes> Pacientes { get; set; }
         public virtual DbSet<PRO_SuministroDeProcedimiento> PRO_SuministroDeProcedimiento { get; set; }
         public virtual DbSet<PRO_SuministroDeProcedimiento_Historico> PRO_SuministroDeProcedimiento_Historico { get; set; }
+        public virtual DbSet<PRO_Alimento_Horarios_Administracion> PRO_Alimento_Horarios_Administracion { get; set; }
+        public virtual DbSet<PRO_Alimento> PRO_Alimento { get; set; }
+        public virtual DbSet<PRO_Alimento_Paciente> PRO_Alimento_Paciente { get; set; }
     
         [DbFunction("SISTMEDEntities", "TraeMedicamentosUnificado")]
         public virtual IQueryable<TraeMedicamentosUnificado_Result> TraeMedicamentosUnificado(Nullable<int> paciente_id)

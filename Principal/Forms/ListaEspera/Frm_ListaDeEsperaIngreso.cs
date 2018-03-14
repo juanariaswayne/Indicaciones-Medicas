@@ -834,6 +834,11 @@ namespace Principal.Forms.ListaEspera
             {
                 _frmEgrego.ListaEsperaId = _listaEsperaUpdate;
                 _frmEgrego.Text = TextBoxApellido.Text + " " + TextBoxNombre.Text;
+                // MARCO SI ES UN REINGRESO, TIPO DNI Y NRO DNI
+                _frmEgrego.EsReingreso = Convert.ToBoolean(dataGridViewListaEspera.Rows[dataGridViewListaEspera.CurrentCell.RowIndex].Cells[(int)Col_ListaEspera.COL_ESREINGRESO].Value);
+                _frmEgrego.TipoDoc = Convert.ToInt32(dataGridViewListaEspera.Rows[dataGridViewListaEspera.CurrentCell.RowIndex].Cells[(int)Col_ListaEspera.COL_TIPODOC].Value);
+                _frmEgrego.NroDoc = Convert.ToInt32(dataGridViewListaEspera.Rows[dataGridViewListaEspera.CurrentCell.RowIndex].Cells[(int)Col_ListaEspera.COL_NRODOC].Value);
+
                 _frmEgrego.ShowDialog();
 
                 NuevoIngreso();
@@ -873,6 +878,9 @@ namespace Principal.Forms.ListaEspera
                     TraeListaEspera(true, false);
 
                 }
+            
+
+
             }
             else
             {

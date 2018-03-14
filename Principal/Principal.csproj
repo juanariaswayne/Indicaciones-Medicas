@@ -33,7 +33,7 @@
     <MinimumRequiredVersion>1.0.1.20</MinimumRequiredVersion>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>34</ApplicationRevision>
+    <ApplicationRevision>35</ApplicationRevision>
     <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -106,13 +106,15 @@
     </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\METRO DLL 1.4\MetroFramework.dll</HintPath>
+      <HintPath>..\..\METRO DLL 1.4\MetroFramework.dll</HintPath>
     </Reference>
-    <Reference Include="MetroFramework.Design">
-      <HintPath>\\192.168.2.50\Camas\METRO DLL 1.4\MetroFramework.Design.dll</HintPath>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\METRO DLL 1.4\MetroFramework.Design.dll</HintPath>
     </Reference>
-    <Reference Include="MetroFramework.Fonts">
-      <HintPath>\\192.168.2.50\Camas\METRO DLL 1.4\MetroFramework.Fonts.dll</HintPath>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\METRO DLL 1.4\MetroFramework.Fonts.dll</HintPath>
     </Reference>
     <Reference Include="Neodynamic.SDK.ThermalLabel, Version=7.0.3500.0, Culture=neutral, PublicKeyToken=0630b9b3415848af, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -299,11 +301,29 @@
     <Compile Include="Forms\ListaEspera\Frm_VisorListaEspera.Designer.cs">
       <DependentUpon>Frm_VisorListaEspera.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MapaCama\Frm_ImprimirPlanillaNutricion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Frm_ImprimirPlanillaNutricion.Designer.cs">
+      <DependentUpon>Frm_ImprimirPlanillaNutricion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\PrimeraVez.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\PrimeraVez.Designer.cs">
       <DependentUpon>PrimeraVez.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\AgregarPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\AgregarPlan.Designer.cs">
+      <DependentUpon>AgregarPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\FrmAgregarAlimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\FrmAgregarAlimentos.Designer.cs">
+      <DependentUpon>FrmAgregarAlimentos.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\PHPV2.cs">
       <SubType>Form</SubType>
@@ -858,6 +878,12 @@
     <Compile Include="PRO_Alimento.cs">
       <DependentUpon>SISTMEDModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="PRO_Alimento_Horarios_Administracion.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRO_Alimento_Paciente.cs">
+      <DependentUpon>SISTMEDModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="PRO_Asociacion_Procedimiento.cs">
       <DependentUpon>SISTMEDModel.tt</DependentUpon>
     </Compile>
@@ -1169,6 +1195,9 @@
     <EmbeddedResource Include="Forms\MapaCama\DetalleMedicacion.resx">
       <DependentUpon>DetalleMedicacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Frm_ImprimirPlanillaNutricion.resx">
+      <DependentUpon>Frm_ImprimirPlanillaNutricion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MapaCama\PacientesDeAlta.resx">
       <DependentUpon>PacientesDeAlta.cs</DependentUpon>
     </EmbeddedResource>
@@ -1208,8 +1237,14 @@
     <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\PrimeraVez.resx">
       <DependentUpon>PrimeraVez.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\AgregarPlan.resx">
+      <DependentUpon>AgregarPlan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\CuidadoOral.resx">
       <DependentUpon>CuidadoOral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\FrmAgregarAlimentos.resx">
+      <DependentUpon>FrmAgregarAlimentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MapaCama\Paciente\Ficha\Indicacion\Procedimiento\PHPV2.resx">
       <DependentUpon>PHPV2.cs</DependentUpon>

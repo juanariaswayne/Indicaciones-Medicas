@@ -13,7 +13,9 @@ namespace Principal.Forms.ListaEspera
     {
         #region Variables
         private int _listaEsperaId;
-
+        private bool _esReingreso;
+        private int _tipoDoc;
+        private int _nroDoc;
 
         public int ListaEsperaId
         {
@@ -28,6 +30,9 @@ namespace Principal.Forms.ListaEspera
             }
         }
 
+        public bool EsReingreso { get => _esReingreso; set => _esReingreso = value; }
+        public int TipoDoc { get => _tipoDoc; set => _tipoDoc = value; }
+        public int NroDoc { get => _nroDoc; set => _nroDoc = value; }
 
         SISTMEDEntities _Mod = new SISTMEDEntities();
 
@@ -119,6 +124,8 @@ namespace Principal.Forms.ListaEspera
             comboBoxTipoEgreso.SelectedIndex = 0;
             comboBoxMotivoEgreso.Visible = false;
             labelMotivo.Visible = false;
+            //AHORA VERIFICO SI ESTE PACIENTE YA ESTA INGRESADO, ES DECIR SI ES UN REINGRESO
+            labelReingreso.Visible = (_esReingreso) ? true : false;
         }
 
 
@@ -163,72 +170,121 @@ namespace Principal.Forms.ListaEspera
                     }
                     else
                     {
-                        //ES UN INGRESO A INTERNACION, DOY DE ALTA EN TABLA PACIENTES Y PACEINTE MODULO
 
-                        Pacientes _newPaciente = new Pacientes();
-                        Clases.IndicacionesBLL.Paciente _IngresoPaciente = new Clases.IndicacionesBLL.Paciente();
-                        //TRAIGO TODOS LOS DATOS DE LA LISTA DE ESPERA
-                        //var _pac = _Mod.MED_ListaEspera.Where(a => a.espera_id == _listaEsperaId).SingleOrDefault();
-                        var _listObj = (from lista in _Mod.MED_ListaEspera
-                                        where lista.espera_id == _listaEsperaId
-                                        select new
-                                        {
-                                            nombre = lista.nombre,
-                                            apellido = lista.apellido,
-                                            genero = lista.genero,
-                                            fechaNacimiento = lista.fechaNacimiento,
-                                            tipoDocumento_id = lista.tipoDocumento_id,
-                                            numeroDocumento = lista.numeroDocumento,
-                                            diagnostico_id = lista.diagnostico_id,
-                                            obraSocial_id = lista.obraSocial_id,
-                                            nroAfiliado = lista.nroAfiliado,
-                                            listaEsperaId = lista.espera_id, //LA UTILIZO PARA ACTUALIZAR TABLA Y MARCARLA COMO EGRESO            
-                                            responsable = lista.responsable,
-                                            vinculo = lista.vinculo,
-                                            telefonos = lista.telefonos,
-                                            sede = lista.sedeSugerida,
-                                            habitacion_id = lista.habitacion_id
-                                        }).FirstOrDefault();
+                        //SI ES UN REINGRESO VALIDO CON LA TABLA PACIENTES PARA VER SI ESTE PACIENTE COINCIDE CON EL QUE ESTOY INGRESANDO
+                        SISTMEDEntities _ModIngreso = new SISTMEDEntities();
 
-                        //PASO AL OBJETO PACIENTE
-                         _newPaciente.sede_id = _listObj.sede;
-                        _newPaciente.habitacion_id = _listObj.habitacion_id;
-                        _newPaciente.nombre = _listObj.nombre;
-                        _newPaciente.apellido = _listObj.apellido;
-                        _newPaciente.genero = (_listObj.genero == "M") ? true : false; //CORREGIR EN TABLA PARA QUE ACEPTE UN CHAR
-                        _newPaciente.fechaNacimiento = _listObj.fechaNacimiento;
-                        _newPaciente.tipoDocumento_id = _listObj.tipoDocumento_id;
-                        _newPaciente.numeroDocumento = _listObj.numeroDocumento;
-                        _newPaciente.diagnostico_id = Convert.ToInt32(_listObj.diagnostico_id);
-                        _newPaciente.fechaIngreso = DateTime.Now;
-                        _newPaciente.obraSocial_id = _listObj.obraSocial_id;
-                        _newPaciente.numeroObraSocial = _listObj.nroAfiliado;
-                        _newPaciente.usuario_id = Clases.Usuario.UsuarioLogeado.id_usuario_Logeado;
-                        _newPaciente.responsabe = _listObj.responsable;
-                        _newPaciente.vinculo = _listObj.vinculo;
-                        _newPaciente.telefono = _listObj.telefonos;
+                        var _list = (from P in _ModIngreso.Pacientes
+                                     where P.tipoDocumento_id == _tipoDoc && P.numeroDocumento == _nroDoc
 
-                        //AHORA TRAIGO LOS MODULOS CARGADOS PARA ESTE POSIBLE PACIENTE
-                        var _pac = _Mod.MED_ListaEsperaModulo.Where(a => a.espera_id == _listaEsperaId).ToList();
-                        MED_PacienteModulo _pacModulo;
-                        List<MED_PacienteModulo> _listModPac = new List<MED_PacienteModulo>();
-                        foreach (MED_ListaEsperaModulo item in _pac)
+                                     select new
+                                     {
+                                         P.nombre,
+                                         P.apellido,
+                                         P.paciente_id
+
+                                     });
+                        if (_list.Count() > 1)
                         {
-                            _pacModulo = new MED_PacienteModulo();
-                            _pacModulo.modulo_id = item.modulo_id;
-                            _listModPac.Add(_pacModulo);
+                            MessageBox.Show("Se han encontrado mas de un paciente con este Nro. de documento, verifique DNI cargado en lista de espera ", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            return;
                         }
 
-                        if (_IngresoPaciente.IngresaPaciente(_newPaciente, _listModPac, _listObj.listaEsperaId))
+                        if (_list == null)
                         {
-                            MessageBox.Show("Paciente ingresado correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                           // EnviarMail(_listObj.listaEsperaId);
-                            Close();
+                            MessageBox.Show("No existe este paciente en Indicaciones, verifique DNI cargado en lista de espera o verifique si es un reingreso ", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            return;
                         }
-                        else
+
+                        string _pacienteIndicaciones = string.Empty;
+                        int _pacienteIdIM = 0;
+                        foreach (var item in _list)
                         {
-                            MessageBox.Show("Error al Ingresar Paciente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                            _pacienteIndicaciones = item.nombre + " " + item.apellido + ", " + "Nro. Historia Clínica: " + item.paciente_id;
+                            _pacienteIdIM = item.paciente_id;
                         }
+
+                        //fin verifica REINGRESO
+                        if (_esReingreso)
+                        {
+                            DialogResult dialogResult = MessageBox.Show("Se actualizará el paciente: " + _pacienteIndicaciones + ", existente en Indicaciones, desea continuar ?", "Mensaje", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                            if (dialogResult == DialogResult.No)
+                            {
+                                return;
+                            }
+
+                        }
+
+                    
+                            //ES UN INGRESO A INTERNACION, DOY DE ALTA EN TABLA PACIENTES Y PACEINTE MODULO
+
+                            Pacientes _newPaciente = new Pacientes();
+                            Clases.IndicacionesBLL.Paciente _IngresoPaciente = new Clases.IndicacionesBLL.Paciente();
+                            //TRAIGO TODOS LOS DATOS DE LA LISTA DE ESPERA
+                            //var _pac = _Mod.MED_ListaEspera.Where(a => a.espera_id == _listaEsperaId).SingleOrDefault();
+                            var _listObj = (from lista in _Mod.MED_ListaEspera
+                                            where lista.espera_id == _listaEsperaId
+                                            select new
+                                            {
+                                                nombre = lista.nombre,
+                                                apellido = lista.apellido,
+                                                genero = lista.genero,
+                                                fechaNacimiento = lista.fechaNacimiento,
+                                                tipoDocumento_id = lista.tipoDocumento_id,
+                                                numeroDocumento = lista.numeroDocumento,
+                                                diagnostico_id = lista.diagnostico_id,
+                                                obraSocial_id = lista.obraSocial_id,
+                                                nroAfiliado = lista.nroAfiliado,
+                                                listaEsperaId = lista.espera_id, //LA UTILIZO PARA ACTUALIZAR TABLA Y MARCARLA COMO EGRESO            
+                                                responsable = lista.responsable,
+                                                vinculo = lista.vinculo,
+                                                telefonos = lista.telefonos,
+                                                sede = lista.sedeSugerida,
+                                                habitacion_id = lista.habitacion_id
+                                            }).FirstOrDefault();
+
+                            //PASO AL OBJETO PACIENTE
+                            _newPaciente.sede_id = _listObj.sede;
+                            _newPaciente.habitacion_id = _listObj.habitacion_id;
+                            _newPaciente.nombre = _listObj.nombre;
+                            _newPaciente.apellido = _listObj.apellido;
+                            _newPaciente.genero = (_listObj.genero == "M") ? true : false; //CORREGIR EN TABLA PARA QUE ACEPTE UN CHAR
+                            _newPaciente.fechaNacimiento = _listObj.fechaNacimiento;
+                            _newPaciente.tipoDocumento_id = _listObj.tipoDocumento_id;
+                            _newPaciente.numeroDocumento = _listObj.numeroDocumento;
+                            _newPaciente.diagnostico_id = Convert.ToInt32(_listObj.diagnostico_id);
+                            _newPaciente.fechaIngreso = DateTime.Now;
+                            _newPaciente.obraSocial_id = _listObj.obraSocial_id;
+                            _newPaciente.numeroObraSocial = _listObj.nroAfiliado;
+                            _newPaciente.usuario_id = Clases.Usuario.UsuarioLogeado.id_usuario_Logeado;
+                            _newPaciente.responsabe = _listObj.responsable;
+                            _newPaciente.vinculo = _listObj.vinculo;
+                            _newPaciente.telefono = _listObj.telefonos;
+
+                            //AHORA TRAIGO LOS MODULOS CARGADOS PARA ESTE POSIBLE PACIENTE
+                            var _pac = _Mod.MED_ListaEsperaModulo.Where(a => a.espera_id == _listaEsperaId).ToList();
+                            MED_PacienteModulo _pacModulo;
+                            List<MED_PacienteModulo> _listModPac = new List<MED_PacienteModulo>();
+                            foreach (MED_ListaEsperaModulo item in _pac)
+                            {
+                                _pacModulo = new MED_PacienteModulo();
+                                _pacModulo.modulo_id = item.modulo_id;
+                                _listModPac.Add(_pacModulo);
+                            }
+
+                            if (_IngresoPaciente.IngresaPaciente(_newPaciente, _listModPac, _listObj.listaEsperaId, _esReingreso, _pacienteIdIM))
+                            {
+
+                                MessageBox.Show("Paciente ingresado correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                // EnviarMail(_listObj.listaEsperaId);
+                                Close();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error al Ingresar Paciente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            }
+
 
                     }
 

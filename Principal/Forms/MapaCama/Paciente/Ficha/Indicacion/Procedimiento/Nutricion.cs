@@ -738,6 +738,14 @@ namespace Principal.Forms.MapaCama.Paciente.Ficha.Indicacion.Procedimiento
                                 {
                                     Modifica_Suministro_Procedimiento_Nutricion();
                                     Graba_Historial_Suministro_Procedimiento_Nutricion();
+
+                                    if(chboxAstringente.Checked == true)
+                                    {
+                                        int id_paciente = Clases.Paciente.PacienteIngresado;
+                                        E.PRO_Posologia.SqlQuery("update PRO_Posologia set astringente=1 where paciente_id=" + id_paciente);
+                                        //Console.WriteLine("Entré por aca");
+                                    }
+
                                     MessageBox.Show("La Operación se realizó correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                                     this.Opener.IActualiza();
@@ -749,6 +757,68 @@ namespace Principal.Forms.MapaCama.Paciente.Ficha.Indicacion.Procedimiento
 
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void chboxAstringente_CheckedChanged(object sender, EventArgs e)
+        {
+            // Si el checkbox Astringente está tildado, se desactivan los controles
+            if(chboxAstringente.Checked == false) // Cuando no está checkeado, los controles estan activos
+            {
+                cboPlanOral.Enabled = true;
+                ckchSinLiquidos.Enabled = true;
+                chckLiquidoEspeso.Enabled = true;
+                chckLiquidoAligerado.Enabled = true;
+                chckLiquidoFino.Enabled = true;
+                chckHiposodico.Enabled = true;
+                chckPicado.Enabled = true;
+                chckCortado.Enabled = true;
+                chckSorbete.Enabled = true;
+                chckHipocalorica.Enabled = true;
+                chckHipercalorica.Enabled = true;
+                chckHepatoProtector.Enabled = true;
+                chckDBT.Enabled = true;
+                chckICR.Enabled = true;
+                chckIRA.Enabled = true;
+                chckACO.Enabled = true;
+                chckCeliaco.Enabled = true;
+                ckchAsistencia.Enabled = true;
+                chckSupControl.Enabled = true;
+            }
+            else
+            {
+                cboPlanOral.Enabled = false;
+                ckchSinLiquidos.Enabled = false;
+                chckLiquidoEspeso.Enabled = false;
+                chckLiquidoAligerado.Enabled = false;
+                chckLiquidoFino.Enabled = false;
+                chckHiposodico.Enabled = false;
+                chckPicado.Enabled = false;
+                chckCortado.Enabled = false;
+                chckSorbete.Enabled = false;
+                chckHipocalorica.Enabled = false;
+                chckHipercalorica.Enabled = false;
+                chckHepatoProtector.Enabled = false;
+                chckDBT.Enabled = false;
+                chckICR.Enabled = false;
+                chckIRA.Enabled = false;
+                chckACO.Enabled = false;
+                chckCeliaco.Enabled = false;
+                ckchAsistencia.Enabled = false;
+                chckSupControl.Enabled = false;
+            }
+        }
+
+        private void btnAgregarPlan_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                AgregarPlan frmAgregarPlan = new AgregarPlan();
+                frmAgregarPlan.ShowDialog();
             }
             catch (Exception ex)
             {

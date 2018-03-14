@@ -976,8 +976,26 @@
     <Key>
       <PropertyRef Name="alimento_id" />
     </Key>
-    <Property Name="alimento_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="alimento_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRO_Alimento_Horarios_Administracion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="descripcion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PRO_Alimento_Paciente">
+    <Key>
+      <PropertyRef Name="id_paciente" />
+      <PropertyRef Name="id_alimento" />
+      <PropertyRef Name="id_horario_administracion" />
+    </Key>
+    <Property Name="id_paciente" Type="int" Nullable="false" />
+    <Property Name="id_alimento" Type="int" Nullable="false" />
+    <Property Name="id_horario_administracion" Type="int" Nullable="false" />
+    <Property Name="observacion" Type="varchar" MaxLength="70" />
   </EntityType>
   <EntityType Name="PRO_Asociacion_Procedimiento">
     <Key>
@@ -1543,6 +1561,7 @@
     <Property Name="ml_frasco2" Type="int" />
     <Property Name="ml_frasco3" Type="int" />
     <Property Name="ml_frasco4" Type="int" />
+    <Property Name="astringente" Type="bit" />
   </EntityType>
   <EntityType Name="PRO_Preparado">
     <Key>
@@ -1844,6 +1863,42 @@
     <Property Name="tipoDocumento_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="descripcion" Type="varchar" MaxLength="50" />
   </EntityType>
+  <Association Name="FK__PRO_Alime__id_al__023E255B">
+    <End Role="PRO_Alimento" Type="Self.PRO_Alimento" Multiplicity="1" />
+    <End Role="PRO_Alimento_Paciente" Type="Self.PRO_Alimento_Paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRO_Alimento">
+        <PropertyRef Name="alimento_id" />
+      </Principal>
+      <Dependent Role="PRO_Alimento_Paciente">
+        <PropertyRef Name="id_alimento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PRO_Alime__id_ho__03324994">
+    <End Role="PRO_Alimento_Horarios_Administracion" Type="Self.PRO_Alimento_Horarios_Administracion" Multiplicity="1" />
+    <End Role="PRO_Alimento_Paciente" Type="Self.PRO_Alimento_Paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRO_Alimento_Horarios_Administracion">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="PRO_Alimento_Paciente">
+        <PropertyRef Name="id_horario_administracion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PRO_Alime__id_pa__014A0122">
+    <End Role="Pacientes" Type="Self.Pacientes" Multiplicity="1" />
+    <End Role="PRO_Alimento_Paciente" Type="Self.PRO_Alimento_Paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pacientes">
+        <PropertyRef Name="paciente_id" />
+      </Principal>
+      <Dependent Role="PRO_Alimento_Paciente">
+        <PropertyRef Name="id_paciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Archivos_Paciente_Pacientes">
     <End Role="Pacientes" Type="Self.Pacientes" Multiplicity="0..1" />
     <End Role="Archivos_Paciente" Type="Self.Archivos_Paciente" Multiplicity="*" />
@@ -2985,6 +3040,8 @@
     <EntitySet Name="Piso" EntityType="Self.Piso" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="PRO_Aditivos" EntityType="Self.PRO_Aditivos" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="PRO_Alimento" EntityType="Self.PRO_Alimento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRO_Alimento_Horarios_Administracion" EntityType="Self.PRO_Alimento_Horarios_Administracion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRO_Alimento_Paciente" EntityType="Self.PRO_Alimento_Paciente" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="PRO_Asociacion_Procedimiento" EntityType="Self.PRO_Asociacion_Procedimiento" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="PRO_Asociacion_Procedimiento_Proc" EntityType="Self.PRO_Asociacion_Procedimiento_Proc" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="PRO_Colocacion_Via_Periferica" EntityType="Self.PRO_Colocacion_Via_Periferica" Schema="dbo" store:Type="Tables" />
@@ -3029,6 +3086,18 @@
     <EntitySet Name="TestPDF" EntityType="Self.TestPDF" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Tipo_Archivo" EntityType="Self.Tipo_Archivo" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TipoDocumento" EntityType="Self.TipoDocumento" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__PRO_Alime__id_al__023E255B" Association="Self.FK__PRO_Alime__id_al__023E255B">
+      <End Role="PRO_Alimento" EntitySet="PRO_Alimento" />
+      <End Role="PRO_Alimento_Paciente" EntitySet="PRO_Alimento_Paciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PRO_Alime__id_ho__03324994" Association="Self.FK__PRO_Alime__id_ho__03324994">
+      <End Role="PRO_Alimento_Horarios_Administracion" EntitySet="PRO_Alimento_Horarios_Administracion" />
+      <End Role="PRO_Alimento_Paciente" EntitySet="PRO_Alimento_Paciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PRO_Alime__id_pa__014A0122" Association="Self.FK__PRO_Alime__id_pa__014A0122">
+      <End Role="Pacientes" EntitySet="Pacientes" />
+      <End Role="PRO_Alimento_Paciente" EntitySet="PRO_Alimento_Paciente" />
+    </AssociationSet>
     <AssociationSet Name="FK_Archivos_Paciente_Pacientes" Association="Self.FK_Archivos_Paciente_Pacientes">
       <End Role="Pacientes" EntitySet="Pacientes" />
       <End Role="Archivos_Paciente" EntitySet="Archivos_Paciente" />

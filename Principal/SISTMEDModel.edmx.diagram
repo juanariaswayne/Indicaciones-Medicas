@@ -45,7 +45,6 @@
         <EntityTypeShape EntityType="SISTMEDModel.PertenenciasPaciente" Width="1.5" PointX="16.75" PointY="21.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SISTMEDModel.Piso" Width="1.5" PointX="23.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SISTMEDModel.PRO_Aditivos" Width="1.5" PointX="23.75" PointY="12.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SISTMEDModel.PRO_Alimento" Width="1.5" PointX="23.75" PointY="15.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SISTMEDModel.PRO_Asociacion_Procedimiento" Width="1.5" PointX="8" PointY="15.125" IsExpanded="true" />
         <EntityTypeShape EntityType="SISTMEDModel.PRO_Colocacion_Via_Periferica" Width="1.5" PointX="8.75" PointY="24.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SISTMEDModel.PRO_Cuidado_Oral" Width="1.5" PointX="0.75" PointY="25.75" IsExpanded="true" />
@@ -172,6 +171,12 @@
         <AssociationConnector Association="SISTMEDModel.FK_PRO_SuministroDeProcedimiento_Historico_PRO_Procedimiento" />
         <AssociationConnector Association="SISTMEDModel.FK_PRO_SuministroDeProcedimiento_PRO_Procedimiento" />
         <AssociationConnector Association="SISTMEDModel.FK_PRO_SuministroDeProcedimiento_Historico_PRO_SuministroDeProcedimiento" />
+        <EntityTypeShape EntityType="SISTMEDModel.PRO_Alimento_Horarios_Administracion" Width="1.5" PointX="10.375" PointY="15.75" />
+        <EntityTypeShape EntityType="SISTMEDModel.PRO_Alimento" Width="1.5" PointX="12.375" PointY="15.75" />
+        <EntityTypeShape EntityType="SISTMEDModel.PRO_Alimento_Paciente" Width="1.5" PointX="40" PointY="9.5" />
+        <AssociationConnector Association="SISTMEDModel.FK__PRO_Alime__id_pa__014A0122" />
+        <AssociationConnector Association="SISTMEDModel.FK__PRO_Alime__id_al__023E255B" />
+        <AssociationConnector Association="SISTMEDModel.FK__PRO_Alime__id_ho__03324994" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

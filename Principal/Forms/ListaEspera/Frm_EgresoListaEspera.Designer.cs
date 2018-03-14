@@ -41,6 +41,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxTipoEgreso = new System.Windows.Forms.ComboBox();
+            this.labelReingreso = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.btnSalir.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -143,6 +144,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.labelReingreso);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.label1);
@@ -197,6 +199,17 @@
             this.comboBoxTipoEgreso.TabIndex = 0;
             this.comboBoxTipoEgreso.SelectedIndexChanged += new System.EventHandler(this.comboBoxTipoEgreso_SelectedIndexChanged);
             // 
+            // labelReingreso
+            // 
+            this.labelReingreso.AutoSize = true;
+            this.labelReingreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelReingreso.ForeColor = System.Drawing.Color.Red;
+            this.labelReingreso.Location = new System.Drawing.Point(460, 30);
+            this.labelReingreso.Name = "labelReingreso";
+            this.labelReingreso.Size = new System.Drawing.Size(120, 13);
+            this.labelReingreso.TabIndex = 15;
+            this.labelReingreso.Text = "ES REINGRESO !!!!";
+            // 
             // Frm_EgresoListaEspera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -235,5 +248,6 @@
         private System.Windows.Forms.Label labelMotivo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label labelReingreso;
     }
 }

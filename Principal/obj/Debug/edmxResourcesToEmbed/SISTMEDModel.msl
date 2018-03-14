@@ -691,14 +691,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="PRO_Alimento">
-      <EntityTypeMapping TypeName="SISTMEDModel.PRO_Alimento">
-        <MappingFragment StoreEntitySet="PRO_Alimento">
-          <ScalarProperty Name="alimento_id" ColumnName="alimento_id" />
-          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="PRO_Asociacion_Procedimiento">
       <EntityTypeMapping TypeName="SISTMEDModel.PRO_Asociacion_Procedimiento">
         <MappingFragment StoreEntitySet="PRO_Asociacion_Procedimiento">
@@ -2529,6 +2521,7 @@
     <EntitySetMapping Name="PRO_Posologia">
       <EntityTypeMapping TypeName="SISTMEDModel.PRO_Posologia">
         <MappingFragment StoreEntitySet="PRO_Posologia">
+          <ScalarProperty Name="astringente" ColumnName="astringente" />
           <ScalarProperty Name="ml_frasco4" ColumnName="ml_frasco4" />
           <ScalarProperty Name="ml_frasco3" ColumnName="ml_frasco3" />
           <ScalarProperty Name="ml_frasco2" ColumnName="ml_frasco2" />
@@ -3321,6 +3314,32 @@
           <ScalarProperty Name="procedimiento_id" ColumnName="procedimiento_id" />
           <ScalarProperty Name="paciente_id" ColumnName="paciente_id" />
           <ScalarProperty Name="suministroDeProcedimiento_id" ColumnName="suministroDeProcedimiento_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRO_Alimento_Horarios_Administracion">
+      <EntityTypeMapping TypeName="SISTMEDModel.PRO_Alimento_Horarios_Administracion">
+        <MappingFragment StoreEntitySet="PRO_Alimento_Horarios_Administracion">
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRO_Alimento">
+      <EntityTypeMapping TypeName="SISTMEDModel.PRO_Alimento">
+        <MappingFragment StoreEntitySet="PRO_Alimento">
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="alimento_id" ColumnName="alimento_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRO_Alimento_Paciente">
+      <EntityTypeMapping TypeName="SISTMEDModel.PRO_Alimento_Paciente">
+        <MappingFragment StoreEntitySet="PRO_Alimento_Paciente">
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+          <ScalarProperty Name="id_horario_administracion" ColumnName="id_horario_administracion" />
+          <ScalarProperty Name="id_alimento" ColumnName="id_alimento" />
+          <ScalarProperty Name="id_paciente" ColumnName="id_paciente" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

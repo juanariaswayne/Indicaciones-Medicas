@@ -33,6 +33,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePickerConfirma = new System.Windows.Forms.DateTimePicker();
             this.groupBoxIngreso = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxSectorMail = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.TextBoxObs = new MetroFramework.Controls.MetroTextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -49,8 +51,6 @@
             this.btnGrabar = new MetroFramework.Controls.MetroTile();
             this.btnSalir = new MetroFramework.Controls.MetroTile();
             this.splitter2 = new System.Windows.Forms.Splitter();
-            this.comboBoxSectorMail = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBoxIngreso.SuspendLayout();
@@ -122,6 +122,23 @@
             this.groupBoxIngreso.TabIndex = 28;
             this.groupBoxIngreso.TabStop = false;
             this.groupBoxIngreso.Text = "Detalle Confirmación";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(483, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 13);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Sector Ingreso:";
+            // 
+            // comboBoxSectorMail
+            // 
+            this.comboBoxSectorMail.FormattingEnabled = true;
+            this.comboBoxSectorMail.Location = new System.Drawing.Point(565, 17);
+            this.comboBoxSectorMail.Name = "comboBoxSectorMail";
+            this.comboBoxSectorMail.Size = new System.Drawing.Size(171, 21);
+            this.comboBoxSectorMail.TabIndex = 20;
             // 
             // label8
             // 
@@ -299,24 +316,6 @@
             this.splitter2.Size = new System.Drawing.Size(10, 38);
             this.splitter2.TabIndex = 0;
             this.splitter2.TabStop = false;
-            // 
-            // comboBoxSectorMail
-            // 
-            this.comboBoxSectorMail.FormattingEnabled = true;
-            this.comboBoxSectorMail.Location = new System.Drawing.Point(565, 17);
-            this.comboBoxSectorMail.Name = "comboBoxSectorMail";
-            this.comboBoxSectorMail.Size = new System.Drawing.Size(171, 21);
-            this.comboBoxSectorMail.TabIndex = 20;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(483, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 13);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Sector Ingreso:";
-     
             // 
             // Frm_ConfirmaCama
             // 
