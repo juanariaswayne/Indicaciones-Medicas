@@ -281,7 +281,7 @@
             // metroCheckBox1
             // 
             this.metroCheckBox1.AutoSize = true;
-            this.metroCheckBox1.Location = new System.Drawing.Point(249, 39);
+            this.metroCheckBox1.Location = new System.Drawing.Point(249, 31);
             this.metroCheckBox1.Name = "metroCheckBox1";
             this.metroCheckBox1.Size = new System.Drawing.Size(79, 15);
             this.metroCheckBox1.Style = MetroFramework.MetroColorStyle.Red;
