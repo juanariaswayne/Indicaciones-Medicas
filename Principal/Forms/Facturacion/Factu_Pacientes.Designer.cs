@@ -154,6 +154,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Pacientes Internados";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Factu_Pacientes_FormClosed);
             this.Load += new System.EventHandler(this.Factu_Pacientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridPacientes)).EndInit();
             this.ResumeLayout(false);

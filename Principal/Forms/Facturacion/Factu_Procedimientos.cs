@@ -257,9 +257,9 @@ namespace Principal.Forms.Facturacion
                 dataGridViewProcedimientos.Rows[indice].Cells[(int)Col_Procedimiento.ID_SUMINISTRO].Value = item.suministro_original;
                 dataGridViewProcedimientos.Rows[indice].Cells[(int)Col_Procedimiento.ID_PROCEDIMIENTO].Value = item.procedimiento_id;
                 dataGridViewProcedimientos.Rows[indice].Cells[(int)Col_Procedimiento.ID_GENERICO].Value = item.generico_id;
-                dataGridViewProcedimientos.Rows[indice].Cells[(int)Col_Procedimiento.INICIO].Value = item.fechaAltaSistema.Value.ToShortDateString();
+                dataGridViewProcedimientos.Rows[indice].Cells[(int)Col_Procedimiento.INICIO].Value = item.fechaAltaSistema.Value.ToString();
                 dataGridViewProcedimientos.Rows[indice].Cells[(int)Col_Procedimiento.PROCEDIMIENTO].Value = item.procedimiento_id == null ? "SIN PROCEDIMIENTO" : item.PRO_Procedimiento.descripcion;
-                dataGridViewProcedimientos.Rows[indice].Cells[(int)Col_Procedimiento.FIN].Value = item.fechaBaja == null ? "" : item.fechaBaja.Value.ToShortDateString();
+                dataGridViewProcedimientos.Rows[indice].Cells[(int)Col_Procedimiento.FIN].Value = item.fechaBaja == null ? "" : item.fechaBaja.Value.ToString();
                 dataGridViewProcedimientos.Rows[indice].Cells[(int)Col_Procedimiento.CHECK].Value = item.impFactu == null? true : item.impFactu;
 
                 if (item.tipoProcedimiento_id == 3) //Procedimientos comunes
@@ -301,6 +301,8 @@ namespace Principal.Forms.Facturacion
         #region Eventos
         private void Factu_Procedimientos_Load(object sender, EventArgs e)
         {
+            dateDesde.Value = Convert.ToDateTime("01/" + DateTime.Now.Month.ToString() + "/" + DateTime.Now.Year.ToString());
+            dateHasta.Value = dateDesde.Value.AddMonths(1).AddDays(-1);
             traeIndicacioneProcedimientos(Clases.Paciente.PacienteIngresado);
         }
         #endregion
@@ -528,6 +530,38 @@ namespace Principal.Forms.Facturacion
                     E.SaveChanges();
                 }
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void dateDesde_ValueChanged(object sender, EventArgs e)
+        {
+            traeIndicacioneProcedimientos(Clases.Paciente.PacienteIngresado);
+        }
+
+        private void dateHasta_ValueChanged(object sender, EventArgs e)
+        {
+            traeIndicacioneProcedimientos(Clases.Paciente.PacienteIngresado);
+        }
+
+        private void dataGridViewProcedimientos_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                if (e.KeyChar == ' ')
+                {
+                    if (Convert.ToBoolean(dataGridViewProcedimientos.CurrentRow.Cells[(int)Col_Procedimiento.CHECK].Value) == false)
+                    {
+                        dataGridViewProcedimientos.CurrentRow.Cells[(int)Col_Procedimiento.CHECK].Value = true;
+                    }
+                    else
+                    {
+                        dataGridViewProcedimientos.CurrentRow.Cells[(int)Col_Procedimiento.CHECK].Value = false;
+                    }
+                }
             }
             catch (Exception ex)
             {

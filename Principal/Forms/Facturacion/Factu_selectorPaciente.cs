@@ -36,8 +36,8 @@ namespace Principal.Forms.Facturacion
         {
             try
             {
-                Facturacion.Factu_Medicamentos _med = new Factu_Medicamentos();
-                _med.ShowDialog();
+                Facturacion.Factu_Medicamentos _med = new Facturacion.Factu_Medicamentos();
+                _med.Show();
             }
             catch (Exception ex)
             {

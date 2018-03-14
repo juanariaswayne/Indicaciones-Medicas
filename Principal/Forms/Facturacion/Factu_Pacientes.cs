@@ -39,8 +39,9 @@ namespace Principal.Forms.Facturacion
                     if (calculaAlertasMed(_itemPaciente.paciente_id) || calculaAlertasPro(_itemPaciente.paciente_id))
                     {
                         gridPacientes.Rows[indice].DefaultCellStyle.BackColor = Color.Yellow;
+                        _itemPaciente.nombre = _itemPaciente.nombre.Replace(" - (Med) ","").Replace(" - (Proc) ","");
 
-                        if(calculaAlertasMed(_itemPaciente.paciente_id))
+                        if (calculaAlertasMed(_itemPaciente.paciente_id))
                         {
                             _itemPaciente.nombre = _itemPaciente.nombre + " - (Med) ";
                         }
@@ -96,7 +97,8 @@ namespace Principal.Forms.Facturacion
 
         private void Factu_Pacientes_Load(object sender, EventArgs e)
         {
-            traePacientes(cboSede.SelectedIndex + 1);
+            cboSede.SelectedIndex = Clases.Paciente.PacienteSede - 1;
+            //traePacientes(cboSede.SelectedIndex + 1);
 
         }
 
@@ -187,6 +189,11 @@ namespace Principal.Forms.Facturacion
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+        }
+
+        private void Factu_Pacientes_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

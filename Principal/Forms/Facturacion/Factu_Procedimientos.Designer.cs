@@ -37,13 +37,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.dataGridViewProcedimientos = new System.Windows.Forms.DataGridView();
-            this.dataGridViewDescartables = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SUMINISTRO_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GENERICO_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +49,13 @@
             this.FINP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CHECK_2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.TIPO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewDescartables = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProcedimientos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDescartables)).BeginInit();
@@ -87,6 +87,7 @@
             this.dateHasta.Name = "dateHasta";
             this.dateHasta.Size = new System.Drawing.Size(107, 29);
             this.dateHasta.TabIndex = 5;
+            this.dateHasta.ValueChanged += new System.EventHandler(this.dateHasta_ValueChanged);
             // 
             // dateDesde
             // 
@@ -96,6 +97,7 @@
             this.dateDesde.Name = "dateDesde";
             this.dateDesde.Size = new System.Drawing.Size(107, 29);
             this.dateDesde.TabIndex = 4;
+            this.dateDesde.ValueChanged += new System.EventHandler(this.dateDesde_ValueChanged);
             // 
             // panel1
             // 
@@ -110,6 +112,7 @@
             // 
             this.metroTile1.ActiveControl = null;
             this.metroTile1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.metroTile1.Enabled = false;
             this.metroTile1.Location = new System.Drawing.Point(1042, 0);
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.Size = new System.Drawing.Size(243, 46);
@@ -159,75 +162,7 @@
             this.dataGridViewProcedimientos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProcedimientos_CellContentClick);
             this.dataGridViewProcedimientos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProcedimientos_CellDoubleClick);
             this.dataGridViewProcedimientos.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProcedimientos_CellValueChanged);
-            // 
-            // dataGridViewDescartables
-            // 
-            this.dataGridViewDescartables.AllowUserToAddRows = false;
-            this.dataGridViewDescartables.AllowUserToDeleteRows = false;
-            this.dataGridViewDescartables.AllowUserToOrderColumns = true;
-            this.dataGridViewDescartables.AllowUserToResizeRows = false;
-            this.dataGridViewDescartables.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dataGridViewDescartables.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDescartables.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewDescartables.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewDescartables.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dataGridViewDescartables.Location = new System.Drawing.Point(1000, 60);
-            this.dataGridViewDescartables.MultiSelect = false;
-            this.dataGridViewDescartables.Name = "dataGridViewDescartables";
-            this.dataGridViewDescartables.RowHeadersVisible = false;
-            this.dataGridViewDescartables.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewDescartables.Size = new System.Drawing.Size(305, 577);
-            this.dataGridViewDescartables.TabIndex = 16;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "ID_CIERRE";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.HeaderText = "SUMINISTRO_ID";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn11.HeaderText = "Cod_Desc";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn12.HeaderText = "Producto";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.HeaderText = "Cantidad";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.HeaderText = "Tipo";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.Visible = false;
+            this.dataGridViewProcedimientos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dataGridViewProcedimientos_KeyPress);
             // 
             // SUMINISTRO_ID
             // 
@@ -304,6 +239,75 @@
             this.TIPO.HeaderText = "TIPO";
             this.TIPO.Name = "TIPO";
             this.TIPO.Visible = false;
+            // 
+            // dataGridViewDescartables
+            // 
+            this.dataGridViewDescartables.AllowUserToAddRows = false;
+            this.dataGridViewDescartables.AllowUserToDeleteRows = false;
+            this.dataGridViewDescartables.AllowUserToOrderColumns = true;
+            this.dataGridViewDescartables.AllowUserToResizeRows = false;
+            this.dataGridViewDescartables.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridViewDescartables.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDescartables.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewDescartables.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewDescartables.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dataGridViewDescartables.Location = new System.Drawing.Point(1000, 60);
+            this.dataGridViewDescartables.MultiSelect = false;
+            this.dataGridViewDescartables.Name = "dataGridViewDescartables";
+            this.dataGridViewDescartables.RowHeadersVisible = false;
+            this.dataGridViewDescartables.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewDescartables.Size = new System.Drawing.Size(305, 577);
+            this.dataGridViewDescartables.TabIndex = 16;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "ID_CIERRE";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.HeaderText = "SUMINISTRO_ID";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn11.HeaderText = "Cod_Desc";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn12.HeaderText = "Producto";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.HeaderText = "Cantidad";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.HeaderText = "Tipo";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.Visible = false;
             // 
             // Factu_Procedimientos
             // 
