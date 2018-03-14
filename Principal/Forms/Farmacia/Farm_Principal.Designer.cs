@@ -267,6 +267,7 @@
             this.metroTextBox1.WaterMark = "Buscar Paciente";
             this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.metroTextBox1.TextChanged += new System.EventHandler(this.metroTextBox1_TextChanged);
             // 
             // label2
             // 
@@ -791,7 +792,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridViewProcedimientos;
         private System.Windows.Forms.DataGridView dataGridViewMedicamentos;
-        private System.Windows.Forms.DataGridView dataGridViewDescartables;
+        public System.Windows.Forms.DataGridView dataGridViewDescartables; /////////////////////////////////////// <--
         private System.Windows.Forms.PictureBox pictureAlerta;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox chckCierre;

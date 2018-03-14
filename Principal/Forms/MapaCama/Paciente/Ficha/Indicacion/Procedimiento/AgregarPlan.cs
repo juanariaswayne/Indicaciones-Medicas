@@ -14,8 +14,6 @@ namespace Principal.Forms.MapaCama.Paciente.Ficha.Indicacion.Procedimiento
 {
     public partial class AgregarPlan : MetroForm
     {
-        //public List<string> alimentosSeleccionados;
-        //public List<int> ids_alimentosSeleccionados;
         public Dictionary<int, string> alimentosAAgregar;
         private Dictionary<int, string> alimentosAEliminar;
         public AgregarPlan formActual; // Referencia al form actual usada para recibir datos del siguiente form
@@ -25,8 +23,6 @@ namespace Principal.Forms.MapaCama.Paciente.Ficha.Indicacion.Procedimiento
             InitializeComponent();
 
             formActual = this;
-            //alimentosSeleccionados = new List<string>();
-            //ids_alimentosSeleccionados = new List<int>();
             alimentosAAgregar = new Dictionary<int, string>();
             alimentosAEliminar = new Dictionary<int, string>();
 
@@ -95,8 +91,7 @@ namespace Principal.Forms.MapaCama.Paciente.Ficha.Indicacion.Procedimiento
                             indice = datagridAlimentosSeleccionados.Rows.Add();
 
                             datagridAlimentosSeleccionados.Rows[indice].Cells["Alimentos"].Value = alimentosAAgregar.Values.ElementAt(i);
-                            datagridAlimentosSeleccionados.Rows[indice].Cells["id"].Value = alimentosAAgregar.Keys.ElementAt(i);//.ToString(); POSIBLE PROBLEMA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                            Console.WriteLine("Pasé por el lugar critico");
+                            datagridAlimentosSeleccionados.Rows[indice].Cells["id"].Value = alimentosAAgregar.Keys.ElementAt(i);
                         }
                         repetido = false;
                     }
@@ -110,7 +105,7 @@ namespace Principal.Forms.MapaCama.Paciente.Ficha.Indicacion.Procedimiento
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error11", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -127,8 +122,7 @@ namespace Principal.Forms.MapaCama.Paciente.Ficha.Indicacion.Procedimiento
                                            where h.descripcion.Equals(cmbBoxHorarioAdministracion.SelectedItem.ToString())
                                            select h.id).Single();
 
-            Console.WriteLine("id_paciente: " + idpaciente);
-            Console.WriteLine("observaciones: " + observaciones);
+
 
             // Guardo los que haya que guardar
             if(alimentosAAgregar.Count > 0)
@@ -136,7 +130,6 @@ namespace Principal.Forms.MapaCama.Paciente.Ficha.Indicacion.Procedimiento
                 var filas = E.PRO_Alimento_Paciente;
                 for (int i = 0; i < alimentosAAgregar.Count; i++)
                 {
-                    Console.WriteLine("Voy a insertar una fila");
                     filas.Add(new PRO_Alimento_Paciente()
                     {
                         id_alimento = alimentosAAgregar.Keys.ElementAt(i),
@@ -144,12 +137,10 @@ namespace Principal.Forms.MapaCama.Paciente.Ficha.Indicacion.Procedimiento
                         id_horario_administracion = id_horarioadministracion_elegido,
                         observacion = observaciones
                     });
-                    Console.WriteLine("Inserté la fila");
                 }
 
                 E.SaveChanges();
                 alimentosAAgregar.Clear();
-                Console.WriteLine("Agregue los alimentos nuevos");
             }
 
             // Elimino los que haya que eliminar de los que ya estaban
@@ -159,21 +150,21 @@ namespace Principal.Forms.MapaCama.Paciente.Ficha.Indicacion.Procedimiento
                 for (int i = 0; i < alimentosAEliminar.Count; i++)
                 {
                     int id_alimentoAEliminar = Convert.ToInt32(alimentosAEliminar.Keys.ElementAt(i));
-                    Console.WriteLine("id alimento a eliminar: " + id_alimentoAEliminar);
+                    //Console.WriteLine("id alimento a eliminar: " + id_alimentoAEliminar);
                     var filaAEliminar = filas.FirstOrDefault(x => x.id_paciente == idpaciente &&
                                                              x.id_horario_administracion == id_horarioadministracion_elegido &&
                                                              x.id_alimento == id_alimentoAEliminar);
-                    Console.WriteLine("obtuve la fila");
+                    //Console.WriteLine("obtuve la fila");
                     if (filaAEliminar != null)
                     {
                         filas.Remove(filaAEliminar);
-                        Console.WriteLine("Elimine la fila");
+                        //Console.WriteLine("Elimine la fila");
                     }
                 }
 
                 E.SaveChanges();
                 alimentosAEliminar.Clear();
-                Console.WriteLine("Elimine los alimentos seleccionados");
+                //Console.WriteLine("Elimine los alimentos seleccionados");
             }
             btnGuardar.Enabled = false;
         }
@@ -217,11 +208,9 @@ namespace Principal.Forms.MapaCama.Paciente.Ficha.Indicacion.Procedimiento
                 if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                     e.RowIndex >= 0)
                 {
-                    
-                    //Console.WriteLine("row index: " + e.RowIndex);
-                    //Console.WriteLine("Supuesto id del alimento: " + senderGrid.Rows[e.RowIndex].Cells["id"].Value);
-                    alimentosAEliminar.Add(Convert.ToInt32(senderGrid.Rows[e.RowIndex].Cells["id"].Value), senderGrid.Rows[e.RowIndex].Cells["Alimentos"].Value.ToString());
-                    Console.WriteLine("Agregue a alimentosAEliminar: " + Convert.ToInt32(senderGrid.Rows[e.RowIndex].Cells["id"].Value) + " - " + senderGrid.Rows[e.RowIndex].Cells["Alimentos"].Value.ToString());
+                    if(!alimentosAEliminar.ContainsKey(Convert.ToInt32(senderGrid.Rows[e.RowIndex].Cells["id"].Value)))
+                        alimentosAEliminar.Add(Convert.ToInt32(senderGrid.Rows[e.RowIndex].Cells["id"].Value), senderGrid.Rows[e.RowIndex].Cells["Alimentos"].Value.ToString());
+                    //Console.WriteLine("Agregue a alimentosAEliminar: " + Convert.ToInt32(senderGrid.Rows[e.RowIndex].Cells["id"].Value) + " - " + senderGrid.Rows[e.RowIndex].Cells["Alimentos"].Value.ToString());
                     if (alimentosAAgregar.ContainsKey(Convert.ToInt32(senderGrid.Rows[e.RowIndex].Cells["id"].Value)) == true)
                         alimentosAAgregar.Remove(Convert.ToInt32(senderGrid.Rows[e.RowIndex].Cells["id"].Value));
                     datagridAlimentosSeleccionados.Rows.RemoveAt(e.RowIndex);
